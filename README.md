@@ -1,4 +1,4 @@
-# IV
+# OrganizeUDiet
 Proyecto para la asignatura de Infraestructura Virtual 
 
 ## Descripción
