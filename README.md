@@ -10,4 +10,4 @@ Para el proyecto usaré el lenguaje Javascript.
 - [Configuración de git](https://github.com/josemip98/OrganizeUDiet/docs)
 
 ## Autor
-- Jose Miguel Pelegrina Pelegrina
+- [Jose Miguel Pelegrina Pelegrina](https://github.com/josemip98)
