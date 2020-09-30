@@ -8,7 +8,7 @@ Podrás consultar todo tipo de alimentos junto con su información nutricional (
 Para el proyecto usaré el lenguaje Javascript.
 
 ## Enlace configuracion
-- [Configuración de git](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
+- [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
 ## Enlace ejercicios autoevaluación
 - [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
