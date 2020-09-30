@@ -10,7 +10,7 @@ Para el proyecto usaré el lenguaje Javascript.
 - [Configuración de git](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 
 ## Enlace ejercicios autoevaluación
-- [Configuración de git](https://github.com/josemip98/EjerciciosIV)
+- [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
 ## Autor
 - [Jose Miguel Pelegrina Pelegrina](https://github.com/josemip98)
