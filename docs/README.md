@@ -9,10 +9,10 @@
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/remote2.png)
 
-Como podemos apreciar en la siguiente imagen, al hacer un push, antes me pedía la contraseña.
+Como podemos ver en la imagen antes me pedía la contraseña al hacer un push.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/pass.png)
 
-Tras la configuración de las claves y cambiar la URL remota de HTTPS a SSH, podemos ver como no necesito introducir la contraseña para hacer push. Esto indica que la configuración ha sido realizada con éxito.
+Tras la configuración de las claves y cambiar la URL remota de HTTPS a SSH, podemos ver como no necesito introducir la contraseña para hacer push.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/claves.png)
