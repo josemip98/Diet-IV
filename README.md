@@ -1,7 +1,7 @@
 # OrganizeUDiet
 
 ## Descripción
-API para la organización y gestión de tu dieta. ¿Tienes problemas para organizar tu dieta? Con este programa podrás consultar todo tipo de alimentos junto con su información nutricional y organizarla a tu gusto mediante un calendario.
+API para la organización y gestión de tu dieta. ¿Tienes problemas para organizar tu dieta? Con este programa podrás consultar todo tipo de alimentos junto con su información nutricional (calorias, grasa, proteinas...) y organizarla a tu gusto mediante un calendario.
 
 ## Herramientas
 Para el proyecto usaré el lenguaje Javascript.
