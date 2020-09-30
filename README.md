@@ -7,7 +7,7 @@ API para la organización y gestión de tu dieta. ¿Tienes problemas para organi
 Para el proyecto usaré el lenguaje Javascript.
 
 ## Enlace
-- [Configuración de git](https://github.com/josemip98/OrganizeUDiet/docs)
+- [Configuración de git](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 
 ## Autor
 - [Jose Miguel Pelegrina Pelegrina](https://github.com/josemip98)
