@@ -15,3 +15,7 @@ Para el proyecto usaré el lenguaje Javascript.
 
 ## Autor
 - [Jose Miguel Pelegrina Pelegrina](https://github.com/josemip98)
+
+## Licencia
+
+- [Licencia](https://github.com/josemip98/LICENSE)
