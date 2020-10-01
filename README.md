@@ -18,4 +18,4 @@ Para el proyecto usaré el lenguaje Javascript.
 
 ## Licencia
 
-- [Licencia](https://github.com/josemip98/LICENSE)
+- [Licencia](https://github.com/josemip98/OrganizeUDiet/blob/master/LICENSE)
