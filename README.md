@@ -1,4 +1,5 @@
 # OrganizeUDiet
+Proyecto para la asignatura de Infraestructura Virtual.
 
 ## Descripción
 API para la organización y gestión de tu dieta. ¿Tienes problemas para organizar tu dieta? 
