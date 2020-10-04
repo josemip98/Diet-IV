@@ -12,6 +12,8 @@ Podrás consultar todo tipo de alimentos junto con su información nutricional (
 ## Enlace configuracion
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
++ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet/blob/master/HU.md)
+
 ## Enlace ejercicios autoevaluación
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
