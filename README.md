@@ -9,6 +9,11 @@ Podrás consultar todo tipo de alimentos junto con su información nutricional (
 + Para la implementación de la API RESTful se usará el paquete Express de NodeJs en la version v3.5.2.
 + En cuanto a la base de datos se usará MongoDB.
 
+## Instalación
+`npm install`
+
+`npm start`
+
 ## Enlace configuracion
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
