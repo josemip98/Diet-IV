@@ -1,0 +1,19 @@
+{
+  "name": "OrganizeUDiet",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Jose Miguel Pelegrina Pelegrina",
+  "license": "GPL-3.0",
+  "keywords": ["iv"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josemip98/OrganizeUDiet.git"
+    },
+  "bugs": "https://github.com/josemip98/OrganizeUDiet/issues",
+  "dependencies": {
+    "express": "^4.7.1",
+    "mongoose": "~3.6.11",
+    "method-override": "^2.1.2",
+    "body-parser": "^1.5.1"
+  }
+}
