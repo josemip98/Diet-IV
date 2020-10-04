@@ -15,9 +15,6 @@ Podrás consultar todo tipo de alimentos junto con su información nutricional (
 
 `npm start`
 
-## Herramienta de construcción
-package.json
-
 ## Enlace configuracion
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
