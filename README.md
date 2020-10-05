@@ -3,7 +3,17 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 ## Descripción
 API para la organización y gestión de tu dieta. ¿Tienes problemas para organizar tu dieta o estás cansado de comer siempre los mismos alimentos? 
-Aquí podrás consultar todo tipo de alimentos junto con su información nutricional (calorias, grasa, proteinas y hidratos) y organizarla a tu gusto mediante un calendario, podrás variar entre alimentos que sean parecidos entre sí nutricionalmente y hacer tu dieta más variada.
+Aquí podrás consultar todo tipo de alimentos junto con su información nutricional (calorias, grasa, proteinas y hidratos) y organizarla a tu gusto mediante un calendario, podrás variar entre alimentos que sean parecidos entre sí nutricionalmente y hacer tu dieta más variada. 
+
+Cada producto mostrará la siguiente información:
+
++ Nombre
++ Marca
++ Información nutricional
+	+ Calorias
+	+ Grasa
+	+ Proteinas
+	+ Hidratos	
 
 ## Herramientas
 
