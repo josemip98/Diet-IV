@@ -12,6 +12,7 @@ Podrás consultar todo tipo de alimentos junto con su información nutricional (
 + En cuanto a la base de datos se usará MongoDB.
 
 ## Instalación
+
 `npm install`
 
 `npm start`
