@@ -6,6 +6,7 @@ API para la organización y gestión de tu dieta. ¿Tienes problemas para organi
 Podrás consultar todo tipo de alimentos junto con su información nutricional (calorias, grasa, proteinas...) y organizarla a tu gusto mediante un calendario.
 
 ## Herramientas
+
 + Para el proyecto usaré el lenguaje Javascript mediante Node.JS en su versión v8.10.0.
 + Para la implementación de la API RESTful se usará el paquete Express de NodeJs en la version v3.5.2.
 + En cuanto a la base de datos se usará MongoDB.
