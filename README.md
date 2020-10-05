@@ -30,6 +30,8 @@ Cada producto mostrará la siguiente información:
 ## Enlace configuracion
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
++ [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
+
 ## Enlace ejercicios autoevaluación
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
