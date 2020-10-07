@@ -25,12 +25,18 @@ Cada producto mostrará la siguiente información:
 
 `npm install`
 
-## Enlace configuracion
+## Índice
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
+
++ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet/issues)
+
++ [Descripción](https://github.com/josemip98/OrganizeUDiet#Descripción)
+
++ [Herramientas](https://github.com/josemip98/OrganizeUDiet#Herramientas)
 
 + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
-+ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet/issues)
++ [Ejercicios autoevaluación](https://github.com/josemip98/OrganizeUDiet#Enlace ejercicios autoevaluación)
 
 ## Enlace ejercicios autoevaluación
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
