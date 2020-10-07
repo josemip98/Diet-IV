@@ -32,10 +32,6 @@ Cada producto mostrará la siguiente información:
 + Para la implementación de la API RESTful se usará el framework Meteor
 + En cuanto a la base de datos se usará MongoDB.
 
-## Instalación
-
-`npm install`
-
 ## Enlace ejercicios autoevaluación
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
