@@ -28,8 +28,8 @@ Cada producto mostrará la siguiente información:
 
 ## Herramientas
 
-+ Para el proyecto usaré el lenguaje Javascript mediante Node.JS en su versión v8.10.0.
-+ Para la implementación de la API RESTful se usará el paquete Express de NodeJs en la version v3.5.2.
++ Para el proyecto usaré el lenguaje Javascript mediante Node.js
++ Para la implementación de la API RESTful se usará el framework Meteor
 + En cuanto a la base de datos se usará MongoDB.
 
 ## Instalación
