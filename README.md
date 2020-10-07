@@ -25,8 +25,6 @@ Cada producto mostrará la siguiente información:
 
 `npm install`
 
-`npm start`
-
 ## Enlace configuracion
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
