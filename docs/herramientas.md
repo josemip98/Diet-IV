@@ -10,9 +10,9 @@ He decidido utilizar JavaScript ya que es uno de los lenguajes más utilizados y
 
 ## Frameworks:
 
-+ **Express:**
++ **Meteor JS:**
 
-He decidido utilizar express porque es uno de los frameworks más populares para Node.
+He decidido utilizar meteor.js porque es uno de los frameworks más populares para Node. Está respaldado por una gran comunidad de usuarios y además cuenta con su propia documentación, tutoriales y paquetes personalizados.
 
 ## Base de datos:
 
