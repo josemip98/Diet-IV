@@ -32,6 +32,8 @@ Cada producto mostrará la siguiente información:
 
 + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
++ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet/issues)
+
 ## Enlace ejercicios autoevaluación
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
