@@ -18,7 +18,7 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 + [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
 
-+ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias)
++ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#https://github.com/josemip98/OrganizeUDiet#historias-de-usuario)
 
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
