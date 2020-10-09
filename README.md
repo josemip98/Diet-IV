@@ -18,7 +18,7 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 + [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
 
-+ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet/issues)
++ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias de usuario)
 
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
@@ -50,7 +50,13 @@ Cada producto mostrará la siguiente información:
 
 ## Tareas
 
-+ [Aquí](https://github.com/josemip98/OrganizeUDiet/issues?q=is%3Aissue+is%3Aclosed) se pueden consultar los issues que he ido cerrando durante la realización del proyecto.
++ [Lista de issues cerrados](https://github.com/josemip98/OrganizeUDiet/issues?q=is%3Aissue+is%3Aclosed)
++ [Lista de milestones](https://github.com/josemip98/OrganizeUDiet/milestones)
+
+## Historias de usuario
+En este apartado se irán añadiendo las historias de usuario
+
++ [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9). Consultar producto
 
 ## Enlace ejercicios autoevaluación
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
