@@ -10,7 +10,13 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
++ [Ubicaciones](https://github.com/josemip98/OrganizeUDiet#Ubicaciones)
+
++ [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
+
 + [Historias de usuario](https://github.com/josemip98/OrganizeUDiet/issues)
+
++ [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
 ## Descripción
 API para la organización y gestión de tu dieta. ¿Tienes problemas para organizar tu dieta o estás cansado de comer siempre los mismos alimentos? 
