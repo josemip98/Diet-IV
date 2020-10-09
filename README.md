@@ -32,6 +32,16 @@ Cada producto mostrará la siguiente información:
 + Para la implementación se usará el framework Meteor
 + En cuanto a la base de datos se usará MongoDB.
 
+## Ubicaciones
+
++ Carpeta de [documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
++ Carpeta de [código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
++ Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
+
+## Tareas
+
++ [Aquí](https://github.com/josemip98/OrganizeUDiet/issues?q=is%3Aissue+is%3Aclosed) se pueden consultar los issues que he ido cerrando durante la realización del proyecto.
+
 ## Enlace ejercicios autoevaluación
 + [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
