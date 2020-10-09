@@ -10,11 +10,11 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
-+ Carpeta de [documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
++ [Carpeta de documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 
-+ Carpeta de [código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
++ [Carpeta de código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
 
-+ Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
++ [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 
 + [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
 
