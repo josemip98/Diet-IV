@@ -1,6 +1,5 @@
 
 class Producto {
-
     constructor(producto, marca, calorias, grasa, proteinas, hidratos){
         this.producto = producto;
 	this.marca = marca;
