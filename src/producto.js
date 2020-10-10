@@ -1,36 +1,36 @@
 
 class Producto {
-    //constructor
-    constructor(){
-        var producto;
-	var marca;
-        var calorias;
-	var grasa;
-	var proteinas;
-	var hidratos;
+
+    constructor(producto, marca, calorias, grasa, proteinas, hidratos){
+        this.producto = producto;
+	this.marca = marca;
+	this.calorias = calorias;
+	this.grasa = grasa;
+	this.proteinas = proteinas;
+	this.hidratos = hidratos;
     }
 
     mostrarProducto(){
-        return producto;
+        return this.producto;
     }
 
     mostrarMarca(){
-        return marca;
+        return this.marca;
     }
 
     mostrarCalorias(){
-        return calorias;
+        return this.calorias;
     }
 
     mostrarGrasa(){
-        return grasa;
+        return this.grasa;
     }
 
     mostrarProteinas(){
-        return proteinas;
+        return this.proteinas;
     }
 
     mostrarHidratos(){
-        return hidratos;
+        return this.hidratos;
     }
 }
