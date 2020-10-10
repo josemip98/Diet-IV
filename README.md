@@ -20,8 +20,6 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 + [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias-de-usuario)
 
-+ [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
-
 ## Descripción
 API para la organización y gestión de tu dieta. ¿Tienes problemas para organizar tu dieta o estás cansado de comer siempre los mismos alimentos? 
 Aquí podrás consultar todo tipo de alimentos junto con su información nutricional (calorias, grasa, proteinas y hidratos) y organizarla a tu gusto mediante un calendario, podrás variar entre alimentos que sean parecidos entre sí nutricionalmente y hacer tu dieta más variada. 
@@ -57,9 +55,6 @@ Cada producto mostrará la siguiente información:
 En este apartado se irán añadiendo las historias de usuario
 
 + [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9). Consultar producto
-
-## Enlace ejercicios autoevaluación
-+ [Repositorio ejercicios](https://github.com/josemip98/EjerciciosIV)
 
 ## Autor
 + [Jose Miguel Pelegrina Pelegrina](https://github.com/josemip98)
