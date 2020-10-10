@@ -16,13 +16,13 @@ Para este hito comenzaremos a utilizar issues y milestones.
 Primero he creado milestones para los hitos 1,2 y 3. Después he creado los siguientes issues relacionados con el hito 1:
 
 + Elección de herramientas 
-+ Añadir razones por las que elegir algunas herramientas
++ Añadir razones por las que elegir algunas [herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 + Revisar documentación
-+ Crear archivo iv.yaml
-+ Crear clase producto
++ Crear archivo [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
++ Crear clase [producto](https://github.com/josemip98/OrganizeUDiet/blob/master/src/producto.js)
 
 Además he creado una historia de usuario:
 
-+ HU01 - Consultar producto
++ [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9) - Consultar producto
 
 Una vez cerrados todos los issues, modifico el fichero hito-1.md y hacemos Pull Request.
