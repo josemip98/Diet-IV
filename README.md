@@ -48,6 +48,8 @@ Cada producto mostrará la siguiente información:
 
 ## Tareas
 
+En este [documento](https://github.com/josemip98/OrganizeUDiet/tree/master/docs/pasos.md) se muestran los pasos seguidos para el desarrollo del proyecto.
+
 + [Lista de issues cerrados](https://github.com/josemip98/OrganizeUDiet/issues?q=is%3Aissue+is%3Aclosed)
 + [Lista de milestones](https://github.com/josemip98/OrganizeUDiet/milestones)
 
