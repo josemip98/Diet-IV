@@ -14,13 +14,17 @@
 
 Para este hito comenzaremos a utilizar issues y milestones.
 Primero he creado milestones para los hitos 1,2 y 3. 
-Después he creado los siguientes issues relacionados con el [hito 1](https://github.com/josemip98/OrganizeUDiet/milestone/1?closed=1):
+Después he creado los siguientes issues relacionados con el [milestone 1](https://github.com/josemip98/OrganizeUDiet/milestone/1?closed=1):
 
 + Elección de herramientas 
 + Añadir razones por las que elegir algunas [herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 + Revisar documentación
 + Crear archivo [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 + Crear clase [producto](https://github.com/josemip98/OrganizeUDiet/blob/master/src/producto.js)
++ Instalar Node.js
++ Arreglar clase producto
++ Modificar fichero gitignore
++ Crear fichero pasos.md
 
 Además he creado una historia de usuario:
 
