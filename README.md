@@ -57,8 +57,8 @@ En este apartado se irán añadiendo las historias de usuario
 
 + [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9). Consultar dieta.
 	+ Como usuario debo poder consultar el listado de productos que conforman la dieta junto con su información nutricional.
-+ [HU02](https://github.com/josemip98/OrganizeUDiet/issues/9) Consultar producto.
-	+ Como usuario, dado un producto debo poder consultar productos con información nutricional similares.
++ [HU02](https://github.com/josemip98/OrganizeUDiet/issues/15) Consultar productos similares.
+	+ Como usuario, dado un producto debo poder consultar productos nutricionalmente similares.
 	
 
 ## Autor
