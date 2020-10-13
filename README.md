@@ -27,7 +27,6 @@ Aquí podrás consultar todo tipo de alimentos junto con su información nutrici
 Cada producto mostrará la siguiente información:
 
 + Nombre
-+ Marca
 + Información nutricional
 	+ Calorias
 	+ Grasa
