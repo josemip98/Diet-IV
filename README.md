@@ -6,9 +6,7 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 + [Descripción](https://github.com/josemip98/OrganizeUDiet#Descripción)
 
-+ [Herramientas](https://github.com/josemip98/OrganizeUDiet#Herramientas)
-
-+ [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
++ [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
 + [Carpeta de documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 
@@ -34,12 +32,6 @@ Cada producto mostrará la siguiente información:
 	+ Grasa
 	+ Proteinas
 	+ Hidratos	
-
-## Herramientas
-
-+ Para el proyecto usaré el lenguaje Javascript mediante Node.js
-+ Para la implementación se usará el framework Meteor
-+ En cuanto a la base de datos se usará MongoDB.
 
 ## Ubicaciones
 
