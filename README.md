@@ -35,12 +35,9 @@ Una dieta está formada por una lista de productos.
 
 El formato a mostrar será:
 
-+ Producto -> Cantidad
++ Producto -> Información nutricional
 
-Cada producto mostrará la siguiente información:
-
-+ Nombre
-+ Información nutricional
+La información nutricional consta de: 
 	+ Calorias
 	+ Grasa
 	+ Proteinas
@@ -78,6 +75,8 @@ En este apartado se irán añadiendo las historias de usuario
 	+ Como usuario debo poder consultar el listado de productos que conforman la dieta junto con su información nutricional.
 + [HU02](https://github.com/josemip98/OrganizeUDiet/issues/15) Consultar productos similares.
 	+ Como usuario, dado un producto debo poder consultar productos nutricionalmente similares.
++ [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) Consultar producto concreto.
+	Como usuario debo poder consultar un producto concreto perteneciente a una dieta. El formato a mostrar será el producto junto con su información nutricional.
 	
 ***
 
