@@ -54,3 +54,5 @@ class Producto {
         this.hidratos = hidratos;
     }
 }
+
+module.exports = Producto;
