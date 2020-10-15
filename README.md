@@ -5,22 +5,25 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 ## Índice
 
-> + [Descripción](https://github.com/josemip98/OrganizeUDiet#Descripción)
++ [Descripción](https://github.com/josemip98/OrganizeUDiet#Descripción)
 
-> + [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
+ + [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
-> + [Ubicaciones](https://github.com/josemip98/OrganizeUDiet#Ubicaciones)
->> + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
+ + [Ubicaciones](https://github.com/josemip98/OrganizeUDiet#Ubicaciones)
+	 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
->> + [Carpeta de documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
+	+ [Carpeta de documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 
->> + [Carpeta de código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
+	+ [Carpeta de código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
 
->> + [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
+	+ [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 
-> + [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
++ [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
 
-> + [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias-de-usuario)
+	+ [Lista de issues cerrados](https://github.com/josemip98/OrganizeUDiet/issues?q=is%3Aissue+is%3Aclosed)
+	+ [Lista de milestones](https://github.com/josemip98/OrganizeUDiet/milestones)
+
++ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias-de-usuario)
 
 ***
 
@@ -39,6 +42,12 @@ Cada producto mostrará la siguiente información:
 	+ Proteinas
 	+ Hidratos	
 	
+***
+
+## Herramientas
+
+ + [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
+
 ***
 
 ## Ubicaciones
