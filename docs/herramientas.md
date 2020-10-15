@@ -32,6 +32,8 @@ Para la base de datos he decidido utilizar MongoDB ya que no necesito crear un s
 
 + **Jest o Mocha**
 
+***
+
 ## Log:
 
 + *Aún por decidir*
