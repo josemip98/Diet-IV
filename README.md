@@ -33,6 +33,10 @@ Aquí podrás consultar todo tipo de alimentos junto con su información nutrici
 
 Una dieta está formada por una lista de productos.
 
+El formato a mostrar será:
+
++ Producto -> Cantidad
+
 Cada producto mostrará la siguiente información:
 
 + Nombre
