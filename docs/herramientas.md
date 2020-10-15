@@ -2,6 +2,10 @@
 
 En este fichero iré haciendo una justificación acerca de las herramientas que se van a uilizar en el proyecto.
 
+*** 
+- - -
+___
+
 ## Lenguaje de programacion:
 
 + **JavaScrip + Node.js:**
