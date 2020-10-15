@@ -4,21 +4,23 @@ Proyecto para la asignatura de Infraestructura Virtual.
 ***
 
 ## Índice
-+ [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 
-+ [Descripción](https://github.com/josemip98/OrganizeUDiet#Descripción)
-
-+ [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
-
-+ [Carpeta de documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
-
-+ [Carpeta de código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
-
-+ [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
-
-+ [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
-
-+ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias-de-usuario)
+> + [Descripción](https://github.com/josemip98/OrganizeUDiet#Descripción)
+>
+> + [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
+>
+> + [Ubicaciones](https://github.com/josemip98/OrganizeUDiet#Ubicaciones)
+>> + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
+>
+>> + [Carpeta de documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
+>
+>> + [Carpeta de código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
+>
+>> + [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
+>
+> + [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
+>
+> + [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias-de-usuario)
 
 ***
 
@@ -41,6 +43,7 @@ Cada producto mostrará la siguiente información:
 
 ## Ubicaciones
 
++ [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 + Carpeta de [documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 + Carpeta de [código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
 + Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
