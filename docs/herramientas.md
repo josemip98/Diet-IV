@@ -30,7 +30,9 @@ Para la base de datos he decidido utilizar MongoDB ya que no necesito crear un s
 
 ## Tests:
 
-+ **Jest o Mocha**
++ **Jest:**
+
+Para realizar los tests estaba entre Jest y Mocha pero finalmente me he decidido por Jest porque muchos recomiendan mocha si tienes un proyecto grande con la necesidad de flexibilidad y personalización, como vamos a trabajar en un proyecto más pequeño no necesitamos la configuración adicional por adelantado, por tanto, Jest es probablemente la mejor opción para mi.
 
 ***
 
