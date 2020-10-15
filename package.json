@@ -1,0 +1,26 @@
+{
+  "name": "OrganizeUDiet",
+  "version": "1.0.3",
+  "description": "Proyecto para gestionar dietas especificas",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josemip98/OrganizeUDiet.git"
+  },
+  "author": "josemip98",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/josemip98/OrganizeUDiet/issues"
+  },
+  "homepage": "https://github.com/josemip98/OrganizeUDiet#readme",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0"
+  }
+}
