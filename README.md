@@ -17,6 +17,8 @@ Proyecto para la asignatura de Infraestructura Virtual.
 	+ [Código de clase](https://github.com/josemip98/OrganizeUDiet/blob/master/src/dieta.js)
 	
 	+ [Código de test](https://github.com/josemip98/OrganizeUDiet/blob/master/tests/dieta.test.js)
+	
+	+ [Fichero configuración del proyecto](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
 
 	+ [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 
@@ -65,6 +67,7 @@ La información nutricional consta de:
 + Carpeta de [documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 + Carpeta de [código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
 + Carpeta de [test](https://github.com/josemip98/OrganizeUDiet/tree/master/test)
++ [Fichero configuración del proyecto](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
 + Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 
 ***
