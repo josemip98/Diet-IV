@@ -1,1 +1,5 @@
 entidad: src/dieta.js
+lenguaje: JavaScript
+test:
+    - tests/dieta.test.js
+taskfile: package.json
