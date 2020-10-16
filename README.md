@@ -61,6 +61,22 @@ La información nutricional consta de:
 
 ***
 
+## Test
+
+Para la realización de los test primero debes clonar este repositorio y tener instalado Node y npm:
+
+`git clone https://github.com/josemip98/OrganizeUDiet`
+
+Instalamos las dependencias:
+
+`npm install`
+
+Lanzamos los tests:
+
+`npm test`
+
+***
+
 ## Ubicaciones
 
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
