@@ -1,6 +1,9 @@
 # Pasos para la realización del proyecto
 
-## Hito 0
+## Hito 0 - Configuración GitHub
+
+Este hito es basicamente configurar y entender el funcionamiento de GitHub ya que se utilizará para el desarrollo del proyecto. Para ello he realizado las siguietnes tareas:
+
 + Realizar un Fork del repositorio de la [asignatura](https://github.com/JJ/IV-20-21)
 + Actualizar fichero de [objetivos](https://github.com/JJ/IV-20-21/blob/master/objetivos/josemip98.md)
 + Configurar git (creación par de claves pública y privada y hacer uso de SSH)
@@ -10,24 +13,54 @@
   + Añadir archivo README.md con la descripción general del proyecto
 + Modificar hito-0.md y hacer Pull Request con el enlace de mi proyecto.
 
-## Hito 1
+## Hito 1 - Estructura general del proyecto
 
-Para este hito comenzaremos a utilizar issues y milestones.
+Para este hito he aprendido a utilizar issues y milestones que son imprescindibles para ir desarrollando el proyecto ya que nos vamos marcando tareas.
 Primero he creado milestones para los hitos 1,2 y 3. 
-Después he creado los siguientes issues relacionados con el [milestone 1](https://github.com/josemip98/OrganizeUDiet/milestone/1?closed=1):
+El milestone 1 consiste basicamente en explicar la estructura general del proyecto, explicando el problema a resolver, elegir el lenguaje, las herramientas que vamos a utilizar y crear la clase principal.
 
-+ Elección de herramientas 
-+ Añadir razones por las que elegir algunas [herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
-+ Revisar documentación
+Para ello he realizado las siguientes tareas:
+
++ Elección de herramientas a utilizar en el proyecto.
++ Añadir razones por las que elegir dichas [herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
++ Revisar documentación para enlazar todo lo realizado en el hito.
 + Crear archivo [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 + Crear clase [producto](https://github.com/josemip98/OrganizeUDiet/blob/master/src/producto.js)
 + Instalar Node.js
-+ Arreglar clase producto
 + Modificar fichero gitignore
-+ Crear fichero pasos.md
++ Crear fichero pasos.md en el que iré explicando los pasos a seguir para realziar el proyecto.
 
 Además he creado una historia de usuario:
 
 + [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9) - Consultar producto
 
 Una vez cerrados todos los issues, modifico el fichero hito-1.md y hacemos Pull Request.
+
+## Hito 2 - Tests
+
+En este hito aprenderemos a testear nuestro código. Primero debemos elegir una herramienta para ello, en mi caso, estaba entre Jest y Mocha pero como explico en este [documento](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md) finalmente me he decidido por Jest. Una vez hecho esto, debemos crear una carpeta Tests en el que incluiremos un fichero donde se implementaran los tests para la clase dieta para testear las distintas funciones que creemos en la clase.
+
+Además de esto, he realziado las siguientes tareas:
+
++ Actualizar README.md para incluir lo realizado en este hito
+
++ Actualizar fichero herramientas.md en el que explico el porqué he elegido cada herramienta
+
++ Actualizar fichero pasos.md con el hito 2
+
++ Crear [test](https://github.com/josemip98/OrganizeUDiet/blob/master/tests/dieta.test.js) 
+
++ Actualizar fichero iv.yaml con el lenguaje, clase y test.
+
++ Crear fichero packaje.json 
+
++ Añadir carpeta para los test
+
+También he creado dos historias más de usuario:
+
++ [HU02](https://github.com/josemip98/OrganizeUDiet/issues/15) Consultar productos similares.
+	+ Como usuario, dado un producto debo poder consultar productos nutricionalmente similares.
++ [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) Consultar producto concreto.
+	+ Como usuario debo poder consultar un producto concreto perteneciente a una dieta. El formato a mostrar será el producto junto con su información nutricional.
+  
+Una vez he cerrado los issues del hito 2, he modificado el fichero hito-2.md y he realizado un Pull Request.
