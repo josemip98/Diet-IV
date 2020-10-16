@@ -47,7 +47,13 @@ La información nutricional consta de:
 
 ## Herramientas
 
- + [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
+ + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
+ 
+ + **Lenguaje:** JavaScrip + Node.js
+ + **Frameworks:** Meteor JS
+ + **Base de datos:** MongoDB
+ + **Tests:** Jest
+ + **Log:** *Por decidir*
 
 ***
 
