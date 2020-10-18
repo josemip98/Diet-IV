@@ -20,19 +20,27 @@ He decidido utilizar meteor.js porque es uno de los frameworks más populares pa
 
 ***
 
-## Base de datos:
-
-+ **MongoDB:**
-
-Para la base de datos he decidido utilizar MongoDB ya que no necesito crear un schema para nuestras tablas lo cual la hace mucho mas flexible sobretodo en mi caso que estoy iniciando un proyecto y no conozco los requerimientos pero necesito empezar ya.
-
-***
-
 ## Tests:
 
 + **Jest:**
 
 Para realizar los tests estaba entre Jest y Mocha pero finalmente me he decidido por Jest porque muchos recomiendan mocha si tienes un proyecto grande con la necesidad de flexibilidad y personalización, como vamos a trabajar en un proyecto más pequeño no necesitamos la configuración adicional por adelantado, por tanto, Jest es probablemente la mejor opción para mi.
+
+***
+
+## Herramienta de construcción
+
++ **Gulp:**
+
+Como herramientas de construcción para la automatización de tareas como puede ser testear el código o iniciar la Api he decidido utilizar Gulp. Estaba entre Gulp y Grunt ya que ambas herramientas eran muy útiles para mi proyecto pero finalmente me he decantado por Gulp ya que está desarrollado en JavaScript, funciona con Node.js, es más rápido que Grunt y además no necesitas crear carpetas temporales simplemente tienes que crear un archivo gulpfile.js con las tareas que quieras automatizar y listo.
+
+***
+
+## Base de datos:
+
++ **MongoDB:**
+
+Para la base de datos he decidido utilizar MongoDB ya que no necesito crear un schema para nuestras tablas lo cual la hace mucho mas flexible sobretodo en mi caso que estoy iniciando un proyecto y no conozco los requerimientos pero necesito empezar ya.
 
 ***
 
