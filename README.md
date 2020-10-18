@@ -64,7 +64,7 @@ La información nutricional consta de:
 
 ## Test
 
-Para la realización de los test primero debes clonar este repositorio y tener instalado Node y npm:
+Para la realización de los test primero debes clonar este repositorio y tener instalado Node, Gulp y npm:
 
 `git clone https://github.com/josemip98/OrganizeUDiet`
 
@@ -72,9 +72,9 @@ Instalamos las dependencias:
 
 `npm install`
 
-Lanzamos los tests:
+Lanzamos los tests con Gulp:
 
-`npm test`
+`gulp test`
 
 ***
 
