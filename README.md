@@ -18,7 +18,9 @@ Proyecto para la asignatura de Infraestructura Virtual.
 	
 	+ [Código de test](https://github.com/josemip98/OrganizeUDiet/blob/master/tests/dieta.test.js)
 	
-	+ [Fichero configuración del proyecto](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
+	+ [Fichero package.json](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
+	
+	+ [Fichero gulpfile.js](https://github.com/josemip98/OrganizeUDiet/blob/master/gulpfile.js)
 
 	+ [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 
@@ -84,7 +86,8 @@ Lanzamos los tests con Gulp:
 + Carpeta de [documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 + Carpeta de [código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
 + Carpeta de [test](https://github.com/josemip98/OrganizeUDiet/tree/master/test)
-+ [Fichero configuración del proyecto](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
++ [Fichero package.json](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
++ [Fichero gulpfile.js](https://github.com/josemip98/OrganizeUDiet/blob/master/gulpfile.js)
 + Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
 
 ***
