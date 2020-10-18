@@ -55,8 +55,9 @@ La información nutricional consta de:
  
  + **Lenguaje:** JavaScrip + Node.js
  + **Frameworks:** Meteor JS
- + **Base de datos:** MongoDB
  + **Tests:** Jest
+ + **Task runner:** Gulp
+ + **Base de datos:** MongoDB
  + **Log:** *Por decidir*
 
 ***
