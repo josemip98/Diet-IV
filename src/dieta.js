@@ -1,6 +1,7 @@
 
 class Dieta{
 
+  //constructor
   constructor(listaProductos, informacionNutricional){
     this.listaProductos = new Array();
     this.informacionNutricional = new Array();
