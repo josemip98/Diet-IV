@@ -85,7 +85,7 @@ Lanzamos los tests con Gulp:
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
 + Carpeta de [documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 + Carpeta de [código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
-+ Carpeta de [test](https://github.com/josemip98/OrganizeUDiet/tree/master/test)
++ Carpeta de [test](https://github.com/josemip98/OrganizeUDiet/tree/master/tests)
 + [Fichero package.json](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
 + [Fichero gulpfile.js](https://github.com/josemip98/OrganizeUDiet/blob/master/gulpfile.js)
 + Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
