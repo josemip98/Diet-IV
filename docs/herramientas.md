@@ -6,7 +6,7 @@ En este fichero iré haciendo una justificación acerca de las herramientas que 
 
 ## Lenguaje de programacion:
 
-+ **JavaScrip + Node.js:**
++ **JavaScript + Node.js:**
 
 He decidido utilizar JavaScript ya que es uno de los lenguajes más utilizados y me parecía interesante aprenderlo, aunque es principalmente para el desarrollo del front-end, si lo juntamos con Node.js es posible utilizarlo para back-end. He decidido utilizar Node.js porque es un ambiente de ejecución muy ligero y eficiente en el que se realiza la compilación en tiempo de ejecución, tiene alta escalabilidad, tiene alto rendimiento y además es expandible con módulos.
 
