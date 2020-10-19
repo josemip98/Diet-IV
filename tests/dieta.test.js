@@ -5,6 +5,7 @@ const Dieta = require("../src/dieta.js");
 var producto;
 var listaProductos;
 var informacionNutricional;
+
 const dieta = new Dieta("Arroz", "354Kcal, 0,5g de grasa, 6,5g de proteinas y 79g de hidratos");
 
 describe("Testeando la clase dieta.js", () => {
