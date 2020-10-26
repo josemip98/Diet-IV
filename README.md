@@ -64,6 +64,7 @@ La información nutricional consta de:
  
  Como herramientas de construcción para la automatización de tareas como puede ser testear el código o iniciar la Api he decidido utilizar Gulp. Estaba entre Gulp y Grunt ya que ambas herramientas eran muy útiles para mi proyecto pero finalmente me he decantado por Gulp ya que está desarrollado en JavaScript, funciona con Node.js, es más rápido que Grunt y además no necesitas crear carpetas temporales simplemente tienes que crear un archivo gulpfile.js con las tareas que quieras automatizar y listo.
  + **Base de datos:** MongoDB
+ + **Despliegue de la aplicación en la nube:** [Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#Docker)
  + **Log:** *Por decidir*
 
 ***
