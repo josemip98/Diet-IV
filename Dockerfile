@@ -10,8 +10,15 @@ COPY package*.json ./
 
 COPY gulpfile.js ./
 
-#ejecutamos npm install para instalar las dependencias y  además borramos los archivos de dependencias
-RUN npm install  &&  npm install && rm package*.json
+#instalamos las dependencias con npm y creamos un usuario con el parámetro -D
+#para crearlo con los valores por defecto
+RUN adduser -D useriv && npm install
+
+#variable de entorno para gestionar node_modules
+ENV PATH=/node_modules/.bin:$PATH
+
+#añadimos un usuario
+USER useriv
 
 #creamos el directorio test
 WORKDIR /test
