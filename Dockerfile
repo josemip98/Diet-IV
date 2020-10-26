@@ -10,18 +10,7 @@ COPY package*.json ./
 
 COPY gulpfile.js ./
 
-#instalamos las dependencias con npm y creamos un usuario con el parámetro -D
-#para crearlo con los valores por defecto
-RUN adduser -D useriv && npm install
-
-#variable de entorno para gestionar node_modules
-ENV PATH=/node_modules/.bin:$PATH
-
-#añadimos un usuario
-USER useriv
-
-#creamos el directorio test
-WORKDIR /test
+COPY ./tests ./tests
 
 #para ejecutar los tests
 CMD ["npm","test"]
