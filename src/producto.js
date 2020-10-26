@@ -1,56 +1,61 @@
 
 class Producto {
-	
-// Constructor	
-    constructor(producto, calorias, grasa, proteinas, hidratos){
-        this.producto = producto;
-	this.calorias = calorias;
-	this.grasa = grasa;
-	this.proteinas = proteinas;
-	this.hidratos = hidratos;
+
+// Constructor
+    constructor(nombre, calorias, grasa, proteinas, hidratos){
+        this.nombre = nombre;
+				this.calorias = calorias;
+				this.grasa = grasa;
+				this.proteinas = proteinas;
+				this.hidratos = hidratos;
     }
-	
+
 // Get
 
-    get producto(){
-        return this.producto;
+    getProducto(){
+      var product = "\nProducto -> " + this.nombre + "\nInformación nutricional: \nCalorias -> " + this.calorias + "\nGrasa -> " + this.grasa + "\nProteinas -> " + this.proteinas + "\nHidratos -> " + this.hidratos;
+      return product;
     }
 
-    get calorias(){
+    getNombre(){
+        return this.nombre;
+    }
+
+    getCalorias(){
         return this.calorias;
     }
 
-    get grasa(){
+    getGrasa(){
         return this.grasa;
     }
 
-    get proteinas(){
+    getProteinas(){
         return this.proteinas;
     }
 
-    get hidratos(){
+    getHidratos(){
         return this.hidratos;
     }
-	
+
 // Set
-	
-    set producto(producto){
+
+    setProducto(producto){
         this.producto = producto;
     }
 
-    set calorias(calorias){
+    setCalorias(calorias){
         this.calorias = calorias;
     }
 
-    set grasa(grasa){
+    setGrasa(grasa){
         this.grasa = grasa;
     }
 
-    set proteinas(proteinas){
+    setProteinas(proteinas){
         this.proteinas = proteinas;
     }
 
-    set hidratos(hidratos){
+    setHidratos(hidratos){
         this.hidratos = hidratos;
     }
 }
