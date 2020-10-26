@@ -36,6 +36,12 @@ Como herramientas de construcción para la automatización de tareas como puede 
 
 ***
 
+## Despliegue de la aplicación en la nube
+
++ **Docker:**
+
+***
+
 ## Base de datos:
 
 + **MongoDB:**
