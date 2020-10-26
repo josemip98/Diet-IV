@@ -17,4 +17,4 @@ RUN npm install  &&  npm install && rm package*.json
 WORKDIR /test
 
 #para ejecutar los tests
-CMD ["npm","test"]
+CMD ["gulp","test"]
