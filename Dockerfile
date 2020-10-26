@@ -1,5 +1,5 @@
 #node con la versión 15
-FROM node:14.0
+FROM node:14-slim
 
 LABEL maintainer="j_miguel98@hotmail.com"
 
