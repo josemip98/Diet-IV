@@ -85,6 +85,18 @@ Lanzamos los tests con Gulp:
 
 ***
 
+## Dockerfile
+
+**
+
+## Ejecución test a partir de Docker
+
+`docker pull josemip98/organizeudiet`
+
+`docker run -t -v `pwd`:/test josemip98/orhanizeudiet`
+
+***
+
 ## Ubicaciones
 
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
