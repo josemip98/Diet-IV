@@ -1,5 +1,5 @@
 #node con la versión 15
-FROM 15.0-alpine3.10
+FROM 14.0-alpine3.10
 
 LABEL maintainer="j_miguel98@hotmail.com"
 
