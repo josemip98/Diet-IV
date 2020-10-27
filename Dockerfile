@@ -7,7 +7,7 @@ LABEL maintainer="j_miguel98@hotmail.com"
 COPY package*.json ./
 COPY gulpfile.js ./
 
-RUN npm install && npm install -g jest-cli
+RUN npm install && npm install -g jest-cli && npm install gulp
 
 COPY ./tests ./tests
 
