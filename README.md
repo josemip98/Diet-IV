@@ -59,6 +59,8 @@ Para el despliegue de la aplicación en la nube vamos a utilizar Docker. Para el
 
 ## Dockerfile
 
+Para la creación del Dockerfile he seguido [estos](https://www.campusmvp.es/recursos/post/mejores-practicas-para-crear-dockerfiles-excelentes.aspx) consejos de buenas prácticas.
+
 + [Dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/Dockerfile)
 
 ***
