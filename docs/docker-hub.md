@@ -1,5 +1,4 @@
 # SUBIDA DE NUESTRO CONTENEDOR A DOCKER HUB Y CONFIGURACION
-
 Primero me he creado una cuenta en Docker hub con el mismo nombre que en GitHub (josemip98) ya que en mi caso no estaba registrado.
 Una vez hecho esto, me he creado un repositorio con el mismo nombre que el de mi proyecto (OrganizeUDiet) pero con todas las letras en minúscula para que asi podamos sincronizarlo con el repositorio de GitHub.
 Por tanto, mi repositorio en Docker Hub queda como josemip98/organizeudiet.
