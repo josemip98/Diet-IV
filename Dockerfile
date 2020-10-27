@@ -9,7 +9,5 @@ COPY gulpfile.js ./
 
 RUN npm install
 
-WORKDIR /test
-
 #para ejecutar los tests
 CMD ["npm","test"]
