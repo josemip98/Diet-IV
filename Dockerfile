@@ -9,6 +9,8 @@ COPY package*.json ./
 
 COPY gulpfile.js ./
 
+RUN adduser -D jose
+
 #Instalación de dependencias
 RUN npm install
 RUN npm install -g jest-cli
