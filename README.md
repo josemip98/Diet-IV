@@ -3,36 +3,6 @@ Proyecto para la asignatura de Infraestructura Virtual.
 
 ***
 
-## Índice
-
-+ [Descripción](https://github.com/josemip98/OrganizeUDiet#Descripción)
-
- + [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
-
- + [Ubicaciones](https://github.com/josemip98/OrganizeUDiet#Ubicaciones)
-	 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
-
-	+ [Carpeta de documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
-
-	+ [Código de clase](https://github.com/josemip98/OrganizeUDiet/blob/master/src/dieta.js)
-	
-	+ [Código de test](https://github.com/josemip98/OrganizeUDiet/blob/master/tests/dieta.test.js)
-	
-	+ [Fichero package.json](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
-	
-	+ [Fichero gulpfile.js](https://github.com/josemip98/OrganizeUDiet/blob/master/gulpfile.js)
-
-	+ [Fichero iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
-
-+ [Tareas](https://github.com/josemip98/OrganizeUDiet#Tareas)
-
-	+ [Lista de issues cerrados](https://github.com/josemip98/OrganizeUDiet/issues?q=is%3Aissue+is%3Aclosed)
-	+ [Lista de milestones](https://github.com/josemip98/OrganizeUDiet/milestones)
-
-+ [Historias de usuario](https://github.com/josemip98/OrganizeUDiet#Historias-de-usuario)
-
-***
-
 ## Descripción
 API para la organización y gestión de tu dieta. ¿Tienes problemas para organizar tu dieta o estás cansado de comer siempre los mismos alimentos? 
 Aquí podrás consultar todo tipo de alimentos junto con su información nutricional (calorias, grasa, proteinas y hidratos) y organizarla a tu gusto, podrás variar entre alimentos que sean parecidos entre sí nutricionalmente y hacer tu dieta más variada. 
@@ -87,13 +57,29 @@ Lanzamos los tests con Gulp:
 
 ## Dockerfile
 
-**
++ [Dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/Dockerfile)
+
+***
+
+## GitHub Container Registry
+
+He subido mi [contenedor](https://github.com/users/josemip98/packages/container/package/organizeudiet) a **GitHub Container Registry** y [aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/github-container.md) explico los pasos seguidos para ello.
+
+***
 
 ## Ejecución test a partir de Docker
+
+Nos descargamos el repositorio de GitHub y ejecutamos los siguientes comandos:
 
 `docker pull josemip98/organizeudiet`
 
 `docker run -t -v `pwd`:/test josemip98/orhanizeudiet`
+
+Si queremos usar el contenedor de GitHub Container Registry, debemos ejecutar los siguientes comandos:
+
+`docker pull ghcr.io/josemip98/organizeudiet:latest`
+
+`docker run -t -v `pwd`:/test ghcr.io/josemip98/organizeudiet:latest`
 
 ***
 
