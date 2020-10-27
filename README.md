@@ -28,11 +28,7 @@ La información nutricional consta de:
  + **Lenguaje:** [JavaScript + Node.js](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
  + **Frameworks:** [Meteor JS](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#frameworks)
  + **Tests:** [Jest](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#tests)
- 
- Para realizar los tests estaba entre Jest y Mocha pero finalmente me he decidido por Jest porque muchos recomiendan mocha si tienes un proyecto grande con la necesidad de flexibilidad y personalización, como vamos a trabajar en un proyecto más pequeño no necesitamos la configuración adicional por adelantado, por tanto, Jest es probablemente la mejor opción para mi.
  + **Task runner:** [Gulp](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#herramienta-de-construcci%C3%B3n)
- 
- Como herramientas de construcción para la automatización de tareas como puede ser testear el código o iniciar la Api he decidido utilizar Gulp. Estaba entre Gulp y Grunt ya que ambas herramientas eran muy útiles para mi proyecto pero finalmente me he decantado por Gulp ya que está desarrollado en JavaScript, funciona con Node.js, es más rápido que Grunt y además no necesitas crear carpetas temporales simplemente tienes que crear un archivo gulpfile.js con las tareas que quieras automatizar y listo.
  + **Base de datos:** [MongoDB](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
  + **Despliegue de la aplicación en la nube:** [Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#despliegue-de-la-aplicaci%C3%B3n-en-la-nube)
  + **Log:** *Por decidir*
