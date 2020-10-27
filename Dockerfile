@@ -6,9 +6,9 @@ LABEL maintainer="j_miguel98@hotmail.com"
 #usamos el asterisco para copiar directamente package.json y package-lock.json
 COPY package*.json ./
 
-RUN npm install
+RUN npm install && npm install -g jest-cli
 
 COPY ./tests ./tests
 
 #para ejecutar los tests
-CMD ["npm","test"]
+CMD ["gulp","test"]
