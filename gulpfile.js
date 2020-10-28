@@ -7,6 +7,6 @@ gulp.task('install', shell.task(['npm install']));
 
 // Tarea para ejecución de tests
 gulp.task('test', () => (
-    gulp.src('tests', {read: false})
+    gulp.src('test', {read: false})
         .pipe(jest({reporter:'default'}))
 ));
