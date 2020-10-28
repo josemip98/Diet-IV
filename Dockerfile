@@ -12,9 +12,5 @@ COPY gulpfile.js ./
 #Instalación de dependencias
 RUN npm install && npm install -g gulp && npm install -g jest-cli && npm install --save-dev gulp-shell
 
-WORKDIR /test
-
-ENV PATH=/node_modules/.bin:$PATH
-
 #para ejecutar los tests
 CMD ["npm","test"]
