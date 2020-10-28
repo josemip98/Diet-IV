@@ -1,4 +1,4 @@
-#node con la versión 15
+#node con la versión 14
 FROM node:14-slim
 
 #Persona encargada del contenedor
