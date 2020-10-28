@@ -1,33 +1,52 @@
+const Producto = require("../src/producto.js");
 
 class Dieta{
 
   //constructor
-  constructor(listaProductos, informacionNutricional){
+  constructor(listaProductos){
     this.listaProductos = new Array();
-    this.informacionNutricional = new Array();
     this.listaProductos = (listaProductos);
-    this.informacionNutricional = (informacionNutricional);
   }
 
-  AniadirProducto(listaProductos, informacionNutricional){
-    if( listaProductos == false && informacionNutricional == false){
+ //Función para añadir un producto a una dieta
+  AniadirProducto(producto, calorias, grasa, proteinas, hidratos){
+    if( producto == false && informacionNutricional == false){
       throw new Error('Error inserción producto');
     }
     else{
+      var productoNuevo = new Producto(producto.toUpperCase(), calorias.toUpperCase(), grasa.toUpperCase(), proteinas.toUpperCase(), hidratos.toUpperCase());
       this.listaProductos.push(listaProductos);
-      this.informacionNutricional.push(informacionNutricional);
     }
   }
 
+ //Función para mostrar productos que forman la dieta
   MostrarDieta(){
     var mostrarDieta = new Array();
     for(var i in this.listaProductos){
-      mostrarDieta.push(this.listaProductos+" : " + this.informacionNutricional);
+      mostrarDieta.push(this.listaProductos[i] + "\n ");
     }
     return mostrarDieta;
   }
 
+  //Función para mostrar un producto concreto junto con su información nutricional
+      mostrarProducto(producto){
+        var encontrado = 0;
+        var productoEncontrado;
+        var indice;
+        for(var i in this.listaProductos){
+          if(producto.toUpperCase() == this.listaProductos[i]){
+            encontrado++;
+            indice = i;
+          }
+        }
+
+        if(encontrado > 0){
+          productoEncontrado = this.listaProductos[indice].getProducto()+ " \n";
+        }
+
+        return productoEncontrado;
+      }
+
 }
 
 module.exports = Dieta;
-
