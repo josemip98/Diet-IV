@@ -4,7 +4,7 @@
   "description": "Proyecto para gestionar dietas especificas",
   "main": "index.js",
   "directories": {
-    "doc": "docs",
+    "doc": "docs"
   },
   "scripts": {
     "test": "jest tests/*.js"

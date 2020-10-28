@@ -8,7 +8,7 @@ LABEL maintainer="j_miguel98@hotmail.com"
 COPY package*.json ./
 
 #Instalación de dependencias
-RUN npm install && npm install -g jest-cli
+RUN npm install && npm install -g jest-cli && rm package*.json
 
 #para ejecutar los tests
 CMD ["npm","test"]
