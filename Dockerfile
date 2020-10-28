@@ -13,9 +13,8 @@ COPY gulpfile.js ./
 RUN npm install && npm install -g gulp && npm install -g jest-cli && npm install --save-dev gulp-shell
 
 # Indica el directorio donde se montará todo
-VOLUME /tests
-WORKDIR /tests
-RUN chown -R node ./tests
+VOLUME /test
+WORKDIR /test
 
 #para ejecutar los tests
 CMD ["npm","test"]
