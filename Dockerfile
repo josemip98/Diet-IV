@@ -10,9 +10,9 @@ COPY package*.json ./
 COPY gulpfile.js ./
 
 #Instalación de dependencias
-RUN npm install && npm install -g gulp-jest jest-cli && npm install -g gulp
+RUN npm install && npm install -g jest-cli
 
 WORKDIR /test
 
 #para ejecutar los tests
-CMD ["gulp","test"]
+CMD ["npm","test"]
