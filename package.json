@@ -4,10 +4,12 @@
   "description": "Proyecto para gestionar dietas especificas",
   "main": "index.js",
   "directories": {
-    "doc": "docs"
+    "doc": "docs",
+    "src": "src",
+    "test": "tests"
   },
   "scripts": {
-    "test": "jest"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
