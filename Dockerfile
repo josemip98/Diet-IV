@@ -10,7 +10,5 @@ COPY package*.json ./
 #Instalación de dependencias
 RUN npm install && npm install -g jest-cli
 
-WORKDIR /test
-
 #para ejecutar los tests
 CMD ["npm","test"]
