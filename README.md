@@ -75,9 +75,9 @@ He subido mi [contenedor](https://github.com/users/josemip98/packages/container/
 
 Nos descargamos el repositorio de GitHub y ejecutamos los siguientes comandos:
 
-`docker pull josemip98/organizeudiet
+`docker pull josemip98/organizeudiet`
 
-docker run -t -v 'pwd':/test josemip98/organizeudiet`
+`docker run -t -v 'pwd':/test josemip98/organizeudiet`
 
 Si queremos usar el contenedor de GitHub Container Registry, debemos ejecutar los siguientes comandos:
 
