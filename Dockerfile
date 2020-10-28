@@ -8,7 +8,7 @@ LABEL maintainer="j_miguel98@hotmail.com"
 COPY package*.json ./
 
 #Instalación de dependencias
-RUN npm install && npm install -g jest-cli
+RUN npm install && npm install -g jest-cli && npm install --save-dev gulp-shell
 
 #para ejecutar los tests
-CMD ["npm","test"]
+CMD ["gulp","test"]
