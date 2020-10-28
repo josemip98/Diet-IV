@@ -21,6 +21,8 @@
   "homepage": "https://github.com/josemip98/OrganizeUDiet#readme",
   "devDependencies": {
     "jest": "^24.9.0",
-    "jest-cli": "^24.9.0"
+    "jest-cli": "^24.9.0",
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8"
   }
 }
