@@ -10,7 +10,7 @@ COPY package*.json ./
 COPY gulpfile.js ./
 
 #Instalación de dependencias
-RUN npm install && npm install -g gulp && npm install -g jest-cli && npm install --save-dev gulp-shell
+RUN npm install && npm install -g gulp && npm install -g jest-cli && npm install --save-dev gulp-shell && rm package*.json
 
 # Indica el directorio donde se montará todo
 VOLUME /test
