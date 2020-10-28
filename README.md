@@ -30,7 +30,7 @@ La información nutricional consta de:
  + **Tests:** [Jest](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#tests)
  + **Task runner:** [Gulp](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#herramienta-de-construcci%C3%B3n)
  + **Base de datos:** [MongoDB](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
- + **Despliegue de la aplicación en la nube:** [Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#despliegue-de-la-aplicaci%C3%B3n-en-la-nube)
+ + **Despliegue de la aplicación en la nube:** [Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md)
  + **Log:** *Por decidir*
 
 ***
