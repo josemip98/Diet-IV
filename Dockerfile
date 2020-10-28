@@ -9,10 +9,8 @@ WORKDIR /test
 #Uso el asterisco para copiar ambos ficheros package.json y package-lock.json
 COPY package*.json ./
 
-COPY gulpfile.js ./
-
 #Instalación de dependencias
-RUN npm install && npm install -g gulp && npm install -g jest-cli && npm install --save-dev gulp-shell
+RUN npm install && npm install -g jest-cli
 
 #para ejecutar los tests
-CMD ["gulp","test"]
+CMD ["npm","test"]
