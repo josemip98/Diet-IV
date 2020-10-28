@@ -6,23 +6,25 @@ var producto;
 var listaProductos;
 var informacionNutricional;
 
-const dieta = new Dieta("Arroz", "354Kcal, 0,5g de grasa, 6,5g de proteinas y 79g de hidratos");
+const dieta = new Dieta("Arroz", "Pollo", "Pasta");
 
 describe("Testeando la clase dieta.js", () => {
 
   describe("Testeando el constructor", () =>{
     test("Comprobando que funciona correctamente", () => {
-      expect(dieta.listaProductos).toBe("Arroz");
-      expect(dieta.informacionNutricional).toBe("354Kcal, 0,5g de grasa, 6,5g de proteinas y 79g de hidratos");
+      expect(dieta.listaProductos).toBe("Arroz", "Pollo", "Pasta");
     });
   });
 });
 
 describe("Testeando el método AniadirProducto()", () => {
  test("Comprobando el metodo para añadir productos a la clase dieta", () => {
-    listaProductos = "Arroz";
-    informacionNutricional = "354Kcal, 0,5g de grasa, 6,5g de proteinas y 79g de hidratos";
-    thrown_error = () => dieta.AniadirProducto(listaProductos, informacionNutricional);
+    producto = "Arroz";
+    calorias = "354Kcal";
+    grasa = "0,5g";
+    proteinas = "6,5g";
+    hidratos = "79g";
+    thrown_error = () => dieta.AniadirProducto(producto, calorias, grasa, proteinas, hidratos);
   });
 });
 
@@ -31,5 +33,21 @@ describe("Testeando el método MostrarDieta()", () => {
         var tam_vector_esperado = dieta.MostrarDieta().length;
         var tam_productos = dieta.listaProductos.length;
         expect(tam_vector_esperado).toEqual(tam_productos);
-      });
     });
+  });
+
+  describe("Testeando el método mostrarProducto()", () => {
+    test("Comprobando que funciona correctamente al pasarle un producto existente", () => {
+      //nos devuelve el producto con su informacion nutricional
+      producto = "Arroz";
+      resultado = dieta.mostrarProducto(producto);
+      for(var i in dieta.listaProductos){
+        if(producto == dieta.listaProductos[i]){
+          var indiceProducto = i;
+        }
+      }
+      informacionNutricional = dieta.listaProductos[indiceProducto];
+
+      expect(resultado).toBe(informacionNutricional);
+    });
+  });
