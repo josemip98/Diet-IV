@@ -63,6 +63,8 @@ Para la creación del Dockerfile he seguido [estos](https://www.campusmvp.es/rec
 
 + [Dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/Dockerfile)
 
++ [Explicacion dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/dockerfile.md)
+
 ***
 
 ## GitHub Container Registry
