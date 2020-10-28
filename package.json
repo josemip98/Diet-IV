@@ -9,7 +9,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest *.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
