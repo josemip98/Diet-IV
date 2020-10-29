@@ -1,5 +1,5 @@
-#node con la versión 15
-FROM node:15.0.1-alpine3.10
+#node con la versión 14
+FROM node:14-alpine
 
 #Persona encargada del contenedor
 LABEL maintainer="j_miguel98@hotmail.com"
