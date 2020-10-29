@@ -21,36 +21,6 @@ La información nutricional consta de:
 	
 ***
 
-## Herramientas
-
- + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
- 
- + **Lenguaje:** [JavaScript + Node.js](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
- + **Frameworks:** [Meteor JS](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#frameworks)
- + **Tests:** [Jest](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#tests)
- + **Task runner:** [Gulp](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#herramienta-de-construcci%C3%B3n)
- + **Base de datos:** [MongoDB](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
- + **Despliegue de la aplicación en la nube:** [Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md)
- + **Log:** *Por decidir*
-
-***
-
-## Test
-
-Para la realización de los test primero debes clonar este repositorio y tener instalado Node, Gulp y npm:
-
-`git clone https://github.com/josemip98/OrganizeUDiet`
-
-Instalamos las dependencias:
-
-`npm install`
-
-Lanzamos los tests con Gulp:
-
-`gulp test`
-
-***
-
 ## Docker
 
 Para el despliegue de la aplicación en la nube vamos a utilizar Docker. Para ello primero necesitamos elegir un contenedor base. [Aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md) se puede consultar las pruebas realizadas y la decisión tomada.
@@ -86,6 +56,36 @@ Si queremos usar el contenedor de GitHub Container Registry, debemos ejecutar lo
 `docker pull ghcr.io/josemip98/organizeudiet:latest`
 
 `docker run -t -v 'pwd':/test ghcr.io/josemip98/organizeudiet:latest`
+
+***
+
+## Herramientas
+
+ + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
+ 
+ + **Lenguaje:** [JavaScript + Node.js](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
+ + **Frameworks:** [Meteor JS](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#frameworks)
+ + **Tests:** [Jest](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#tests)
+ + **Task runner:** [Gulp](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#herramienta-de-construcci%C3%B3n)
+ + **Base de datos:** [MongoDB](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
+ + **Despliegue de la aplicación en la nube:** [Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md)
+ + **Log:** *Por decidir*
+
+***
+
+## Test
+
+Para la realización de los test primero debes clonar este repositorio y tener instalado Node, Gulp y npm:
+
+`git clone https://github.com/josemip98/OrganizeUDiet`
+
+Instalamos las dependencias:
+
+`npm install`
+
+Lanzamos los tests con Gulp:
+
+`gulp test`
 
 ***
 
