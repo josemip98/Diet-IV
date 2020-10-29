@@ -56,42 +56,13 @@ Si queremos usar el contenedor de GitHub Container Registry, debemos ejecutar lo
 `docker pull ghcr.io/josemip98/organizeudiet:latest`
 
 `docker run -t -v 'pwd':/test ghcr.io/josemip98/organizeudiet:latest`
-
-***
-
-## Herramientas
-
- + [Justificación de herramientas](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
  
- + **Lenguaje:** [JavaScript + Node.js](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
- + **Frameworks:** [Meteor JS](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#frameworks)
- + **Tests:** [Jest](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#tests)
- + **Task runner:** [Gulp](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#herramienta-de-construcci%C3%B3n)
- + **Base de datos:** [MongoDB](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md#lenguaje-de-programacion)
- + **Despliegue de la aplicación en la nube:** [Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md)
- + **Log:** *Por decidir*
-
-***
-
-## Test
-
-Para la realización de los test primero debes clonar este repositorio y tener instalado Node, Gulp y npm:
-
-`git clone https://github.com/josemip98/OrganizeUDiet`
-
-Instalamos las dependencias:
-
-`npm install`
-
-Lanzamos los tests con Gulp:
-
-`gulp test`
-
 ***
 
 ## Recopilación de enlaces
 
 + [Configuración de git](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/git_config.md)
++ [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 + Carpeta de [documentos](https://github.com/josemip98/OrganizeUDiet/tree/master/docs)
 + Carpeta de [código fuente](https://github.com/josemip98/OrganizeUDiet/tree/master/src)
 + Carpeta de [test](https://github.com/josemip98/OrganizeUDiet/tree/master/tests)
