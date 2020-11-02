@@ -42,12 +42,6 @@ Para la creación del Dockerfile he seguido [estos](https://www.campusmvp.es/rec
 
 ***
 
-## GitHub Container Registry
-
-He subido mi [contenedor](https://github.com/users/josemip98/packages/container/package/organizeudiet) a **GitHub Container Registry** y [aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/github-container.md) explico los pasos seguidos para ello.
-
-***
-
 ## Ejecución test a partir de Docker
 
 Nos descargamos el repositorio de GitHub y ejecutamos los siguientes comandos:
@@ -74,6 +68,7 @@ Si queremos usar el contenedor de GitHub Container Registry, debemos ejecutar lo
 + [Fichero package.json](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
 + [Fichero gulpfile.js](https://github.com/josemip98/OrganizeUDiet/blob/master/gulpfile.js)
 + Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
++ [GitHub Container Registry](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/github-container.md)
 
 ***
 
