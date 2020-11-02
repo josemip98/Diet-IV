@@ -21,6 +21,11 @@ La información nutricional consta de:
 	
 ***
 
+## Integración continua
+## Travis
+
+***
+
 ## Docker
 
 Para el despliegue de la aplicación en la nube vamos a utilizar Docker. Para ello primero necesitamos elegir un contenedor base. [Aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md) se puede consultar las pruebas realizadas y la decisión tomada.
