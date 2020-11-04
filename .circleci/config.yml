@@ -4,5 +4,13 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test
-
+      - node/test:
+          version: 13.0.0
+      - node/test:
+          version: 12.0.0
+      - node/test:
+          version: 11.0.0
+      - node/test:
+          version: 10.0.0
+      - node/test:
+          version: 8.10.0
