@@ -20,7 +20,7 @@ jobs:
           name: Instalar Gulp
           #comando para instalar gulp
           command: |
-            npm install -g gulp
+            sudo npm install -g gulp
       - run:
           name: Lanzar tests
           #ejecutamos los tests con el gestor de tareas
