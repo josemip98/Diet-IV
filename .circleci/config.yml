@@ -15,7 +15,7 @@ jobs:
           name: Instalar Jest
           #comando para ejecutar instalar Jest
           command: |
-            npm install -g jest
+            sudo npm install -g jest
       - run:
           name: Instalar Gulp
           #comando para instalar gulp
