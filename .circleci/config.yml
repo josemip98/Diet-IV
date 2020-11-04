@@ -1,34 +1,7 @@
-#versión de la plataforma circle que estamos usando
 version: 2.1
-#tareas que vamos a realizar
-jobs:
-  #nombre de la tarea
-  test:
-    docker:
-        #imagen que vamos a usar, en este caso necesitamos node
-      - image: circleci/node:lts
-    #listado de órdenes a ejecutar
-    steps:
-      - checkout
-      - run:
-          #nombre proporcionado para dirigirnos a esta orden a la hora de ver errores o warnings
-          name: Instalar Jest
-          #comando para ejecutar instalar Jest
-          command: |
-            sudo npm install -g jest
-      - run:
-          name: Instalar Gulp
-          #comando para instalar gulp
-          command: |
-            sudo npm install -g gulp && npm i -g gulp-cli
-      - run:
-          name: Lanzar tests
-          #ejecutamos los tests con el gestor de tareas
-          command: |
-            gulp test
-#flujos de trabajo
+orbs:
+  node: circleci/node@3.0.0
 workflows:
-  testeo:
+  node-tests:
     jobs:
-      #tarea a ejecutar
-      - test
+      - node/test
