@@ -12,15 +12,10 @@ jobs:
       - checkout
       - run:
           #nombre proporcionado para dirigirnos a esta orden a la hora de ver errores o warnings
-          name: Instalar Jest
-          #comando para ejecutar instalar Jest
+          name: Instalar dependencias
+          #comando para instalar dependencias
           command: |
             sudo npm install && sudo npm install -g jest && sudo npm install -g gulp
-      - run:
-          name: Instalar Gulp
-          #comando para instalar gulp
-          command: |
-                  #sudo npm install -g gulp
       - run:
           name: Lanzar tests
           #ejecutamos los tests con el gestor de tareas
