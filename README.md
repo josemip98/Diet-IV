@@ -22,7 +22,6 @@ La información nutricional consta de:
 ***
 
 ## Integración continua
-## Travis
 
 ***
 
