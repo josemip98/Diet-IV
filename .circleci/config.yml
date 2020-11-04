@@ -25,7 +25,7 @@ jobs:
           name: Lanzar tests
           #ejecutamos los tests con el gestor de tareas
           command: |
-            npm test
+            gulp test
 #flujos de trabajo
 workflows:
   testeo:
