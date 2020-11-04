@@ -31,4 +31,4 @@ workflows:
   testeo:
     jobs:
       #tarea a ejecutar
-      - npm test
+      - test
