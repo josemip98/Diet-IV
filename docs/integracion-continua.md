@@ -44,5 +44,13 @@ En las dos siguientes capturas podemos comprobar los resultados obtenidos:
 
 ## Integración continua con Circle CI
 
+Como sistema de integración continua adicional he decidido utilizar Circle CI.
+Primero me he registrado en la web y he creado el archivo .config.yml:
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/CircleCI.png)
+
+Primero indico la versión de Circle CI. Creo una tarea llamada test en el que utilizamos la imagen de node, después instalamos las dependencias con npm install e instalamos **jest** y  mi **gestor de tareas gulp** con npm install -g jest y npm install -g gulp. Despues lanzamos los tests con gulp test.
+
+Podemos ver como los tests pasan correctamente.
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoCI.png)
