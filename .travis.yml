@@ -1,12 +1,17 @@
+#Aquí indicamos el lenguaje usado, en mi caso es JavaScript con NodeJS
 Language: node_js
+#Ahora probamos varias versiones de NodeJS, desde la 8 a la 14.
 node_js:
-        - 8.10
+        - 8
+        - 9
         - 10
         - 11
         - 12
         - 13
         - 14
+#Con esto instalamos jest y gulp antes de la instalación de la aplicación (npm install).
 before_install:
         - npm install -g jest
-        - npm install -g grunt
+        - npm install -g gulp
+#Por último ejecutamos los tests con gulp.
 script: gulp test
