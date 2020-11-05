@@ -8,6 +8,16 @@
     "src": "src",
     "test": "tests"
   },
+  "homepage": "https://github.com/josemip98/OrganizeUDiet#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-jest": "^4.0.3",
+    "gulp-shell": "^0.8.0",
+    "gulp-util": "^3.0.8",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "nyc": "^15.1.0"
+  },
   "scripts": {
     "test": "gulp test",
     "coverage": "nyc --reporter=lcov --reporter=text npm run test"
@@ -20,15 +30,5 @@
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/josemip98/OrganizeUDiet/issues"
-  },
-  "homepage": "https://github.com/josemip98/OrganizeUDiet#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-jest": "^4.0.3",
-    "gulp-shell": "^0.8.0",
-    "gulp-util": "^3.0.8",
-    "jest": "^24.9.0",
-    "jest-cli": "^24.9.0",
-    "nyc": "^15.1.0"
   }
 }
