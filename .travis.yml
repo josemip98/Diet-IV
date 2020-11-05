@@ -1,4 +1,4 @@
-#Aquí indicamos el lenguaje usado.
+#Indicamos el lenguaje usado.
 Language: minimal
 #Instalamos Docker.
 services:
