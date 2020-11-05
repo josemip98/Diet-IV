@@ -22,39 +22,14 @@ La información nutricional consta de:
 ***
 
 ## Integración continua
+
 ## Travis
 
-***
++ [Fichero configuración Travis](https://github.com/josemip98/OrganizeUDiet/blob/master/.travis.yml)
 
-## Docker
+## Circle CI
 
-Para el despliegue de la aplicación en la nube vamos a utilizar Docker. Para ello primero necesitamos elegir un contenedor base. [Aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md) se puede consultar las pruebas realizadas y la decisión tomada.
-
-***
-
-## Dockerfile
-
-Para la creación del Dockerfile he seguido [estos](https://www.campusmvp.es/recursos/post/mejores-practicas-para-crear-dockerfiles-excelentes.aspx) consejos de buenas prácticas.
-
-+ [Dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/Dockerfile)
-
-+ [Explicacion dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/dockerfile.md)
-
-***
-
-## Ejecución test a partir de Docker
-
-Nos descargamos el repositorio de GitHub y ejecutamos los siguientes comandos:
-
-`docker pull josemip98/organizeudiet`
-
-`docker run -t -v 'pwd':/test josemip98/organizeudiet`
-
-Si queremos usar el contenedor de GitHub Container Registry, debemos ejecutar los siguientes comandos:
-
-`docker pull ghcr.io/josemip98/organizeudiet:latest`
-
-`docker run -t -v 'pwd':/test ghcr.io/josemip98/organizeudiet:latest`
++ [Fichero configuración Circle CI](https://github.com/josemip98/OrganizeUDiet/blob/master/.circleci/config.yml)
  
 ***
 
@@ -68,6 +43,9 @@ Si queremos usar el contenedor de GitHub Container Registry, debemos ejecutar lo
 + [Fichero package.json](https://github.com/josemip98/OrganizeUDiet/blob/master/package.json)
 + [Fichero gulpfile.js](https://github.com/josemip98/OrganizeUDiet/blob/master/gulpfile.js)
 + Fichero [iv.yaml](https://github.com/josemip98/OrganizeUDiet/blob/master/iv.yaml)
++ [Elección Docker](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/eleccionContenedor.md)
++ [Dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/Dockerfile)
++ [Explicacion dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/dockerfile.md)
 + [GitHub Container Registry](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/github-container.md)
 
 ***
