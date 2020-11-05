@@ -4,8 +4,6 @@ En este documento explicaré todos los aspectos relativos a la integración cont
 
 Para ello he utilizado Travis y Circle CI.
 
-Como podemos comprobar cada vez que hagamos un commit al repositorio se lanzarán los test automaticamente.
-
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/IC.png)
 
 ## Integración continua con Travis
