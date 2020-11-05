@@ -1,17 +1,10 @@
-#Aquí indicamos el lenguaje usado, en mi caso es JavaScript con NodeJS
-Language: node_js
-#Ahora probamos varias versiones de NodeJS, desde la 8 a la 14.
-node_js:
-        - 8
-        - 9
-        - 10
-        - 11
-        - 12
-        - 13
-        - 14
-#Con esto instalamos jest y gulp antes de la instalación de la aplicación (npm install).
+#Aquí indicamos el lenguaje usado.
+Language: minimal
+#Instalamos Docker.
+services:
+  - docker
+#Con esto nos descargamos nuestro contenedor
 before_install:
-        - npm install -g jest
-        - npm install -g gulp
-#Por último ejecutamos los tests con gulp.
-script: gulp test
+  - docker pull josemip98/organizeudiet
+#Por último ejecutamos dicho contenedor para lanzar los tests.
+script: docker run -t -v `pwd`:/test josemip98/organizeudiet
