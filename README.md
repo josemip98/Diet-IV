@@ -25,6 +25,9 @@ La información nutricional consta de:
 
 En este [fichero](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/integracion-continua.md) explico todo lo relacionado con la integración continua.
 
+Primero he configurado Travis y como sistema de integración continua adicional voy a utilizar Circle CI.
+Además utilizo en ambos el gestor de tareas **Gulp** que es el que estoy utilizando en el proyecto. Y aprovecho mi contenedor Docker en el sistema de integración continua **Travis**.
+
 ## Travis
 
 + [Fichero configuración Travis](https://github.com/josemip98/OrganizeUDiet/blob/master/.travis.yml)
