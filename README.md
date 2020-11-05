@@ -23,6 +23,8 @@ La información nutricional consta de:
 
 ## Integración continua
 
+En este [fichero](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/integracion-continua.md) explico todo lo relacionado con la integración continua.
+
 ## Travis
 
 + [Fichero configuración Travis](https://github.com/josemip98/OrganizeUDiet/blob/master/.travis.yml)
