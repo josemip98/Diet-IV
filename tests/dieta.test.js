@@ -1,6 +1,5 @@
 
 const Dieta = require("../src/dieta.js");
-
 //Variables
 var producto;
 var listaProductos;
