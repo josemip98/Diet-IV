@@ -1,7 +1,6 @@
 const Producto = require("../src/producto.js");
 
 class Dieta{
-
   //constructor
   constructor(listaProductos){
     this.listaProductos = new Array();
@@ -18,7 +17,6 @@ class Dieta{
       this.listaProductos.push(listaProductos);
     }
   }
-
  //Función para mostrar productos que forman la dieta
   MostrarDieta(){
     var mostrarDieta = new Array();
@@ -27,7 +25,6 @@ class Dieta{
     }
     return mostrarDieta;
   }
-
   //Función para mostrar un producto concreto junto con su información nutricional
       mostrarProducto(producto){
         var encontrado = 0;
