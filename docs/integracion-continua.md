@@ -2,7 +2,7 @@
 
 En este documento explicaré todos los aspectos relativos a la integración continua que incluye nuestro proyecto.
 
-Para ello he utilizado Travis y Circle CI.
+Para ello he utilizado **Travis y Circle CI**.
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/IC.png)
 
