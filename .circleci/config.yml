@@ -15,7 +15,7 @@ jobs:
           name: Instalar dependencias
           #comando para instalar dependencias
           command: |
-            gulp install && gulp install -g jest && gulp install -g gulp
+            npm install -g jest && npm install -g gulp && gulp install
       - run:
           name: Lanzar tests
           #ejecutamos los tests con el gestor de tareas
