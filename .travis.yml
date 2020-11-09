@@ -13,6 +13,6 @@ node_js:
 #Esta sección se ejecuta antes de la instalación de la aplicación (antes de npm install .)
 #instalamos Jest y mi gestor de tareas Gulp.
 before_install:
-    - npm install && npm install -g gulp && npm install -g jest
+    - npm install -g gulp && npm install -g jest
 #Ejecutamos los tests con gulp
 script: gulp test
