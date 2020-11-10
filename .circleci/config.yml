@@ -10,7 +10,6 @@ jobs:
     #listado de órdenes a ejecutar
     steps:
       - checkout
-      - run:
           #nombre proporcionado para dirigirnos a esta orden a la hora de ver errores o warnings
       - run:
           name: Lanzar tests
