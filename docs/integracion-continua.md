@@ -15,9 +15,9 @@ Después creamos un archivo .travis.yml, en mi caso quedó así:
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/travis.png)
 
 Lo que hago es indicar el lenguaje que voy a utilizar con language, en mi caso es node_js.
-Después compruebo que funciona para diferentes versiones de NodeJS desde la 8 a la 14.
+Después compruebo que funciona para diferentes versiones de NodeJS desde la 8 a la 15.
 
-En la sección de before_install incluimos los que queramos instalar antes de que se instale la aplicación (npm install), instalamos jest y gulp para el posterior lanzamiento de los tests con gulp test.
+En la sección de before_install incluimos los que queramos instalar antes de que se instale la aplicación (npm install), instalamos jest y **mi gestor de tareas gulp** para el posterior lanzamiento de los tests con gulp test.
 
 El resultado de Travis fué el siguiente:
 
@@ -30,7 +30,7 @@ Primero me he registrado en la web y he creado el archivo .config.yml:
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/CircleCI.png)
 
-Primero indico la versión de Circle CI. Creo una tarea llamada test en el que utilizamos la imagen de node, después instalamos las dependencias con npm install e instalamos **jest** y  mi **gestor de tareas gulp** con npm install -g jest y npm install -g gulp. Despues lanzamos los tests con gulp test.
+Indico la versión de Circle CI. Creo una tarea llamada test en el que utilizamos la imagen de mi contenedor josemip98/organizeudiet, después instalamos **jest** y  mi **gestor de tareas gulp** con npm install -g jest y npm install -g gulp. Despues lanzamos los tests con gulp test.
 
 Podemos ver como los tests pasan correctamente.
 
