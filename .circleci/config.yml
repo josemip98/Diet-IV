@@ -6,16 +6,12 @@ jobs:
   test:
     docker:
         #imagen que vamos a usar, en este caso necesitamos node
-      - image: circleci/node:lts
+      - image: josemip98/organizeudiet
     #listado de órdenes a ejecutar
     steps:
       - checkout
       - run:
           #nombre proporcionado para dirigirnos a esta orden a la hora de ver errores o warnings
-          name: Instalar dependencias
-          #comando para instalar dependencias
-          command: |
-            npm install -g jest && npm install -g gulp && gulp install
       - run:
           name: Lanzar tests
           #ejecutamos los tests con el gestor de tareas
