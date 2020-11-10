@@ -23,23 +23,6 @@ El resultado de Travis fué el siguiente:
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoTravis1.png)
 
-## Utilizando el contenedor de Docker Hub
-
-Finalmente para **aprovechar el contenedor de Docker** que generamos cambié el fichero .travis.yml y quedó de la siguiente manera:
-
-![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/travis-final.png)
-
-Descubrí gracias al grupo de telegram de la asignatura que existe una versión de Travis minimal la cuál solo contiene herramientas de control de versiones y de compilación esenciales.
-
-Instalo docker y ejecuto la orden docker pull de nuestro docker almacenado en Docker Hub.
-
-Por último, en la sección de script especifico el comando a ejecutar que será el de ejecución de los tests.
-
-En las dos siguientes capturas podemos comprobar los resultados obtenidos:
-
-![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoTravis.png)
-![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoTravis2.png)
-
 ## Integración continua con Circle CI
 
 Como sistema de integración continua adicional he decidido utilizar Circle CI.
