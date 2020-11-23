@@ -21,6 +21,7 @@ module.exports = (req,res) =>{
 	      hidratos= datos.productos[i]["proteinas"];
         i+=1
         var pro = new Producto(nombre,calorias,grasa,proteinas,hidratos)
+        dieta.AniadirProducto(pro)
     }
 
     var datosJSON = []
