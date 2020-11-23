@@ -14,7 +14,7 @@ class Dieta{
     }
     else{
       var productoNuevo = new Producto(producto.toUpperCase(), calorias.toUpperCase(), grasa.toUpperCase(), proteinas.toUpperCase(), hidratos.toUpperCase());
-      this.listaProductos.push(listaProductos);
+      this.listaProductos.push(productoNuevo);
     }
   }
  //Función para mostrar productos que forman la dieta
