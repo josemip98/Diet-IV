@@ -9,10 +9,10 @@ module.exports = (req,res) =>{
 
     const{nombre="Vacio"} = req.query
     var result;
-    var catalogo = new Catalogo();
+    var dieta = new Dieta();
     var i = 0;
 
-    //Generamos los productos captando del fichero data.js para añadirlas al catalogo
+    //Generamos los productos captando del fichero data.js para añadirlas a la dieta
     while( i < datos.datos.length){
         nombre= datos.datos[i]['Nombre'];
         calorias= datos.datos[i]["calorias"];
@@ -21,7 +21,7 @@ module.exports = (req,res) =>{
 	      hidratos= datos.datos[i]["proteinas"];
         i+=1
         var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
-        catalogo.aniadirProducto(producto)
+        dieta.aniadirProducto(producto)
 
     }
 
