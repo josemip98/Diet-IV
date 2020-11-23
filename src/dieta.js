@@ -26,24 +26,23 @@ class Dieta{
     return mostrarDieta;
   }
   //Función para mostrar un producto concreto junto con su información nutricional
-      mostrarProducto(producto){
-        var encontrado = 0;
-        var productoEncontrado;
-        var indice;
-        for(var i in this.listaProductos){
-          if(producto.toUpperCase() == this.listaProductos[i]){
-            encontrado++;
-            indice = i;
-          }
+  mostrarProducto(producto){
+    var encontrado = 0;
+    var productoEncontrado;
+    var indice;
+    for(var i in this.listaProductos){
+      if(producto.toUpperCase() == this.listaProductos[i]){
+        encontrado++;
+        indice = i;
         }
-
-        if(encontrado > 0){
-          productoEncontrado = this.listaProductos[indice].getProducto()+ " \n";
-        }
-
-        return productoEncontrado;
       }
 
-}
+      if(encontrado > 0){
+        productoEncontrado = this.listaProductos[indice].getProducto()+ " \n";
+      }
+
+      return productoEncontrado;
+    }
+  }
 
 module.exports = Dieta;
