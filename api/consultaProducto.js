@@ -23,8 +23,7 @@ module.exports = (req,res) =>{
         grasa= datos.productos[i]["grasa"];
         proteinas= datos.productos[i]["hidratos"];
         hidratos= datos.productos[i]["proteinas"];
-        result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
-        if(producto == nombre){
+        if(producto == nombre || producto.toUpperCase() == nombre){
           result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
         }
         i+=1
