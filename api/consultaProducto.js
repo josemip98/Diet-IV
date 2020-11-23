@@ -33,7 +33,7 @@ module.exports = (req,res) =>{
 
         productosNombre.forEach(element => {
             datosJSON.push({
-                element.getProducto()
+              "Producto " : element.getProducto()
             });
 
         });
