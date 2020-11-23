@@ -25,7 +25,7 @@ module.exports = (req,res) =>{
   	      hidratos= datos.productos[i]["proteinas"];
           i+=1
           result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
-
+      }
     }
     //Si es Vacio significa que no se ha recibido nada
     else if(producto == "Vacio"){
