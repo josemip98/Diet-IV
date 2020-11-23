@@ -11,6 +11,7 @@ module.exports = (req,res) =>{
     var result;
     var dieta = new Array();
     var i = 0;
+    var j = 0;
 
     //Generamos los productos captando del fichero data.js para añadirlas a la dieta
     while( i < datos.productos.length){
@@ -21,7 +22,7 @@ module.exports = (req,res) =>{
 	      hidratos= datos.productos[i]["proteinas"];
         i+=1
         var pro = new Producto(nombre,calorias,grasa,proteinas,hidratos)
-        dieta.push(nombre)
+        dieta.AniadirProducto(pro)
     }
 
     var datosJSON = []
