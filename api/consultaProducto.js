@@ -27,7 +27,7 @@ module.exports = (req,res) =>{
     var objetoJSON = {}
 
     if(producto == "arroz" || producto=="macarrones" || producto=="atun"){
-        var productosNombre = Dieta.mostrarProducto(pro)
+        var productosNombre = dieta.mostrarProducto(pro)
 
         productosNombre.forEach(element => {
             datosJSON.push({
