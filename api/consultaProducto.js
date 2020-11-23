@@ -41,7 +41,7 @@ module.exports = (req,res) =>{
 
     }
     //Si es Vacio significa que no se ha recibido nada
-    else if(genero == "Vacio"){
+    else if(nombre == "Vacio"){
         result="Debe indicar un producto";
     }
     else{
