@@ -1,26 +1,26 @@
   
 {
-  "productos": [
+  "productos":[
     {
-      "nombre": "arroz",
-      "calorias": 344,
-      "grasa": 1,
-      "hidratos": 75,
-      "proteinas": 9
+      "nombre":"arroz",
+      "calorias":"344",
+      "grasa":"1",
+      "hidratos":"75",
+      "proteinas":"9"
     },
     {
-      "nombre": "macarrones",
-       "calorias": 366,
-       "grasa": 2,
-       "hidratos": 74,
-       "proteinas": 12
+      "nombre":"macarrones",
+       "calorias":"366",
+       "grasa":"2",
+       "hidratos":"74",
+       "proteinas":"12"
     },
     {
-      "nombre": "atun",
-      "calorias": 357,
-      "grasa": 31,
-      "hidratos": 1,
-      "proteinas": 20
+      "nombre":"atun",
+      "calorias":"357",
+      "grasa":"31",
+      "hidratos":"1",
+      "proteinas":"20"
     }
   ]
 }
