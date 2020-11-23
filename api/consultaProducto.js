@@ -7,7 +7,7 @@ module.exports = (req,res) =>{
     //Captaremos de la URL el producto del que queremos consultar la informacion nutricional
     //Si no obtenemos ningun por defecto valor "Vacio" para generar el resultado correspondiente
 
-    var {nombre="Vacio"} = req.query
+    var {producto="Vacio"} = req.query
     var result;
     var dieta = new Dieta();
     var i = 0;
@@ -20,8 +20,7 @@ module.exports = (req,res) =>{
 	      proteinas= datos.productos[i]["hidratos"];
 	      hidratos= datos.productos[i]["proteinas"];
         i+=1
-        var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
-        dieta.aniadirProducto(producto)
+        dieta.AniadirProducto(nombre,calorias,grasa,proteinas,hidratos)
 
     }
 
