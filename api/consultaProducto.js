@@ -9,9 +9,8 @@ module.exports = (req,res) =>{
 
     var {producto="Vacio"} = req.query
     var result;
-    var dieta = new Array();
+    var dieta = new Dieta();
     var i = 0;
-    var j = 0;
 
     //Generamos los productos captando del fichero data.js para añadirlas a la dieta
     while( i < datos.productos.length){
