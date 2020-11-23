@@ -8,7 +8,7 @@ module.exports = (req,res) =>{
     //Si no obtenemos ningun por defecto valor "Vacio" para generar el resultado correspondiente
 
     var {producto="Vacio"} = req.query
-    var result;
+    var result = "";
     var dieta = new Dieta();
     var i = 0;
 
@@ -18,6 +18,7 @@ module.exports = (req,res) =>{
     if(producto == "arroz" || producto=="macarrones" || producto=="atun"){
       //Generamos los productos captando del fichero data.js para añadirlas a la dieta
       while( i < datos.productos.length){
+          if(datos.productos[i]["nombre"] == producto){
           nombre= datos.productos[i]["nombre"];
           calorias= datos.productos[i]["calorias"];
     	    grasa= datos.productos[i]["grasa"];
@@ -25,6 +26,7 @@ module.exports = (req,res) =>{
   	      hidratos= datos.productos[i]["proteinas"];
           i+=1
           result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
+        }
       }
     }
     //Si es Vacio significa que no se ha recibido nada
