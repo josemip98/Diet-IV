@@ -20,8 +20,7 @@ module.exports = (req,res) =>{
 	      proteinas= datos.productos[i]["hidratos"];
 	      hidratos= datos.productos[i]["proteinas"];
         i+=1
-        var pro = new Producto(nombre,calorias,grasa,proteinas,hidratos);
-        dieta.AniadirProducto(pro);
+        dieta.AniadirProducto(nombre,calorias,grasa,proteinas,hidratos);
     }
 
     var datosJSON = []
