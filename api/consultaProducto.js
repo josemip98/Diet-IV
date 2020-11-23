@@ -20,14 +20,12 @@ module.exports = (req,res) =>{
 	      proteinas= datos.productos[i]["hidratos"];
 	      hidratos= datos.productos[i]["proteinas"];
         i+=1
-        dieta.AniadirProducto(nombre,calorias,grasa,proteinas,hidratos);
     }
 
     var datosJSON = []
     var objetoJSON = {}
 
     if(producto == "arroz" || producto=="macarrones" || producto=="atun"){
-        var productosNombre = dieta.mostrarProducto(pro)
 
         productosNombre.forEach(element => {
             datosJSON.push({
