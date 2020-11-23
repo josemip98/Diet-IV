@@ -1,0 +1,31 @@
+{
+  "productos": [
+    {
+      "nombre": "arroz",
+      "nutricional": {
+        "calorias": 344,
+        "grasa": 1,
+        "hidratos": 75,
+        "proteinas": 9
+	}
+    },
+    {
+      "nombre": "macarrones",
+      "nutricional": {
+        "calorias": 366,
+        "grasa": 2,
+        "hidratos": 74,
+        "proteinas": 12
+      }
+    },
+    {
+      "nombre": "atun",
+      "nutricional": {
+        "calorias": 357,
+        "grasa": 31,
+        "hidratos": 1,
+        "proteinas": 20
+      }
+    }
+  ]
+}
