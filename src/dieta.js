@@ -13,7 +13,7 @@ class Dieta{
       throw new Error('Error inserción producto');
     }
     else{
-      var productoNuevo = new Producto(producto.toUpperCase(), calorias.toUpperCase(), grasa.toUpperCase(), proteinas.toUpperCase(), hidratos.toUpperCase());
+      var productoNuevo = new Producto(producto, calorias, grasa, proteinas, hidratos);
       this.listaProductos.push(productoNuevo);
     }
   }
