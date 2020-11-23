@@ -14,7 +14,7 @@ module.exports = (req,res) =>{
 
     //Generamos los productos captando del fichero data.js para añadirlas a la dieta
     while( i < datos.productos.length){
-        nombre= datos.productos[i]["Nombre"];
+        nombre= datos.productos[i]["nombre"];
         calorias= datos.productos[i]["calorias"];
   	    grasa= datos.productos[i]["grasa"];
 	      proteinas= datos.productos[i]["hidratos"];
