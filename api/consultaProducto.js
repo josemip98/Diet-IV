@@ -13,15 +13,15 @@ module.exports = (req,res) =>{
     var i = 0;
 
     //Generamos los productos captando del fichero data.js para añadirlas al catalogo
-    while( i < data.data.length){
-        nombre= data.data[i]['Nombre'];
-        sinopsis= data.data[i]["Sinopsis"];
-  
-        num_temporadas = data.data[i]["Numero Temporadas"];
-        gen = data.data[i]["Genero"];
+    while( i < datos.datos.length){
+        nombre= datos.datos[i]['Nombre'];
+        calorias= datos.datos[i]["calorias"];
+  	grasa= datos.datos[i]["grasa"];
+	proteinas= datos.datos[i]["hidratos"];
+	hidratos= datos.datos[i]["proteinas"];
         i+=1
-        var serie = new Serie(nombre,sinopsis,num_temporadas,gen)
-        catalogo.aniadirSerie(serie)
+        var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
+        catalogo.aniadirProducto(producto)
 
     }
 
