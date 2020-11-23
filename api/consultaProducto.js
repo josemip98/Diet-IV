@@ -9,7 +9,7 @@ module.exports = (req,res) =>{
 
     var {producto="Vacio"} = req.query
     var result;
-    var dieta = new Dieta();
+    var dieta = new Array();
     var i = 0;
 
     //Generamos los productos captando del fichero data.js para añadirlas a la dieta
@@ -20,7 +20,8 @@ module.exports = (req,res) =>{
 	      proteinas= datos.productos[i]["hidratos"];
 	      hidratos= datos.productos[i]["proteinas"];
         i+=1
-        dieta.AniadirProducto(nombre,calorias,grasa,proteinas,hidratos)
+        var pro = new Producto(nombre,calorias,grasa,proteinas,hidratos)
+        dieta.push(nombre)
     }
 
     var datosJSON = []
