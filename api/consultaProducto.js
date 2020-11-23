@@ -12,25 +12,22 @@ module.exports = (req,res) =>{
     var dieta = new Dieta();
     var i = 0;
 
-    //Generamos los productos captando del fichero data.js para añadirlas a la dieta
-    while( i < datos.productos.length){
-        nombre= datos.productos[i]["nombre"];
-        calorias= datos.productos[i]["calorias"];
-  	    grasa= datos.productos[i]["grasa"];
-	      proteinas= datos.productos[i]["hidratos"];
-	      hidratos= datos.productos[i]["proteinas"];
-        i+=1
-    }
-
     var datosJSON = []
     var objetoJSON = {}
 
     if(producto == "arroz" || producto=="macarrones" || producto=="atun"){
-
-        productosNombre.forEach(element => {
-            datosJSON.push({
-              "Producto " : element.getProducto()
-            });
+      //Generamos los productos captando del fichero data.js para añadirlas a la dieta
+      while( i < datos.productos.length){
+          nombre= datos.productos[i]["nombre"];
+          calorias= datos.productos[i]["calorias"];
+    	    grasa= datos.productos[i]["grasa"];
+  	      proteinas= datos.productos[i]["hidratos"];
+  	      hidratos= datos.productos[i]["proteinas"];
+          i+=1
+          datosJSON.push({
+            element.getProducto()
+          });
+      }
 
         });
         // FORMAMOS EL JSON
