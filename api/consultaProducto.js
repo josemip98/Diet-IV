@@ -7,7 +7,7 @@ module.exports = (req,res) =>{
     //Captaremos de la URL el producto del que queremos consultar la informacion nutricional
     //Si no obtenemos ningun por defecto valor "Vacio" para generar el resultado correspondiente
 
-    var {nombre="Vacio"} = req.query
+    var {nombreBusqueda="Vacio"} = req.query
     var result;
     var dieta = new Dieta();
     var i = 0;
@@ -26,7 +26,7 @@ module.exports = (req,res) =>{
     var datosJSON = []
     var objetoJSON = {}
 
-    if(producto == "arroz" || producto=="macarrones" || producto=="atun"){
+    if(nombreBusqueda == "arroz" || nombreBusqueda=="macarrones" || nombreBusqueda=="atun"){
         var productosNombre = Dieta.mostrarProducto(producto)
 
         productosNombre.forEach(element => {
@@ -41,11 +41,11 @@ module.exports = (req,res) =>{
 
     }
     //Si es Vacio significa que no se ha recibido nada
-    else if(nombre == "Vacio"){
+    else if(nombreBusqueda == "Vacio"){
         result="Debe indicar un producto";
     }
     else{
-        result="producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
+        result="Producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
 
     }
 
