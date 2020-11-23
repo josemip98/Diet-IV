@@ -13,12 +13,12 @@ module.exports = (req,res) =>{
     var i = 0;
 
     //Generamos los productos captando del fichero data.js para añadirlas a la dieta
-    while( i < datos.datos.length){
-        nombre= datos.datos[i]['Nombre'];
-        calorias= datos.datos[i]["calorias"];
-  	    grasa= datos.datos[i]["grasa"];
-	      proteinas= datos.datos[i]["hidratos"];
-	      hidratos= datos.datos[i]["proteinas"];
+    while( i < datos.productos.length){
+        nombre= datos.productos[i]['Nombre'];
+        calorias= datos.productos[i]["calorias"];
+  	    grasa= datos.productos[i]["grasa"];
+	      proteinas= datos.productos[i]["hidratos"];
+	      hidratos= datos.productos[i]["proteinas"];
         i+=1
         var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
         dieta.aniadirProducto(producto)
