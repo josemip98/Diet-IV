@@ -18,15 +18,15 @@ module.exports = (req,res) =>{
     if(producto == "arroz" || producto=="macarrones" || producto=="atun"){
       //Generamos los productos captando del fichero data.js para añadirlas a la dieta
       while( i < datos.productos.length){
-          if(datos.productos[i]["nombre"] == producto){
+          if(producto == datos.productos[i]["nombre"]){
           nombre= datos.productos[i]["nombre"];
           calorias= datos.productos[i]["calorias"];
     	    grasa= datos.productos[i]["grasa"];
   	      proteinas= datos.productos[i]["hidratos"];
   	      hidratos= datos.productos[i]["proteinas"];
-          i+=1
           result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
         }
+        i+=1
       }
     }
     //Si es Vacio significa que no se ha recibido nada
