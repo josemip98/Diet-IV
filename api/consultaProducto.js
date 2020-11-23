@@ -7,7 +7,7 @@ module.exports = (req,res) =>{
     //Captaremos de la URL el producto del que queremos consultar la informacion nutricional
     //Si no obtenemos ningun por defecto valor "Vacio" para generar el resultado correspondiente
 
-    const{nombre="Vacio"} = req.query
+    var {nombre="Vacio"} = req.query
     var result;
     var dieta = new Dieta();
     var i = 0;
