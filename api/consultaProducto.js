@@ -36,7 +36,7 @@ module.exports = (req,res) =>{
         i+=1
       }
       // FORMAMOS EL JSON
-        objetoJSON.series = datosJSON;
+        objetoJSON.productos = datosJSON;
         result = JSON.stringify(objetoJSON)
     }
     //Si es Vacio significa que no se ha recibido nada
