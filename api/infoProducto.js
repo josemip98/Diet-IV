@@ -6,6 +6,7 @@ const Producto = require("../src/producto.js");
 function listadoProductos(){
 
     var i = 0;
+    var result = ""
     var dieta = new Dieta();
     while( i < datos.productos.length){
       nombre= datos.productos[i]["nombre"];
@@ -17,7 +18,6 @@ function listadoProductos(){
       var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
       //dieta.AniadirProducto(producto)
     }
-    var result = ""
 
     result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
 
