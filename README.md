@@ -23,7 +23,7 @@ La información nutricional consta de:
 
 ## Funciones serverless
 
-+ [Despliegue correcto y funcionando](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/despliegueServerless.md)
++ [Despliegue correcto y funcionando](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverless.md#despliegue-funciones-serverless-en-github-con-vercel)
 
 + Función integrada con el proyecto:
 
