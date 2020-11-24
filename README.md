@@ -21,25 +21,16 @@ La información nutricional consta de:
 	
 ***
 
-## Serverless
+## Funciones serverless
 
-***
++ Despliegue:
 
-## Integración continua
++ Función integrada con el proyecto:
 
-En este [fichero](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/integracion-continua.md) explico todo lo relacionado con la integración continua.
++ Función serverless:
 
-Primero he configurado Travis y como sistema de integración continua adicional voy a utilizar Circle CI.
-Además utilizo en ambos el gestor de tareas **Gulp** que es el que estoy utilizando en el proyecto. Y aprovecho mi contenedor Docker en el sistema de integración continua **Travis**.
++ Bot de telegram:
 
-## Travis
-
-+ [Fichero configuración Travis](https://github.com/josemip98/OrganizeUDiet/blob/master/.travis.yml)
-
-## Circle CI
-
-+ [Fichero configuración Circle CI](https://github.com/josemip98/OrganizeUDiet/blob/master/.circleci/config.yml)
- 
 ***
 
 ## Recopilación de enlaces
@@ -56,6 +47,9 @@ Además utilizo en ambos el gestor de tareas **Gulp** que es el que estoy utiliz
 + [Dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/Dockerfile)
 + [Explicacion dockerfile](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/dockerfile.md)
 + [GitHub Container Registry](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/github-container.md)
+[Explicación integración continua](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/integracion-continua.md)
++ [Fichero configuración Travis](https://github.com/josemip98/OrganizeUDiet/blob/master/.travis.yml)
++ [Fichero configuración Circle CI](https://github.com/josemip98/OrganizeUDiet/blob/master/.circleci/config.yml)
 
 ***
 
