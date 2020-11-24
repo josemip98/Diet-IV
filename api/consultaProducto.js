@@ -35,7 +35,6 @@ module.exports = (req,res) =>{
         }
         i+=1
       }
-      // FORMAMOS EL JSON
         objetoJSON.productos = datosJSON;
         result = JSON.stringify(objetoJSON)
     }
