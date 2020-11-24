@@ -4,8 +4,7 @@ const Producto = require("../src/producto.js");
 
 //AÑADIMOS FUNCION PARA LISTAR PRODUCTOS
 function listadoProductos(){
-    var datosJSON = []
-    var objetoJSON = {}
+
     var i = 0;
     var result = ""
     var dieta = new Dieta();
@@ -15,20 +14,9 @@ function listadoProductos(){
       grasa= datos.productos[i]["grasa"];
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
-      datosJSON.push({
-                "Nombre ": nombre,
-                "Calorias": calorias,
-                "Grasa": grasa,
-                "Proteinas": proteinas,
-                "Hidratos": hidratos
-            });
       i+=1
-      //result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
+      result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
     }
-
-    // FORMAMOS EL JSON
-        objetoJSON.productos = datosJSON;
-        result = JSON.stringify(objetoJSON)
 
     return result
 }
