@@ -15,7 +15,7 @@ function listadoProductos(){
       hidratos= datos.productos[i]["hidratos"];
       i+=1
       var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
-      dieta.AniadirProducto(producto)
+      //dieta.AniadirProducto(producto)
     }
     var result = ""
     //Tras ello captamos la series por genero
