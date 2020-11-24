@@ -20,11 +20,6 @@ Y ya tendriamos nuestro proyecto desplegado en vercel.
 
 Para probarlo tenemos que crear una carpeta api que es donde incluiremos las funciones, para este caso voy a crear una función serverless de prueba que se llamara [hello.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/hello.js) que sólo imprime en pantalla el mensaje "Hello World".
 
-- req: Obtenemos el valor de name, si no le damos ningún valor imprimirá un hola mundo.
-- status: Establecemos el código de estado que se envía con la respuesta.
-- send: es una función en la que enviamos la respuesta.
-- res: Enviamos la respuesta.
-
 El resultado es el siguiente:
 
 Sin darle ningún valor a name:
