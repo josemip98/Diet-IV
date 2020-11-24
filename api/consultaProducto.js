@@ -24,10 +24,20 @@ module.exports = (req,res) =>{
         proteinas= datos.productos[i]["proteinas"];
         hidratos= datos.productos[i]["hidratos"];
         if(producto == nombre || producto.toUpperCase() == nombre){
-          result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
+          datosJSON.push({
+                "Nombre ": element.getNombre(),
+                "Calorias": element.getCalorias(),
+                "Grasa":element.getGrasa(),
+                "Proteinas":element.getProteinas(),
+                "Hidratos":element.getHidratos()
+            });
+          //result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
         }
         i+=1
       }
+      // FORMAMOS EL JSON
+        objetoJSON.series = datosJSON;
+        result = JSON.stringify(objetoJSON)
     }
     //Si es Vacio significa que no se ha recibido nada
     else if(producto == "Vacio"){
