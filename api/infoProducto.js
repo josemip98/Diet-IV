@@ -6,7 +6,7 @@ const Producto = require("../src/producto.js");
 function listadoProductos(){
 
     var i = 0;
-    var producto = new Producto();
+    var dieta = new Dieta();
     while( i < datos.productos.length){
       nombre= datos.productos[i]["nombre"];
       calorias= datos.productos[i]["calorias"];
@@ -14,8 +14,8 @@ function listadoProductos(){
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
       i+=1
-      var dieta = new Dieta(nombre,sinopsis,num_temporadas,gen)
-      producto.aniadirSerie(serie)
+      var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
+      dieta.AniadirProducto(producto)
     }
     var result = ""
     //Tras ello captamos la series por genero
