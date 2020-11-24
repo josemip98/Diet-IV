@@ -72,6 +72,8 @@ En este apartado se irán añadiendo las historias de usuario
 	+ Como usuario, dado un producto debo poder consultar productos nutricionalmente similares.
 + [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) Consultar producto concreto.
 	+ Como usuario debo poder consultar un producto concreto perteneciente a una dieta. El formato a mostrar será el producto junto con su información nutricional.
++ [HU04](https://github.com/josemip98/OrganizeUDiet/issues/40) Consultar listado productos.
+	+ Como usuario debo poder consultar el listado completo de productos. El formato a mostrar será un listado formado por el producto junto con su información nutricional.
 	
 ***
 
