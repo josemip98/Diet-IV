@@ -25,11 +25,11 @@ module.exports = (req,res) =>{
         hidratos= datos.productos[i]["hidratos"];
         if(producto == nombre || producto.toUpperCase() == nombre){
           datosJSON.push({
-                "Nombre ": element.getNombre(),
-                "Calorias": element.getCalorias(),
-                "Grasa":element.getGrasa(),
-                "Proteinas":element.getProteinas(),
-                "Hidratos":element.getHidratos()
+                "Nombre ": nombre,
+                "Calorias": calorias,
+                "Grasa": grasa,
+                "Proteinas": proteinas,
+                "Hidratos": hidratos
             });
           //result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
         }
