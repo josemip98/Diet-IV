@@ -17,9 +17,8 @@ function listadoProductos(){
       i+=1
       var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
       //dieta.AniadirProducto(producto)
+      result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
     }
-
-    result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
 
     return result
 }
