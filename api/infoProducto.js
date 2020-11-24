@@ -41,6 +41,9 @@ module.exports = async (req,res) =>{
             result="Listado de productos....\n";
             result+=listadoProductos()
         }
+        else if (text == "/muestraBody") {
+          var result = JSON.stringify(req.body)
+        }
 
         // Devolvemos
         var objetoJSON ={text : result,method : "sendMessage",chat_id : IDchat}
