@@ -14,10 +14,15 @@ function listadoProductos(){
       grasa= datos.productos[i]["grasa"];
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
+      datosJSON.push({
+                "Nombre ": nombre,
+                "Calorias": calorias,
+                "Grasa": grasa,
+                "Proteinas": proteinas,
+                "Hidratos": hidratos
+            });
       i+=1
-      var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos)
-      //dieta.AniadirProducto(producto)
-      result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
+      //result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
     }
 
     return result
