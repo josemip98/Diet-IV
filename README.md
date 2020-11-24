@@ -146,8 +146,4 @@ En este apartado se irán añadiendo las historias de usuario
 + [Jose Miguel Pelegrina Pelegrina](https://github.com/josemip98)
 
 ***
-![Travis (.com)](https://img.shields.io/travis/com/josemip98/OrganizeUDiet?label=Build%20Travis)
-
-![CircleCI](https://img.shields.io/circleci/build/github/josemip98/OrganizeUDiet?label=Build%20CircleCI)
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![Travis (.com)](https://img.shields.io/travis/com/josemip98/OrganizeUDiet?label=Build%20Travis) ![CircleCI](https://img.shields.io/circleci/build/github/josemip98/OrganizeUDiet?label=Build%20CircleCI) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
