@@ -18,11 +18,8 @@ function listadoProductos(){
       //dieta.AniadirProducto(producto)
     }
     var result = ""
-    //Tras ello captamos la series por genero
-    listadoProductos = producto.listadoProductos()
-    for(var j = 0; j < listadoProductos.length ; j++){
-        result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
-    }
+
+    result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
 
     return result
 }
