@@ -14,7 +14,6 @@ module.exports = (req,res) =>{
     var datosJSON = []
     var objetoJSON = {}
 
-
       //Generamos los productos captando del fichero productos.json
       while( i < datos.productos.length){
         nombre= datos.productos[i]["nombre"];
