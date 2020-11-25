@@ -1,0 +1,53 @@
+const datos = require("./productos.json");
+const Dieta  = require("../src/dieta.js");
+const Producto = require("../src/producto.js");
+
+//AÑADIMOS FUNCION PARA LISTAR PRODUCTOS
+function listadoProductos(){
+
+    var i = 0;
+    var result = ""
+    while( i < datos.productos.length){
+      nombre= datos.productos[i]["nombre"];
+      calorias= datos.productos[i]["calorias"];
+      grasa= datos.productos[i]["grasa"];
+      proteinas= datos.productos[i]["proteinas"];
+      hidratos= datos.productos[i]["hidratos"];
+      i+=1
+      result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
+    }
+
+    return result
+}
+
+//AÑADIMOS FUNCION PARABUSCAR PRODUCTO CONCRETO
+function consultaProducto(producto){
+
+    var i = 0;
+    var result = ""
+    while( i < datos.productos.length){
+      nombre= datos.productos[i]["nombre"];
+      calorias= datos.productos[i]["calorias"];
+      grasa= datos.productos[i]["grasa"];
+      proteinas= datos.productos[i]["proteinas"];
+      hidratos= datos.productos[i]["hidratos"];
+      i+=1
+
+      if(producto == nombre || producto.toUpperCase() == nombre){
+        result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
+      }
+      //Si es Vacio significa que no se ha recibido nada
+      else if(producto == "Vacio"){
+          result="Debe indicar un producto";
+      }
+      else{
+          result="Producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
+
+      }
+
+    }
+
+    return result
+}
+
+module.exports = { listadoProductos, consultaProducto };

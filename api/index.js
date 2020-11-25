@@ -1,5 +1,5 @@
 const datos = require("./productos.json");
-const funcion = require("./listadoProductos.js");
+const funcion = require("./bot.js");
 const Dieta  = require("../src/dieta.js");
 const Producto = require("../src/producto.js");
 
@@ -21,6 +21,11 @@ module.exports = async (req,res) =>{
 	else if(text == "/lista"){
     result="Listado de productos....\n";
     result+=funcion.listadoProductos();
+  }
+  else if(text == "/producto"){
+    result="Escriba producto a mostrar....\n";
+    var palabra = mensaje.split(" ")[1];
+    result+=funcion.consultaProducto(palabra);
   }
   else{
     result="/help para ver la lista de comandos disponibles";
