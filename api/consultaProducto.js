@@ -31,6 +31,8 @@ module.exports = (req,res) =>{
                 "Proteinas": proteinas,
                 "Hidratos": hidratos
             });
+            objetoJSON.productos = datosJSON;
+            result = JSON.stringify(objetoJSON)
           //result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
         }
         //Si es Vacio significa que no se ha recibido nada
@@ -42,9 +44,6 @@ module.exports = (req,res) =>{
         }
         i+=1
       }
-
-      objetoJSON.productos = datosJSON;
-      result = JSON.stringify(objetoJSON)
 
     // Se envía el resultado
     res.status(200).send(result)
