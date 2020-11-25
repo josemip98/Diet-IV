@@ -70,4 +70,40 @@ Si indicamos un producto que esté disponible:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel5.png)
 
+## BOT de Telegram
+
+Para desarrollar el Bot de Telegram he utilizado un fichero [bot.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/bot.js) que contiene las funciones consultaProducto y listaProducto y el fichero [index.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js) en el que
+se gestionarán los comandos disponibles y la respuesta que devuelven.
+
++ /start: iniciará el bot
++ /help: nos lista los comandos disponibles
++ /lista: nos lista los productos disponibles junto con su información nutricional
++ /producto <nombre_producto>: nos muestra la información de un producto concreto
+
+### Uso del WebHook 
+
+Para establecer nuestro Webhook hacemos uso del siguiente enlace:
+
+`https://api.telegram.org/bot{bot_token}/setWebhook?url={ruta_del_bot}`
+
+en mi caso la ruta es la siguiente:
+
+`https://organize-u-diet-git-master.josemip98.vercel.app/api/index.js`
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/webhook.png)
+
+### Comprobación de uso
+
+Podemos acceder al Bot mediante el [enlace](tg://resolve?domain=OrganizeUDietBot) o buscando en telegram @OrganizeUDietBot. Lo mas recomendable es utilizar el comando /help para listar los comandos disponibles.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/usoBot1.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/usoBot2.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/usoBot3.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/usoBot4.png)
+
+
+
 
