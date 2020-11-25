@@ -16,7 +16,7 @@ module.exports = async (req,res) =>{
     result="¡Bienvenido al bot para organizar tu dieta!\n";
 	}
   else if(text == "/help"){
-    result = "/start - comenzar a usar el bot \n/lista - muestra un listado de los productos disponibles \n";
+    result = "/start - comenzar a usar el bot \n/lista - muestra un listado de los productos disponibles \n/producto - muestra un producto concreto junto con su información nutricional";
   }
 	else if(text == "/lista"){
     result="Listado de productos....\n";
@@ -24,7 +24,7 @@ module.exports = async (req,res) =>{
   }
   else if(text == "/producto"){
     result="Escriba producto a mostrar....\n";
-    var palabra = mensaje.split(" ")[1];
+    var palabra = text.split(" ")[1];
     result+=funcion.consultaProducto(palabra);
   }
   else{
