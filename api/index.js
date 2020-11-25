@@ -24,7 +24,7 @@ module.exports = async (req,res) =>{
       result="Listado de productos....\n";
       result+=funcion.listadoProductos();
     }else if(text.match(expresion)){
-      result="Escriba producto a mostrar....\n";
+      result="Mostrando producto....\n";
       var palabra = text.split(" ")[1];
       result+=funcion.consultaProducto(palabra);
     }

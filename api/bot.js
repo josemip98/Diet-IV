@@ -25,13 +25,12 @@ function consultaProducto(producto){
 
     var i = 0;
     var result = ""
-    while( i < datos.productos.length){
+    while(i < datos.productos.length){
       nombre= datos.productos[i]["nombre"];
       calorias= datos.productos[i]["calorias"];
       grasa= datos.productos[i]["grasa"];
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
-      i+=1
 
       if(producto == nombre || producto == nombre.toUpperCase()){
         result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
@@ -44,7 +43,7 @@ function consultaProducto(producto){
           result="Producto no disponible.";
 
       }
-
+      i+=1
     }
 
     return result

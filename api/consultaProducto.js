@@ -15,8 +15,8 @@ module.exports = (req,res) =>{
     var datosJSON = []
     var objetoJSON = {}
 
-    if(producto == "arroz" || producto=="macarrones" || producto=="atun"){
-      //Generamos los productos captando del fichero data.js para añadirlas a la dieta
+
+      //Generamos los productos captando del fichero productos.json
       while( i < datos.productos.length){
         nombre= datos.productos[i]["nombre"];
         calorias= datos.productos[i]["calorias"];
@@ -33,20 +33,18 @@ module.exports = (req,res) =>{
             });
           //result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas ;
         }
+        //Si es Vacio significa que no se ha recibido nada
+        else if(producto == "Vacio"){
+            result="Debe indicar un producto";
+        }
+        else{
+            result="Producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
+        }
         i+=1
       }
-        objetoJSON.productos = datosJSON;
-        result = JSON.stringify(objetoJSON)
-    }
-    //Si es Vacio significa que no se ha recibido nada
-    else if(producto == "Vacio"){
-        result="Debe indicar un producto";
-    }
-    else{
-        result="Producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
 
-    }
-
+      objetoJSON.productos = datosJSON;
+      result = JSON.stringify(objetoJSON)
 
     // Se envía el resultado
     res.status(200).send(result)
