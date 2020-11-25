@@ -2,7 +2,7 @@ const datos = require("./productos.json");
 const Dieta  = require("../src/dieta.js");
 const Producto = require("../src/producto.js");
 
-module.exports = (req,res) =>{
+exports.handler = async event =>{
 
     var i = 0;
     var result = ""
