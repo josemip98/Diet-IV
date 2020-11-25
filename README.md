@@ -33,12 +33,13 @@ La información nutricional consta de:
 	+ [Resultado esperado](https://github.com/josemip98/OrganizeUDiet/blob/master/5.json)
 
 + Función serverless con Netlify integrada con el proyecto:
-	+ [Documentación]()
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessNetlify.md)
 	+ [Fichero código función listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js)
 	+ [Archivo netlify.toml](https://github.com/josemip98/OrganizeUDiet/blob/master/netlify.toml)
 + Bot de telegram:
 	+ [Documentación]()
-	+ [Fichero bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)
+	+ [Tareas bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)
+	+ [Funciones bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/bot.js)
 	+ [Enlace OrganizeUDietBot](https://web.telegram.org/#/im?p=@OrganizeUDietBot)
 ***
 
