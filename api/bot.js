@@ -33,7 +33,7 @@ function consultaProducto(producto){
       hidratos= datos.productos[i]["hidratos"];
       i+=1
 
-      if(producto == nombre){
+      if(producto == nombre || producto == nombre.toUpperCase()){
         result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
       }
       //Si es Vacio significa que no se ha recibido nada
@@ -41,7 +41,7 @@ function consultaProducto(producto){
           result="Debe indicar un producto";
       }
       else{
-          result="Producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
+          result="Producto no disponible.";
 
       }
 
