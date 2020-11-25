@@ -1,4 +1,4 @@
 module.exports = (req, res) => {
-    const { name = 'World' } = req.query
-    res.status(200).send(`Hello ${name}!`)
+    const { name = 'Mundo' } = req.query
+    res.status(200).send(`Hola ${name}!`)
   }
