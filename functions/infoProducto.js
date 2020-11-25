@@ -16,7 +16,10 @@ exports.handler = async event =>{
       result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
     }
 
-// Se envía el resultado
-  res.status(200).send(result)
+  // Se envía el resultado
+  return{
+    statusCode:200,
+    body: result.toString()
+  }
 
 }
