@@ -11,18 +11,20 @@ module.exports = async (req,res) =>{
         //Captamos contenido de mensaje
         var text = req.body.message.text
         var result = ""
-        // Según el contenido obtenemos una lista de series u otra
+        var expresion = /\/producto (.+)/
+
+  // Según el contenido obtenemos una lista de series u otra
 	if(text == "/start"){
     result="¡Bienvenido al bot para organizar tu dieta!\n";
 	}
   else if(text == "/help"){
-    result = "/start - comenzar a usar el bot \n/lista - muestra un listado de los productos disponibles \n/producto - muestra un producto concreto junto con su información nutricional";
+    result = "/start - comenzar a usar el bot \n/lista - muestra un listado de los productos disponibles \n/producto <nombre_producto> - muestra un producto concreto junto con su información nutricional";
   }
 	else if(text == "/lista"){
     result="Listado de productos....\n";
     result+=funcion.listadoProductos();
   }
-  else if(text == "/producto"){
+  }else if(mensaje.match(expresion)){
     result="Escriba producto a mostrar....\n";
     var palabra = text.split(" ")[1];
     result+=funcion.consultaProducto(palabra);
