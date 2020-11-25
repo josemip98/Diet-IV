@@ -36,7 +36,7 @@ La información nutricional consta de:
 
 + Bot de telegram:
 	+ [Fichero código función](https://github.com/josemip98/OrganizeUDiet/blob/master/api/infoProducto.js)
-
+	+ [Enlace OrganizeUDietBot](t.me/OrganizeUDietBot)
 ***
 
 ## Herramientas
