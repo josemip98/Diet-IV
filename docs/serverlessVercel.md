@@ -38,7 +38,6 @@ Pasandole el valor a name:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel2.png)
 
-<<<<<<< HEAD
 ## Implementación de una función integrada en mi proyecto
 
 He decidido crear una función relacionada con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) con la que consultar un producto concreto. El formato a mostrar será el nombre del producto junto con su información nutricional (Calorías, grasa, proteinas, hidratos).
@@ -61,10 +60,4 @@ Si indicamos un producto que esté disponible:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel5.png)
 
-
-
-
-=======
-## Función integrada en mi proyecto
->>>>>>> ca63b0951476617cd5a0ccb6fb71c8d4bf8930d6
 
