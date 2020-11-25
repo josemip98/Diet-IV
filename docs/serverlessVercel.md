@@ -1,6 +1,6 @@
 # Despliegue funciones serverless en GitHub con Vercel
 
-## Conexión
+## Conexión y prueba básica
 
 Lo primero de todo será registrarme en vercel y enlazar mi proyecto de GitHub.
 
@@ -38,5 +38,33 @@ Pasandole el valor a name:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel2.png)
 
+<<<<<<< HEAD
+## Implementación de una función integrada en mi proyecto
+
+He decidido crear una función relacionada con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) con la que consultar un producto concreto. El formato a mostrar será el nombre del producto junto con su información nutricional (Calorías, grasa, proteinas, hidratos).
+
+Primero he creado un archivo [productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json) que es una lista de productos junto con su información nutricional.
+
+Después he creado el fichero [consultaProducto.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js) en el que tenemos la función.
+
+Los resultados son los siguientes:
+
+Si no indicamos ningún producto:
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel3.png)
+
+Si indicamos un producto que no se encuentra disponible:
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel4.png)
+
+Si indicamos un producto que esté disponible:
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel5.png)
+
+
+
+
+=======
 ## Función integrada en mi proyecto
+>>>>>>> ca63b0951476617cd5a0ccb6fb71c8d4bf8930d6
 
