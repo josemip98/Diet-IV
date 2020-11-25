@@ -27,15 +27,18 @@ La información nutricional consta de:
 
 + Función serverless con Vercel integrada con el proyecto:
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#implementaci%C3%B3n-de-una-funci%C3%B3n-integrada-en-mi-proyecto)
-	+ [Fichero código función](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js)
+	+ [Fichero código función consultaProducto](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js)
 	+ [Fichero productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json)
 	+ [URL prueba](https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz)
 	+ [Resultado esperado](https://github.com/josemip98/OrganizeUDiet/blob/master/5.json)
 
-+ Función serverless:
-
++ Función serverless con Netlify integrada con el proyecto:
+	+ [Documentación]()
+	+ [Fichero código función listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js)
+	+ [Archivo netlify.toml](https://github.com/josemip98/OrganizeUDiet/blob/master/netlify.toml)
 + Bot de telegram:
-	+ [Fichero código función](https://github.com/josemip98/OrganizeUDiet/blob/master/api/infoProducto.js)
+	+ [Documentación]()
+	+ [Fichero bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)
 	+ [Enlace OrganizeUDietBot](https://web.telegram.org/#/im?p=@OrganizeUDietBot)
 ***
 
