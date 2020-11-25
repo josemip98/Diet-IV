@@ -26,7 +26,7 @@ La información nutricional consta de:
 + [Despliegue correcto y funcionando](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#despliegue-funciones-serverless-en-github-con-vercel)
 
 + Función serverless con Vercel integrada con el proyecto:
-	+ [Documentación]((https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#despliegue-funciones-serverless-en-github-con-vercel))
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#implementaci%C3%B3n-de-una-funci%C3%B3n-integrada-en-mi-proyecto)
 	+ [Fichero código función](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js)
 	+ [Fichero productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json)
 	+[URL prueba](https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz)
