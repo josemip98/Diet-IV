@@ -46,7 +46,7 @@ Primero he creado un archivo [productos.json](https://github.com/josemip98/Organ
 
 Después he creado el fichero [consultaProducto.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js) en el que tenemos la función.
 
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/despliegueVerce2.png)
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/despliegueVercel2.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/despliegueVercel3.png)
 
