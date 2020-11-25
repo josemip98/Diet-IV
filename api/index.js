@@ -20,7 +20,7 @@ module.exports = async (req,res) =>{
   }
 	else if(text == "/lista"){
     result="Listado de productos....\n";
-    result+=funcion.listadoProductos()
+    result+=funcion.listadoProductos();
   }
   else{
     result="/help para ver la lista de comandos disponibles";
