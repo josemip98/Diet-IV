@@ -1,5 +1,5 @@
 const datos = require("./productos.json");
-const funcion = require("./infoProducto.js");
+const funcion = require("./listadoProductos.js");
 const Dieta  = require("../src/dieta.js");
 const Producto = require("../src/producto.js");
 
