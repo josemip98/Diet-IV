@@ -9,9 +9,8 @@ module.exports = (req,res) =>{
 
     var {producto="Vacio"} = req.query
     var result;
-    var dieta = new Dieta();
     var i = 0;
-
+    var existeProducto = false;
     var datosJSON = []
     var objetoJSON = {}
 
@@ -24,6 +23,7 @@ module.exports = (req,res) =>{
         proteinas= datos.productos[i]["proteinas"];
         hidratos= datos.productos[i]["hidratos"];
         if(producto == nombre || producto.toUpperCase() == nombre){
+          existeProducto = true;
           datosJSON.push({
                 "Nombre ": nombre,
                 "Calorias": calorias,
@@ -39,7 +39,7 @@ module.exports = (req,res) =>{
         else if(producto == "Vacio"){
             result="Debe indicar un producto";
         }
-        else{
+        else if (existeProducto==false){
             result="Producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
         }
         i+=1
