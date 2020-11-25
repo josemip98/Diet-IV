@@ -23,7 +23,6 @@ module.exports = async (req,res) =>{
 	else if(text == "/lista"){
     result="Listado de productos....\n";
     result+=funcion.listadoProductos();
-  }
   }else if(mensaje.match(expresion)){
     result="Escriba producto a mostrar....\n";
     var palabra = text.split(" ")[1];
