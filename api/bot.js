@@ -34,7 +34,7 @@ function consultaProducto(producto){
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
 
-      if(producto == nombre || producto == nombre.toUpperCase()){
+      if(producto == nombre || producto.toUpperCase() == nombre){
         existeProducto = true;
         result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
       }
