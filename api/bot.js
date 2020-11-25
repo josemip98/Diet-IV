@@ -34,7 +34,7 @@ function consultaProducto(producto){
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
 
-      if(producto == nombre || producto.toUpperCase() == nombre){
+      if(producto == nombre){
         existeProducto = true;
         result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
       }
@@ -44,7 +44,6 @@ function consultaProducto(producto){
       }
       else if (existeProducto == false){
           result="Producto no disponible.";
-
       }
       i+=1
     }
