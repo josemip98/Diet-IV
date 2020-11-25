@@ -24,7 +24,9 @@ function listadoProductos(){
 function consultaProducto(producto){
 
     var i = 0;
-    var result = ""
+    var result = "";
+    var existeProducto = false;
+
     while(i < datos.productos.length){
       nombre= datos.productos[i]["nombre"];
       calorias= datos.productos[i]["calorias"];
@@ -33,13 +35,14 @@ function consultaProducto(producto){
       hidratos= datos.productos[i]["hidratos"];
 
       if(producto == nombre || producto == nombre.toUpperCase()){
+        existeProducto = true;
         result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
       }
       //Si es Vacio significa que no se ha recibido nada
       else if(producto == " "){
           result="Debe indicar un producto";
       }
-      else{
+      else if (existeProducto == false){
           result="Producto no disponible.";
 
       }
