@@ -37,7 +37,7 @@ function consultaProducto(producto){
         result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
       }
       //Si es Vacio significa que no se ha recibido nada
-      else if(producto == "Vacio"){
+      else if(producto == " "){
           result="Debe indicar un producto";
       }
       else{
