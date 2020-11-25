@@ -20,3 +20,5 @@ function listadoProductos(){
 
     return result
 }
+
+module.exports = { listadoProductos };
