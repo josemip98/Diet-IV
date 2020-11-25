@@ -18,18 +18,18 @@ module.exports = async (req,res) =>{
       result="¡Bienvenido al bot para organizar tu dieta!\n";
   	}
     else if(text == "/help"){
-      result = "/start - comenzar a usar el bot \n/lista - muestra un listado de los productos disponibles \n/producto <nombre_producto> - muestra un producto concreto junto con su información nutricional";
+      result = "/start - comenzar a usar el bot \n/lista - muestra el listado de los productos disponibles \n/producto <nombre_producto> - muestra un producto concreto junto con su información nutricional";
     }
   	else if(text == "/lista"){
-      result="Listado de productos....\n";
+      result="Listado de productos:\n";
       result+=funcion.listadoProductos();
     }else if(text.match(expresion)){
-      result="Mostrando producto....\n";
+      result="Mostrando producto:\n";
       var palabra = text.split(" ")[1];
       result+=funcion.consultaProducto(palabra);
     }
     else{
-      result="/help para ver la lista de comandos disponibles";
+      result="/help - lista de comandos disponibles";
     }
 
     // Devolvemos
