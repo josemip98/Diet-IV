@@ -1,0 +1,26 @@
+  
+{
+  "productos":[
+  {
+      "nombre":"ARROZ",
+      "calorias":"344",
+      "grasa":"1",
+      "proteinas":"9",
+      "hidratos":"75"
+    },
+    {
+      "nombre":"MACARRONES",
+       "calorias":"366",
+       "grasa":"2",
+       "proteinas":"12",
+       "hidratos":"74"
+    },
+    {
+      "nombre":"ATUN",
+      "calorias":"357",
+      "grasa":"31",
+      "proteinas":"20",
+      "hidratos":"1"
+    }
+  ]
+}
