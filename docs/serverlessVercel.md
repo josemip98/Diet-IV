@@ -38,5 +38,5 @@ Pasandole el valor a name:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel2.png)
 
-
+## Función integrada en mi proyecto
 
