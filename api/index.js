@@ -4,16 +4,14 @@ const Dieta  = require("../src/dieta.js");
 const Producto = require("../src/producto.js");
 
 module.exports = async (req,res) =>{
-  //Que contiene req.body
+
   if(req.body.message != undefined){
-    //Captamos id del mensaje
+
     var IDchat = req.body.message.chat.id
-    //Captamos contenido de mensaje
     var text = req.body.message.text
     var result = ""
     var expresion = /\/producto (.+)/
 
-    // Según el contenido obtenemos una lista de series u otra
   	if(text == "/start"){
       result="¡Bienvenido al bot para organizar tu dieta!\n";
   	}
@@ -32,13 +30,11 @@ module.exports = async (req,res) =>{
       result="/help - lista de comandos disponibles";
     }
 
-    // Devolvemos
     var objetoJSON ={text : result,method : "sendMessage",chat_id : IDchat}
     res.setHeader("Content-Type","application/json");
     res.status(200).json(objetoJSON)
     }
     else{
-      //Enviamos un mensaje normal
       res.status(200).send("Iniciamos el bot de OrganizeUDiet")
     }
 

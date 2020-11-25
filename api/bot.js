@@ -2,7 +2,6 @@ const datos = require("./productos.json");
 const Dieta  = require("../src/dieta.js");
 const Producto = require("../src/producto.js");
 
-//AÑADIMOS FUNCION PARA LISTAR PRODUCTOS
 function listadoProductos(){
 
     var i = 0;
@@ -20,7 +19,6 @@ function listadoProductos(){
     return result
 }
 
-//AÑADIMOS FUNCION PARABUSCAR PRODUCTO CONCRETO
 function consultaProducto(producto){
 
     var i = 0;
@@ -38,7 +36,7 @@ function consultaProducto(producto){
         existeProducto = true;
         result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
       }
-      //Si es Vacio significa que no se ha recibido nada
+
       else if(producto == " "){
           result="Debe indicar un producto";
       }
