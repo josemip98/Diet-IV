@@ -1,4 +1,5 @@
 const datos = require("./productos.json");
+const funcion = require("./infoProducto.js");
 const Dieta  = require("../src/dieta.js");
 const Producto = require("../src/producto.js");
 
@@ -19,7 +20,7 @@ module.exports = async (req,res) =>{
   }
 	else if(text == "/lista"){
     result="Listado de productos....\n";
-    result+=listadoProductos()
+    result+=funcion.listadoProductos()
   }
   else{
     result="/help para ver la lista de comandos disponibles";
