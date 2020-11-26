@@ -36,6 +36,7 @@ La información nutricional consta de:
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessNetlify.md)
 	+ [Fichero código función listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js)
 	+ [Archivo netlify.toml](https://github.com/josemip98/OrganizeUDiet/blob/master/netlify.toml)
+	+ [URL prueba](https://laughing-ramanujan-50249a.netlify.app/.netlify/functions/listadoProductos)
 + Bot de telegram:
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#bot-de-telegram)
 	+ [Tareas bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)
