@@ -81,16 +81,23 @@ Si indicamos un producto que esté disponible:
 Para desarrollar el Bot de Telegram he utilizado un fichero [bot.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/bot.js) que contiene las funciones consultaProducto y listaProducto y el fichero [index.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js) en el que
 se gestionarán los comandos disponibles y la respuesta que devuelven.
 
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/index.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/listadoBot.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/consultaProductoBot.png)
-
 + /start: iniciará el bot
 + /help: nos lista los comandos disponibles
 + /lista: nos lista los productos disponibles junto con su información nutricional
 + /producto <nombre_producto>: nos muestra la información de un producto concreto
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/index.png)
+
+La función listadoProductos ya la comenté en el apartado anterior simplemente la he reutilizado para el bot.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/listadoBot.png)
+
+Y la función consultaProducto(producto) que la utilizé en Netlify la he modificado y funciona también en vercel. El funcionamiento es el mismo, leo los productos disponibles del fichero productos.json y si coincide el nombre con el producto que queremos creo una variable porducto de la clase Producto con sus valores nombre, calorias, grasa, proteinas y hidratos y a result que es la variable que devolveremos como resultado le asignaremos el resultado de la función getProducto de la clase producto que devuelve el nombre y su información nutricional.
+Si el producto introducido para buscar no existiera nos diría que el producto no está disponible o si no hemos indicado ninguno nos pedirá que introduzcamos el nombre de un producto.
+
+Por último devolvemos la variable result y exportamos ambas funciones para ser utilizadas en el index.js.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/consultaProductoBot.png)
 
 ### Uso del WebHook 
 
