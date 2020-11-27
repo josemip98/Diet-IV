@@ -19,7 +19,7 @@ class Dieta{
   mostrarDieta(){
     var mostrarDieta = new Array();
     for(var i in this.listaProductos){
-      mostrarDieta.push(this.listaProductos[i] + "\n ");
+      mostrarDieta.push(this.listaProductos[i].getProducto() + "\n ");
     }
     return mostrarDieta;
   }
