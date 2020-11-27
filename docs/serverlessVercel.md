@@ -62,7 +62,7 @@ A la función le pasamos un parámetro llamado producto en el que indicaremos el
 
 Por último devolvemos la variable result que contendrá el producto y su información nutricional si es correcto y existe o por el contrario las indicaciones para buscar un producto.
 
-Desplegamos el proyecto:
+Ejecutamos el comando `vercel --prod`para desplegarlo.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/despliegueVercel2.png)
 
