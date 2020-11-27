@@ -36,7 +36,7 @@ function consultaProducto(producto){
       hidratos= datos.productos[i]["hidratos"];
       if(producto == nombre){
         existeProducto = true;
-        var producto = new producto(nombre,calorias,grasa,proteinas,hidratos);
+        var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
         result = producto.getProducto();
       }
 
