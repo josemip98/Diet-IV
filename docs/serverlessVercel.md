@@ -18,15 +18,24 @@ Y ya tendriamos nuestro proyecto desplegado en vercel.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/despliegueVercel.png)
 
-Para probarlo tenemos que crear una carpeta api que es donde incluiremos las funciones, para este caso voy a crear una función serverless de prueba que se llamara [hello.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/hello.js) que sólo imprime en pantalla el mensaje "Hello World".
+Para probarlo tenemos que crear una carpeta api que es donde incluiremos las funciones, para este caso voy a crear una función serverless de prueba que se llamara [hello.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/hello.js) que imprime en pantalla el mensaje Hola $name, si no le pasamos ningún parámetro se le dará el valor mundo e imprimirá "Hola mundo" y si le pasamos un parámetro imrpimerá Hola $valor_parámetro.
 
-Nos descargamos vercel cli y ejecutamos el comando `vercel` para vincular el proyecto.
+- req: aquí vamos a tener la petición en este caso podemos obtener el valor de name y el valor por defecto es mundo.
+- status: es una función para establecer el código de estado.
+- send: es una función en la que enviamos la respuesta.
+- res: enviamos la respuesta, en este caso enviamos el código de estado y "Hola $name".
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/hello.png)
+
+Nos descargamos vercel cli con `npm install -g vercel` y ejecutamos el comando `vercel` para vincular el proyecto.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/vercelCLI.png)
 
 Ejecutamos el comando `vercel --prod`para desplegarlo.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/vercelCLI2.png)
+
+Cada vez que hagamos git push a nuestro proyecto se nos actualizará el repositorio tanto en GitHub como en Vercel.
 
 El resultado es el siguiente:
 
