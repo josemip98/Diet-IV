@@ -40,13 +40,18 @@ Pasandole el valor a name:
 
 ## Implementación de una función integrada en mi proyecto
 
-He decidido crear una función relacionada con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) con la que consultar un producto concreto. El formato a mostrar será el nombre del producto junto con su información nutricional (Calorías, grasa, proteinas, hidratos).
+Para integrar la función en mi proyecto he creado el [issue](https://github.com/josemip98/OrganizeUDiet/issues/43) Despliegue función consultaProducto(producto) en Vercel que hace referencia a la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) con la que consultar un producto concreto. El formato a mostrar será el nombre del producto junto con su información nutricional (Calorías, grasa, proteinas, hidratos).
 
 Primero he creado un archivo [productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json) que es una lista de productos junto con su información nutricional.
 
 Después he creado el fichero [consultaProducto.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js) en el que tenemos la función.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/consultaProducto.png)
+
+Primero hago los require de mi fichero de datos productos.json y las clases dieta y producto. 
+A la función le pasamos un parámetro llamado producto en el que indicaremos el producto que queremos visualizar. La función lee los productos disponibles del fichero productos.json y si el nombre del producto coincide con el parámetro introducido, creamos una variable producto con los valores del producto que queremos visualizar y se lo asignamos a un json con las funciones getNombre(), getCalorias(), getGrasa(), getProteinas() y getHidratos de la clase Producto. Si no existe nos dirá que el producto no está disponible y si no introducimos ningún parámetro nos pedirá que le indiquemos el nombre del producto.
+
+Por último devolvemos la variable result que contendrá el producto y su información nutricional si es correcto y existe o por el contrario las indicaciones para buscar un producto.
 
 Desplegamos el proyecto:
 

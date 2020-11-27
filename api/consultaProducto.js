@@ -24,7 +24,7 @@ module.exports = (req,res) =>{
         proteinas= datos.productos[i]["proteinas"];
         hidratos= datos.productos[i]["hidratos"];
         //Si existe el producto lo muestra
-        if(producto == nombre || producto.toUpperCase() == nombre){
+        if(producto == nombre){
           existeProducto = true;
           var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
 
