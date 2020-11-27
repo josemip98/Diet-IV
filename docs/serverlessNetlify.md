@@ -11,9 +11,15 @@ En dicho directorio podemos encontrar el fichero [productos.json](https://github
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/listado.png)
 
-Primero hago los require de mi fichero de datos productos.json y las clases dieta y producto. La función lo que hace es leer del fichero productos.json todos los productos y los va incluyendo en la variable result para después ser mostrados.
+Primero hago los require de mi fichero de datos productos.json y las clases dieta y producto. La función lo que hace es leer del fichero productos.json todos los productos y crea una variable producto para cada uno y los incluye en una variable dieta con la función aniadirProducto(producto).
 
-Desplegamos el proyecto:
+Despues a la variable result que es la que devolverá la función le asigno el resultado de la función mostrarDieta() de la clase dieta que devuelve todos los productos, para cada uno muestra su nombre y su información nutricional.
+
+Desplegamos el proyecto con los comandos:
+
+`netlify deploy`
+
+`netlify deploy --prod`
 
 + [Enlace de la función](https://laughing-ramanujan-50249a.netlify.app/.netlify/functions/listadoProductos)
 
