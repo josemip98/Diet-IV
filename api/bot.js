@@ -14,8 +14,10 @@ function listadoProductos(){
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
       i+=1
-      result += "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
+      var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
+      dieta.aniadirProducto(producto);
     }
+    result = dieta.mostrarDieta();
 
     return result
 }

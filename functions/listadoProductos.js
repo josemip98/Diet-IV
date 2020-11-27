@@ -7,8 +7,6 @@ exports.handler = async event =>{
     var i = 0;
     var result = ""
     var dieta = new Dieta();
-    var datosJSON = []
-    var objetoJSON = {}
     while( i < datos.productos.length){
       nombre= datos.productos[i]["nombre"];
       calorias= datos.productos[i]["calorias"];
