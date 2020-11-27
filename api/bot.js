@@ -34,16 +34,16 @@ function consultaProducto(producto){
       grasa= datos.productos[i]["grasa"];
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
-
       if(producto == nombre){
         existeProducto = true;
-        result = "Producto: " + nombre + ", calorias: " + calorias + ", grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: " + proteinas + "\n";
+        var producto = new producto(nombre,calorias,grasa,proteinas,hidratos);
+        result = producto.getProducto();
       }
 
       else if(producto == " "){
           result="Debe indicar un producto";
       }
-      else if (existeProducto == false){
+      else{
           result="Producto no disponible.";
       }
       i+=1
