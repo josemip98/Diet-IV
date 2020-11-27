@@ -6,6 +6,7 @@ function listadoProductos(){
 
     var i = 0;
     var result = ""
+    var dieta = new Dieta();
     while( i < datos.productos.length){
       nombre= datos.productos[i]["nombre"];
       calorias= datos.productos[i]["calorias"];
