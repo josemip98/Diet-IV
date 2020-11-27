@@ -32,7 +32,7 @@ module.exports = (req,res) =>{
                   "Nombre ": producto.getNombre(),
                   "Calorias": producto.getCalorias(),
                   "Grasa": producto.getGrasa(),
-                  "Proteinas": producto.getproteinas(),
+                  "Proteinas": producto.getProteinas(),
                   "Hidratos": producto.getHidratos()
           });
             objetoJSON.productos = datosJSON;
