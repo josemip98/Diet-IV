@@ -26,6 +26,7 @@ La información nutricional consta de:
 + [Despliegue correcto y funcionando](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#despliegue-funciones-serverless-en-github-con-vercel)
 
 + Función serverless con Vercel integrada con el proyecto:
+Para integrar la función en mi proyecto he creado el [issue](https://github.com/josemip98/OrganizeUDiet/issues/43) Despliegue función consultaProducto(producto) en Vercel que hace referencia a la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) 
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#implementaci%C3%B3n-de-una-funci%C3%B3n-integrada-en-mi-proyecto)
 	+ [Fichero código función consultaProducto](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js)
 	+ [Fichero productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json)
@@ -33,6 +34,7 @@ La información nutricional consta de:
 	+ [Resultado esperado](https://github.com/josemip98/OrganizeUDiet/blob/master/5.json)
 
 + Función serverless con Netlify integrada con el proyecto:
+Para integrar la función en mi proyecto he creado el [issue](https://github.com/josemip98/OrganizeUDiet/issues/45) Despliegue función listadoPalabras en Netlify que hace referencia a la [HU04](https://github.com/josemip98/OrganizeUDiet/issues/44) 
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessNetlify.md)
 	+ [Fichero código función listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js)
 	+ [Archivo netlify.toml](https://github.com/josemip98/OrganizeUDiet/blob/master/netlify.toml)
