@@ -1,4 +1,4 @@
-
+const Producto = require("../src/producto.js");
 const Dieta = require("../src/dieta.js");
 //Variables
 var producto;
@@ -18,12 +18,13 @@ describe("Testeando la clase dieta.js", () => {
 
 describe("Testeando el método AniadirProducto()", () => {
  test("Comprobando el metodo para añadir productos a la clase dieta", () => {
-    producto = "Arroz";
+    nombre = "Arroz";
     calorias = "354Kcal";
     grasa = "0,5g";
     proteinas = "6,5g";
     hidratos = "79g";
-    thrown_error = () => dieta.AniadirProducto(producto, calorias, grasa, proteinas, hidratos);
+    producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
+    thrown_error = () => dieta.AniadirProducto(producto);
   });
 });
 

@@ -8,12 +8,11 @@ class Dieta{
   }
 
  //Función para añadir un producto a una dieta
-  AniadirProducto(producto, calorias, grasa, proteinas, hidratos){
-    if( producto == false && calorias == false && grasa == false && proteinas == false && hidratos == false){
+  AniadirProducto(producto){
+    if( producto == false){
       throw new Error('Error inserción producto');
     }
     else{
-      var productoNuevo = new Producto(producto, calorias, grasa, proteinas, hidratos);
       this.listaProductos.push(productoNuevo);
     }
   }
