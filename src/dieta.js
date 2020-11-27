@@ -12,7 +12,7 @@ class Dieta{
       throw new Error('Error inserción producto');
     }
     else{
-      this.listaProductos.push(productoNuevo);
+      this.listaProductos.push(producto);
     }
   }
  //Función para mostrar productos que forman la dieta
