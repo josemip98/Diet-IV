@@ -16,8 +16,8 @@ exports.handler = async event =>{
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
       i+=1
-      if(nombre != undefined){
-        var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
+      var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
+      if(producto != undefined){
         dieta.AniadirProducto(producto);
       }
     }
