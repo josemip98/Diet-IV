@@ -9,6 +9,10 @@ Después he creado el archivo [netlify.toml](https://github.com/josemip98/Organi
 
 En dicho directorio podemos encontrar el fichero [productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/productos.json) en el que tenemos la lista de productos y el archivo [listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js) en el que tenemos la función.
 
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/listadoProductos.png)
+
+Primero hago los require de mi fichero de datos productos.json y las clases dieta y producto. La función lo que hace es leer del fichero productos.json todos los productos y los va incluyendo en la variable result para después ser mostrados.
+
 Desplegamos el proyecto:
 
 + [Enlace de la función](https://laughing-ramanujan-50249a.netlify.app/.netlify/functions/listadoProductos)
