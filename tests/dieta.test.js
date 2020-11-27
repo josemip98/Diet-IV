@@ -5,16 +5,7 @@ var producto;
 var listaProductos;
 var informacionNutricional;
 
-const dieta = new Dieta("Arroz", "Pollo", "Pasta");
-
-describe("Testeando la clase dieta.js", () => {
-
-  describe("Testeando el constructor", () =>{
-    test("Comprobando que funciona correctamente", () => {
-      expect(dieta.listaProductos).toBe("Arroz", "Pollo", "Pasta");
-    });
-  });
-});
+const dieta = new Dieta();
 
 describe("Testeando el método AniadirProducto()", () => {
  test("Comprobando el metodo para añadir productos a la clase dieta", () => {

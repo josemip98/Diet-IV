@@ -2,14 +2,13 @@ const Producto = require("../src/producto.js");
 
 class Dieta{
   //constructor
-  constructor(listaProductos){
+  constructor(){
     this.listaProductos = new Array();
-    this.listaProductos = (listaProductos);
   }
 
  //Función para añadir un producto a una dieta
   AniadirProducto(producto){
-    if( producto == false){
+    if(producto == false){
       throw new Error('Error inserción producto');
     }
     else{
