@@ -7,7 +7,7 @@ class Dieta{
   }
 
  //Función para añadir un producto a una dieta
-  AniadirProducto(producto){
+  aniadirProducto(producto){
     if(producto == false){
       throw new Error('Error inserción producto');
     }
@@ -16,7 +16,7 @@ class Dieta{
     }
   }
  //Función para mostrar productos que forman la dieta
-  MostrarDieta(){
+  mostrarDieta(){
     var mostrarDieta = new Array();
     for(var i in this.listaProductos){
       mostrarDieta.push(this.listaProductos[i] + "\n ");
