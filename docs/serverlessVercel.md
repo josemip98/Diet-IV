@@ -81,6 +81,12 @@ Si indicamos un producto que esté disponible:
 Para desarrollar el Bot de Telegram he utilizado un fichero [bot.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/bot.js) que contiene las funciones consultaProducto y listaProducto y el fichero [index.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js) en el que
 se gestionarán los comandos disponibles y la respuesta que devuelven.
 
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/index.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/listadoBot.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/consultaProductoBot.png)
+
 + /start: iniciará el bot
 + /help: nos lista los comandos disponibles
 + /lista: nos lista los productos disponibles junto con su información nutricional
