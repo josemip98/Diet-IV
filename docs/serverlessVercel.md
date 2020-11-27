@@ -46,12 +46,13 @@ Primero he creado un archivo [productos.json](https://github.com/josemip98/Organ
 
 Después he creado el fichero [consultaProducto.js](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js) en el que tenemos la función.
 
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/consultaProducto.png)
+
 Desplegamos el proyecto:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/despliegueVercel2.png)
 
-Y aquí podemos ver las funciones que tenemos, hello.js es la función básica que utilizé para probar Vercel, consultaProducto.js es la que he implementado para integrarla en mi proyecto y la de infoProducto.js es otra función que he implementado para la creación de un **BOT de Telegram** que más adelante explicaré.
-
+Y aquí podemos ver las funciones que tenemos, hello.js es la función básica que utilizé para probar Vercel, consultaProducto.js es la que he implementado para integrarla en mi proyecto.
 Además podemos ver como las consultas que estoy realizando no dan errores.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/despliegueVercel3.png)

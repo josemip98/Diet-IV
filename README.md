@@ -28,6 +28,7 @@ La información nutricional consta de:
 + Función serverless con Vercel integrada con el proyecto:
 
 Para integrar la función en mi proyecto he creado el [issue](https://github.com/josemip98/OrganizeUDiet/issues/43) Despliegue función consultaProducto(producto) en Vercel que hace referencia a la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) 
+
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#implementaci%C3%B3n-de-una-funci%C3%B3n-integrada-en-mi-proyecto)
 	+ [Fichero código función consultaProducto](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js)
 	+ [Fichero productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json)
@@ -37,11 +38,13 @@ Para integrar la función en mi proyecto he creado el [issue](https://github.com
 + Función serverless con Netlify integrada con el proyecto:
 
 Para integrar la función en mi proyecto he creado el [issue](https://github.com/josemip98/OrganizeUDiet/issues/45) Despliegue función listadoPalabras en Netlify que hace referencia a la [HU04](https://github.com/josemip98/OrganizeUDiet/issues/44) 
+
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessNetlify.md)
 	+ [Fichero código función listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js)
 	+ [Archivo netlify.toml](https://github.com/josemip98/OrganizeUDiet/blob/master/netlify.toml)
 	+ [URL prueba](https://laughing-ramanujan-50249a.netlify.app/.netlify/functions/listadoProductos)
 + Bot de telegram:
+
 Para la creación del Bot de telegram he utilizado ambas funciones anteriores y lo he desplegado en Vercel.
 	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#bot-de-telegram)
 	+ [Tareas bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)

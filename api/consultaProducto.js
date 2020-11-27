@@ -47,7 +47,7 @@ module.exports = (req,res) =>{
         }
         //Si no existe el producto
         else if (existeProducto==false){
-            result="Producto no disponible. Los productos disponibles por el momento son: arroz macarrones atun";
+            result="Producto no disponible.";
         }
         i+=1
       }
