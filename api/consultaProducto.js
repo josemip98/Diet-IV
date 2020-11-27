@@ -29,11 +29,11 @@ module.exports = (req,res) =>{
           var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
 
           datosJSON.push({
-                  "Nombre ": prod.getNombre(),
-                  "Calorias": prod.getCalorias(),
-                  "Grasa": prod.getGrasa(),
-                  "Proteinas": prod.getproteinas(),
-                  "Hidratos": prod.getHidratos()
+                  "Nombre ": producto.getNombre(),
+                  "Calorias": producto.getCalorias(),
+                  "Grasa": producto.getGrasa(),
+                  "Proteinas": producto.getproteinas(),
+                  "Hidratos": producto.getHidratos()
           });
             objetoJSON.productos = datosJSON;
             result = JSON.stringify(objetoJSON)
