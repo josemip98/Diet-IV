@@ -43,7 +43,7 @@ function consultaProducto(producto){
       else if(producto == " "){
           result="Debe indicar un producto";
       }
-      else{
+      else if(existeProducto == false){
           result="Producto no disponible.";
       }
       i+=1
