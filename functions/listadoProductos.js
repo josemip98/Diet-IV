@@ -16,8 +16,10 @@ exports.handler = async event =>{
       proteinas= datos.productos[i]["proteinas"];
       hidratos= datos.productos[i]["hidratos"];
       i+=1
-      var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
-      dieta.AniadirProducto(producto);
+      if(nombre != undefined){
+        var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
+        dieta.AniadirProducto(producto);
+      }
     }
 
     result = dieta.mostrarDieta();
