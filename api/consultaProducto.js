@@ -11,13 +11,15 @@ module.exports = (req,res) =>{
     var datosJSON = []
     var objeto = {}
     var dieta = new Dieta();
+    var producto_encontrado
 
       //Generamos los productos captando del fichero productos.json
       while( i < datos.productos.length){
         var prod = new Producto(datos.productos[i].nombre,datos.productos[i].calorias,datos.productos[i].grasa,datos.productos[i].proteinas,datos.productos[i].hidratos);
         dieta.aniadirProducto(prod);
+        producto_encontrado = dieta.buscarProducto(prod.getNombre())
         //Si existe el producto lo muestra
-        if(dieta.buscarProducto(prod.getNombre()) == producto){
+        if(producto_encontrado.getNombre()) == producto){
           existeProducto = true;
 
           datosJSON.push({
