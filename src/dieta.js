@@ -29,14 +29,14 @@ class Dieta{
     var productoEncontrado;
     var indice;
     for(var i in this.listaProductos){
-      if(producto == this.listaProductos[i]){
+      if(producto == this.listaProductos[i].getNombre()){
         encontrado++;
         indice = i;
         }
       }
 
       if(encontrado > 0){
-        productoEncontrado = this.listaProductos[indice].getProducto()+ " \n";
+        productoEncontrado = this.listaProductos[indice];
       }
 
       return productoEncontrado;

@@ -21,7 +21,7 @@ describe("Testeando el método AniadirProducto()", () => {
 
 describe("Testeando el método MostrarDieta()", () => {
    test("Comprobamos que se han mostrado todos los productos", () => {
-        var tam_vector_esperado = dieta.MostrarDieta().length;
+        var tam_vector_esperado = dieta.mostrarDieta().length;
         var tam_productos = dieta.listaProductos.length;
         expect(tam_vector_esperado).toEqual(tam_productos);
     });
