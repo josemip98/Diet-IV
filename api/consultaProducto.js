@@ -10,25 +10,22 @@ module.exports = (req,res) =>{
     var existeProducto = false;
     var datosJSON = []
     var objeto = {}
+    var dieta = new Dieta();
 
       //Generamos los productos captando del fichero productos.json
       while( i < datos.productos.length){
-        nombre= datos.productos[i]["nombre"];
-        calorias= datos.productos[i]["calorias"];
-        grasa= datos.productos[i]["grasa"];
-        proteinas= datos.productos[i]["proteinas"];
-        hidratos= datos.productos[i]["hidratos"];
+        var prod = new Producto(datos.productos[i].nombre,datos.productos[i].calorias,datos.productos[i].grasa,datos.productos[i].proteinas,datos.productos[i].hidratos);
+        dieta.aniadirProducto(prod);
         //Si existe el producto lo muestra
-        if(producto == nombre){
+        if(dieta.mostrar(prod)){
           existeProducto = true;
-          var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
 
           datosJSON.push({
-                  "Nombre ": producto.getNombre(),
-                  "Calorias": producto.getCalorias(),
-                  "Grasa": producto.getGrasa(),
-                  "Proteinas": producto.getProteinas(),
-                  "Hidratos": producto.getHidratos()
+                  "Nombre ": prod.getNombre(),
+                  "Calorias": prod.getCalorias(),
+                  "Grasa": prod.getGrasa(),
+                  "Proteinas": prod.getProteinas(),
+                  "Hidratos": prod.getHidratos()
           });
             objeto.productos = datosJSON;
           //result = "Producto: " + nombre + ", calorias: " + calorias + ",
