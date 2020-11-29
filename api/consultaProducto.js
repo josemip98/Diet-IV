@@ -4,17 +4,12 @@ const Producto = require("../src/producto.js");
 
 module.exports = (req,res) =>{
 
-    // Captaremos de la URL el producto del que queremos consultar la
-    // informacion nutricional
-    // Si no obtenemos ningun por defecto valor "Vacio" para generar
-    // el resultado correspondiente
-
-    var {producto="Vacio"} = req.query
+    var {producto="ninguno"} = req.query
     var result;
     var i = 0;
     var existeProducto = false;
-    var datosJSON = []
-    var objetoJSON = {}
+    var datos = []
+    var objeto = {}
 
       //Generamos los productos captando del fichero productos.json
       while( i < datos.productos.length){
@@ -28,26 +23,30 @@ module.exports = (req,res) =>{
           existeProducto = true;
           var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
 
-          datosJSON.push({
+          datos.push({
                   "Nombre ": producto.getNombre(),
                   "Calorias": producto.getCalorias(),
                   "Grasa": producto.getGrasa(),
                   "Proteinas": producto.getProteinas(),
                   "Hidratos": producto.getHidratos()
           });
-            objetoJSON.productos = datosJSON;
-            result = JSON.stringify(objetoJSON)
+            objeto.productos = datos;
+            result = JSON.stringify(objeto)
           //result = "Producto: " + nombre + ", calorias: " + calorias + ",
           // grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: "
           // + proteinas ;
         }
-        //Si es Vacio significa que no se ha recibido nada
-        else if(producto == "Vacio"){
-            result="Debe indicar un producto";
+        // Si no hemos indicado ningún producto
+        else if(producto == "ninguno"){
+          clave_error = "Error";
+            objeto = { error: "Debe indicar un producto" };
+            result[clave_error].push(objeto);
         }
         //Si no existe el producto
         else if (existeProducto==false){
-            result="Producto no disponible.";
+            clave_error = "Error";
+              objeto = { error: "Producto no disponible." };
+              result[clave_error].push(objeto);
         }
         i+=1
       }
