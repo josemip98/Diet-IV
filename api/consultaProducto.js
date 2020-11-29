@@ -26,16 +26,14 @@ module.exports = (req,res) =>{
         //Si existe el producto lo muestra
         if(existeProducto == true){
           var clave = "productos";
-          producto_a_mostrar.forEach(e => {
           result = {
-                  nombre: e.getNombre(),
-                  calorias: e.getCalorias(),
-                  grasa: e.getGrasa(),
-                  proteinas: e.getProteinas(),
-                  hidratos: e.getHidratos()
+                  "Nombre ": producto_a_mostrar.getNombre(),
+                  "Calorias": producto_a_mostrar.getCalorias(),
+                  "Grasa": producto_a_mostrar.getGrasa(),
+                  "Proteinas": producto_a_mostrar.getProteinas(),
+                  "Hidratos": producto_a_mostrar.getHidratos()
           };
-            objeto[clave].push(result);
-          });
+            objeto = JSON.stringify(result)
         }
         // Si no hemos indicado ningún producto
         else if(producto == "ninguno"){
