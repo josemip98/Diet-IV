@@ -19,7 +19,7 @@ module.exports = (req,res) =>{
         dieta.aniadirProducto(prod);
         producto_encontrado = dieta.buscarProducto(prod.getNombre())
         //Si existe el producto lo muestra
-        if(producto_encontrado.getNombre()) == producto){
+        if(producto_encontrado.getNombre() == producto){
           existeProducto = true;
 
           datosJSON.push({
