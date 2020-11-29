@@ -11,6 +11,7 @@ module.exports = (req,res) =>{
     var objeto = {}
     var dieta = new Dieta();
     var producto_encontrado
+    var producto_a_mostrar
 
       while( i < datos.productos.length){
         var prod = new Producto(datos.productos[i].nombre,datos.productos[i].calorias,datos.productos[i].grasa,datos.productos[i].proteinas,datos.productos[i].hidratos);
@@ -18,7 +19,7 @@ module.exports = (req,res) =>{
         producto_encontrado = dieta.buscarProducto(prod.getNombre())
           if(producto_encontrado.getNombre() == producto){
             existeProducto = true;
-            var producto_a_mostrar = producto_encontrado;
+            producto_a_mostrar = producto_encontrado;
           }
         i+=1
       }
