@@ -27,11 +27,11 @@ describe("Testeando el método MostrarDieta()", () => {
     });
   });
 
-  describe("Testeando el método mostrarProducto()", () => {
+  describe("Testeando el método buscarProducto()", () => {
     test("Comprobando que funciona correctamente al pasarle un producto existente", () => {
       //nos devuelve el producto con su informacion nutricional
       producto = "Arroz";
-      resultado = dieta.mostrarProducto(producto);
+      resultado = dieta.buscarProducto(producto);
       for(var i in dieta.listaProductos){
         if(producto == dieta.listaProductos[i]){
           var indiceProducto = i;
