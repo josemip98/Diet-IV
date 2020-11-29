@@ -8,7 +8,7 @@ module.exports = (req,res) =>{
     var result;
     var i = 0;
     var existeProducto = false;
-    var datos = []
+    var datosJSON = []
     var objeto = {}
 
       //Generamos los productos captando del fichero productos.json
@@ -30,7 +30,7 @@ module.exports = (req,res) =>{
                   "Proteinas": producto.getProteinas(),
                   "Hidratos": producto.getHidratos()
           });
-            objeto.productos = datos;
+            objeto.productos = datosJSON;
             result = JSON.stringify(objeto)
           //result = "Producto: " + nombre + ", calorias: " + calorias + ",
           // grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: "
