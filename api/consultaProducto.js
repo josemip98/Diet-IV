@@ -35,7 +35,8 @@ module.exports = (req,res) =>{
                   hidratos: e.getHidratos()
           };
             objeto[clave].push(result);
-        });
+          });
+        }
         // Si no hemos indicado ningún producto
         else if(producto == "ninguno"){
           clave = "Error";
