@@ -17,7 +17,7 @@ module.exports = (req,res) =>{
         var prod = new Producto(datos.productos[i].nombre,datos.productos[i].calorias,datos.productos[i].grasa,datos.productos[i].proteinas,datos.productos[i].hidratos);
         dieta.aniadirProducto(prod);
         //Si existe el producto lo muestra
-        if(dieta.mostrarProducto(prod) == producto){
+        if(dieta.mostrarProducto(prod.getNombre()) == producto){
           existeProducto = true;
 
           datosJSON.push({
