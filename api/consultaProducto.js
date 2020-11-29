@@ -31,7 +31,6 @@ module.exports = (req,res) =>{
                   "Hidratos": producto.getHidratos()
           });
             objeto.productos = datosJSON;
-            result = JSON.stringify(objeto)
           //result = "Producto: " + nombre + ", calorias: " + calorias + ",
           // grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: "
           // + proteinas ;
@@ -40,20 +39,20 @@ module.exports = (req,res) =>{
         else if(producto == "ninguno"){
           clave_error = "Error";
           objeto[clave_error] = []
-          mensaje_error = { error: "Debe indicar un producto" };
-          result = JSON.stringify(mensaje_error)
+          result = { error: "Debe indicar un producto" };
+          objeto[clave_error].push(result);
         }
         //Si no existe el producto
         else if (existeProducto==false){
             clave_error = "Error";
             objeto[clave_error] = []
-            mensaje_error = { error: "Producto no disponible." };
-            result = JSON.stringify(mensaje_error)
+            result = { error: "Producto no disponible." };
+            objeto[clave_error].push(result);
         }
         i+=1
       }
 
     // Se envía el resultado
-    res.status(200).send(result)
+    res.status(200).send(objeto);
 
 }
