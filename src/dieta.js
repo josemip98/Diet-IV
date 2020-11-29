@@ -24,18 +24,18 @@ class Dieta{
     return mostrarDieta;
   }
   //Función para mostrar un producto concreto junto con su información nutricional
-  mostrarProducto(producto){
-    var encontrado = 0;
+  buscarProducto(producto){
+    var encontrado = false;
     var productoEncontrado;
     var indice;
     for(var i in this.listaProductos){
       if(producto == this.listaProductos[i].getNombre()){
-        encontrado++;
+        encontrado = true;
         indice = i;
         }
       }
 
-      if(encontrado > 0){
+      if(encontrado == true){
         productoEncontrado = this.listaProductos[indice];
       }
 
