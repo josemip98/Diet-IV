@@ -13,6 +13,7 @@ module.exports = (req,res) =>{
     var dieta = new Dieta();
     var producto_encontrado
     var producto_a_mostrar
+    var cod
 
       while( i < datos.productos.length){
         var prod = new Producto(datos.productos[i].nombre,datos.productos[i].calorias,datos.productos[i].grasa,datos.productos[i].proteinas,datos.productos[i].hidratos);
@@ -36,6 +37,7 @@ module.exports = (req,res) =>{
           };
             objetoJSON.productos = result;
             objeto = JSON.stringify(objetoJSON)
+            cod = 200
         }
         // Si no hemos indicado ningún producto
         else if(producto == "ninguno"){
@@ -43,6 +45,7 @@ module.exports = (req,res) =>{
           objeto[clave] = []
           result = { error: "Debe indicar un producto" };
           objeto[clave].push(result);
+          cod = 404
         }
         //Si no existe el producto
         else if (existeProducto==false){
@@ -50,9 +53,10 @@ module.exports = (req,res) =>{
             objeto[clave] = []
             result = { error: "Producto no disponible." };
             objeto[clave].push(result);
+            cod = 404
         }
 
     // Se envía el resultado
-    res.status(200).send(objeto);
+    res.status(cod).send(objeto);
 
 }
