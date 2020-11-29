@@ -32,7 +32,7 @@ module.exports = (req,res) =>{
                   "Proteinas": producto_a_mostrar.getProteinas(),
                   "Hidratos": producto_a_mostrar.getHidratos()
           });
-            objeto[productos].push(result);
+            objeto.productos.push(result);
           //result = "Producto: " + nombre + ", calorias: " + calorias + ",
           // grasa: " + grasa + ", hidratos: " + hidratos + ", proteinas: "
           // + proteinas ;
