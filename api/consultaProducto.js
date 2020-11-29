@@ -39,14 +39,16 @@ module.exports = (req,res) =>{
         // Si no hemos indicado ningún producto
         else if(producto == "ninguno"){
           clave_error = "Error";
-            objeto = { error: "Debe indicar un producto" };
-            result[clave_error].push(objeto);
+          result[clave_error] = []
+          objeto = { error: "Debe indicar un producto" };
+          result[clave_error].push(objeto);
         }
         //Si no existe el producto
         else if (existeProducto==false){
             clave_error = "Error";
-              objeto = { error: "Producto no disponible." };
-              result[clave_error].push(objeto);
+            result[clave_error] = []
+            objeto = { error: "Producto no disponible." };
+            result[clave_error].push(objeto);
         }
         i+=1
       }
