@@ -29,7 +29,7 @@ class Dieta{
     var productoEncontrado;
     var indice;
     for(var i in this.listaProductos){
-      if(producto.toUpperCase() == this.listaProductos[i]){
+      if(producto == this.listaProductos[i]){
         encontrado++;
         indice = i;
         }
