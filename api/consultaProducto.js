@@ -17,18 +17,20 @@ module.exports = (req,res) =>{
         var prod = new Producto(datos.productos[i].nombre,datos.productos[i].calorias,datos.productos[i].grasa,datos.productos[i].proteinas,datos.productos[i].hidratos);
         dieta.aniadirProducto(prod);
         producto_encontrado = dieta.buscarProducto(prod.getNombre())
+          if(producto_encontrado.getNombre() == producto){
+            existeProducto = true;
+            var producto_a_mostrar = producto_encontrado;
+          }
         i+=1
       }
         //Si existe el producto lo muestra
-        if(producto_encontrado.getNombre() == producto){
-          existeProducto = true;
-
+        if(existeProducto = true){
           datosJSON.push({
-                  "Nombre ": prod.getNombre(),
-                  "Calorias": prod.getCalorias(),
-                  "Grasa": prod.getGrasa(),
-                  "Proteinas": prod.getProteinas(),
-                  "Hidratos": prod.getHidratos()
+                  "Nombre ": producto_a_mostrar.getNombre(),
+                  "Calorias": producto_a_mostrar.getCalorias(),
+                  "Grasa": producto_a_mostrar.getGrasa(),
+                  "Proteinas": producto_a_mostrar.getProteinas(),
+                  "Hidratos": producto_a_mostrar.getHidratos()
           });
             objeto.productos = datosJSON;
           //result = "Producto: " + nombre + ", calorias: " + calorias + ",
