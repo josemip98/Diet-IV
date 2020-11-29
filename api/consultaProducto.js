@@ -23,7 +23,7 @@ module.exports = (req,res) =>{
           existeProducto = true;
           var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
 
-          datos.push({
+          datosJSON.push({
                   "Nombre ": producto.getNombre(),
                   "Calorias": producto.getCalorias(),
                   "Grasa": producto.getGrasa(),
