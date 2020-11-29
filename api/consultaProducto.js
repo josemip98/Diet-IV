@@ -24,7 +24,7 @@ module.exports = (req,res) =>{
         i+=1
       }
         //Si existe el producto lo muestra
-        if(existeProducto = true){
+        if(existeProducto == true){
           datosJSON.push({
                   "Nombre ": producto_a_mostrar.getNombre(),
                   "Calorias": producto_a_mostrar.getCalorias(),
