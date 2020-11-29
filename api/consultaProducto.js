@@ -9,6 +9,7 @@ module.exports = (req,res) =>{
     var i = 0;
     var existeProducto = false;
     var objeto = {}
+    var objetoJSON = {}
     var dieta = new Dieta();
     var producto_encontrado
     var producto_a_mostrar
@@ -33,7 +34,8 @@ module.exports = (req,res) =>{
                   "Proteinas": producto_a_mostrar.getProteinas(),
                   "Hidratos": producto_a_mostrar.getHidratos()
           };
-            objeto = JSON.stringify(result)
+            objetoJSON.productos = result;
+            objeto = JSON.stringify(objetoJSON)
         }
         // Si no hemos indicado ningún producto
         else if(producto == "ninguno"){
