@@ -35,7 +35,7 @@ module.exports = (req,res) =>{
                   proteinas: producto_a_mostrar.getProteinas(),
                   hidratos: producto_a_mostrar.getHidratos()
           };
-            obj[clave].push(result);
+            objeto[clave].push(result);
             cod = 200
         }
         // Si no hemos indicado ningún producto
