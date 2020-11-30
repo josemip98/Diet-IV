@@ -29,13 +29,14 @@ module.exports = (req,res) =>{
         if(existeProducto == true){
           var clave = "productos";
           result = {
-                  nombre: producto_a_mostrar.getNombre(),
-                  calorias: producto_a_mostrar.getCalorias(),
-                  grasa: producto_a_mostrar.getGrasa(),
-                  proteinas: producto_a_mostrar.getProteinas(),
-                  hidratos: producto_a_mostrar.getHidratos()
+                  "Nombre ": producto_a_mostrar.getNombre(),
+                  "Calorias": producto_a_mostrar.getCalorias(),
+                  "Grasa": producto_a_mostrar.getGrasa(),
+                  "Proteinas": producto_a_mostrar.getProteinas(),
+                  "Hidratos": producto_a_mostrar.getHidratos()
           };
-            objeto[clave].push(result);
+            objetoJSON.productos = result;
+            objeto = JSON.stringify(objetoJSON)
             cod = 200
         }
         // Si no hemos indicado ningún producto
