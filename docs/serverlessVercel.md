@@ -58,9 +58,9 @@ Después he creado el fichero [consultaProducto.js](https://github.com/josemip98
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/consultaProducto.png)
 
 Primero hago los require de mi fichero de datos productos.json y las clases dieta y producto. 
-A la función le pasamos un parámetro llamado producto en el que indicaremos el producto que queremos visualizar. La función lee los productos disponibles del fichero productos.json y si el nombre del producto coincide con el parámetro introducido, creamos una variable producto con los valores del producto que queremos visualizar y se lo asignamos a un json con las funciones getNombre(), getCalorias(), getGrasa(), getProteinas() y getHidratos de la clase Producto. Si no existe nos dirá que el producto no está disponible y si no introducimos ningún parámetro nos pedirá que le indiquemos el nombre del producto.
+A la función le pasamos un parámetro llamado producto en el que indicaremos el producto que queremos visualizar. La función lee los productos disponibles del fichero productos.json y va creando una variable producto para cada uno y los va añadiendo a una variable dieta con la función aniadirProducto(producto). Después con la función buscarProducto(nombre_producto) de la clase dieta buscamos el producto que queremos y si el nombre del producto coincide con el parámetro introducido, se lo asignamos a un json con las funciones getNombre(), getCalorias(), getGrasa(), getProteinas() y getHidratos de la clase Producto. Si no existe nos dirá que el producto no está disponible y si no introducimos ningún parámetro nos pedirá que le indiquemos el nombre del producto.
 
-Por último devolvemos la variable result que contendrá el producto y su información nutricional si es correcto y existe o por el contrario las indicaciones para buscar un producto.
+Por último, si es correcto y existe devolvemos la variable objeto que contendrá el producto y su información nutricional junto con el codigo 200 que indica que la petición se ha realizado con éxito  o por el contrario, si no existe o no se ha indicado ningún producto a buscar devolverá las indicaciones para buscar un producto y el codigo de error 404.
 
 Ejecutamos el comando `vercel --prod`para desplegarlo.
 
@@ -75,11 +75,11 @@ Los resultados son los siguientes:
 
 Si no indicamos ningún producto:
 
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel3.png)
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel4.png)
 
 Si indicamos un producto que no se encuentra disponible:
 
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel4.png)
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/resultadoVercel3.png)
 
 Si indicamos un producto que esté disponible:
 
