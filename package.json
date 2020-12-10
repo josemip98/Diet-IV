@@ -27,6 +27,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "~1.9.1",
+    "jade": "~1.11.0",
     "gulp": "^4.0.2",
     "gulp-jest": "^4.0.3",
     "gulp-shell": "^0.8.0",
