@@ -21,6 +21,29 @@ La información nutricional consta de:
 	
 ***
 
+## Funciones serverless
+
++ [Despliegue correcto y funcionando](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#despliegue-funciones-serverless-en-github-con-vercel)
+
++ Función serverless con Vercel integrada con el proyecto:
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#implementaci%C3%B3n-de-una-funci%C3%B3n-integrada-en-mi-proyecto)
+	+ [Fichero código función consultaProducto](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js)
+	+ [Fichero productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json)
+	+ [URL prueba](https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz)
+	+ [Resultado esperado](https://github.com/josemip98/OrganizeUDiet/blob/master/5.json)
+
++ Función serverless con Netlify integrada con el proyecto:
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessNetlify.md)
+	+ [Fichero código función listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js)
+	+ [Archivo netlify.toml](https://github.com/josemip98/OrganizeUDiet/blob/master/netlify.toml)
+	+ [URL prueba](https://laughing-ramanujan-50249a.netlify.app/.netlify/functions/listadoProductos)
++ Bot de telegram:
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#bot-de-telegram)
+	+ [Tareas bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)
+	+ [Funciones bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/bot.js)
+	+ [Enlace OrganizeUDietBot](https://web.telegram.org/#/im?p=@OrganizeUDietBot)
+***
+
 ## Herramientas
 [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
@@ -86,29 +109,6 @@ Además utilizo en ambos el gestor de tareas **Gulp** que es el que estoy utiliz
 
 + [Fichero configuración Circle CI](https://github.com/josemip98/OrganizeUDiet/blob/master/.circleci/config.yml)
 
-***
-
-## Funciones serverless
-
-+ [Despliegue correcto y funcionando](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#despliegue-funciones-serverless-en-github-con-vercel)
-
-+ Función serverless con Vercel integrada con el proyecto:
-	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#implementaci%C3%B3n-de-una-funci%C3%B3n-integrada-en-mi-proyecto)
-	+ [Fichero código función consultaProducto](https://github.com/josemip98/OrganizeUDiet/blob/master/api/consultaProducto.js)
-	+ [Fichero productos.json](https://github.com/josemip98/OrganizeUDiet/blob/master/api/productos.json)
-	+ [URL prueba](https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz)
-	+ [Resultado esperado](https://github.com/josemip98/OrganizeUDiet/blob/master/5.json)
-
-+ Función serverless con Netlify integrada con el proyecto:
-	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessNetlify.md)
-	+ [Fichero código función listadoProductos](https://github.com/josemip98/OrganizeUDiet/blob/master/functions/listadoProductos.js)
-	+ [Archivo netlify.toml](https://github.com/josemip98/OrganizeUDiet/blob/master/netlify.toml)
-	+ [URL prueba](https://laughing-ramanujan-50249a.netlify.app/.netlify/functions/listadoProductos)
-+ Bot de telegram:
-	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/serverlessVercel.md#bot-de-telegram)
-	+ [Tareas bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)
-	+ [Funciones bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/bot.js)
-	+ [Enlace OrganizeUDietBot](https://web.telegram.org/#/im?p=@OrganizeUDietBot)
 ***
 
 ## Recopilación de enlaces
