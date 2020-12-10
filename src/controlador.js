@@ -7,5 +7,9 @@ class Controlador {
       this.dieta = new Dieta();
     }
 
+   mostrarDieta(){
+     var productos = this.dieta.mostrarDieta();
+     return productos;
+   }
 
 }
