@@ -17,4 +17,9 @@ class Controlador {
      return listado;
    }
 
+   buscarProducto(producto){
+     var producto = this.dieta.buscarProducto(producto);
+     return producto;
+   }
+
 }
