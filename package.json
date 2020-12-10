@@ -2,14 +2,17 @@
   "name": "OrganizeUDiet",
   "version": "2.1.1",
   "description": "Proyecto para gestionar dietas especificas",
-  "main": "index.js",
+  "main": "app.js",
   "directories": {
     "doc": "docs",
     "src": "src",
     "test": "tests"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "node bin/www",
+    "start_pm2": "node_modules/.bin/pm2 start bin/www",
+    "stop_pm2": "node_modules/.bin/pm2 stop bin/www"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,10 @@
     "gulp-shell": "^0.8.0",
     "gulp-util": "^3.0.8",
     "jest": "^24.9.0",
+    "pm2": "^4.1.2",
     "jest-cli": "^24.9.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

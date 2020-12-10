@@ -1,7 +1,9 @@
-entidad: src/dieta.js
+entidad:
+  - src/dieta.js
+  - src/producto.js
 lenguaje: JavaScript
 test:
-    - tests/dieta.test.js
-    - tests/producto.test.js
+  - tests/dieta.test.js
+  - tests/producto.test.js
 taskfile: package.json
 URL: https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz
