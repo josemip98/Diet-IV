@@ -22,4 +22,8 @@ class Controlador {
      return producto;
    }
 
+   buscarProductoSimilar(producto){
+     var producto = this.dieta.buscarProductoSimilar(producto);
+     return producto;
+   }
 }
