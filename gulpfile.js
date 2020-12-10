@@ -19,7 +19,7 @@ gulp.task('start', function () {
       name: 'OrganizeUDiet',
       script: 'bin/www',
       exec_mode: 'cluster',
-      instances: 4
+      instances: 1
     }, function () {
          console.log('Arrancando OrganizeUDiet.');
          pm2.streamLogs('all', 0);

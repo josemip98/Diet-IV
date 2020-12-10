@@ -3,7 +3,7 @@ var router = express.Router();
 const app = express();
 var path = require('path');
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.send('La API OrganizeUDiet funciona correctamente!. Consulta /status para ver un ejemplo de uso.')
 })
 
@@ -21,3 +21,5 @@ router.get('/status', function(req, res, next) {
   }
   res.status(200).json(ejemplo);
 });
+
+module.exports = router;
