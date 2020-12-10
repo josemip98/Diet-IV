@@ -12,4 +12,9 @@ class Controlador {
      return productos;
    }
 
+   listadoProductos(){
+     var listado = this.dieta.mostrarDieta();
+     return listado;
+   }
+
 }
