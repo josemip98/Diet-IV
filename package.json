@@ -36,5 +36,8 @@
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
     "pm2": "^4.5.0"
+  },
+  "devDependencies": {
+    "supertest": "^6.0.1"
   }
 }
