@@ -79,7 +79,7 @@ router.delete('/elimina', function(req, res, next) {
   var body = req.body;
   var nombre = body.nombre;
   try {
-    dieta.eliminaProducto(nombre);
+    dieta.eliminarProducto(nombre);
     res.sendStatus(200);
   }
   catch(e) {

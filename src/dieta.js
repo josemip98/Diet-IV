@@ -17,7 +17,7 @@ class Dieta{
   }
 
   //Función para eliminar un producto de una dieta
-   eliminaProducto(producto){
+   eliminarProducto(producto){
      var encontrado = false;
      var indice;
      for(var i in this.listaProductos){
@@ -28,9 +28,6 @@ class Dieta{
      }
     if(encontrado == true){
       var eliminado = this.listaProductos.splice(indice,1);
-    }
-    else{
-      throw new Error('Error borrado producto');
     }
    }
 
