@@ -49,4 +49,19 @@ router.post('/producto', function(req, res, next) {
 
 });
 
+router.get('/producto/:producto', function(req, res, next) {
+
+  try {
+    var producto = req.params.producto;
+    var producto_final = dieta.buscarProducto(producto);
+    res.status(200).json(producto_final);
+  }
+  catch(e) {
+    throw e;
+  }
+
+});
+
+
+
 module.exports = router;
