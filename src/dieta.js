@@ -15,6 +15,25 @@ class Dieta{
       this.listaProductos.push(producto);
     }
   }
+
+  //Función para eliminar un producto de una dieta
+   eliminaProducto(producto){
+     var encontrado = false;
+     var indice;
+     for(var i in this.listaProductos){
+       if(producto == this.listaProductos[i].getNombre()){
+         encontrado = true;
+         indice = i;
+       }
+     }
+    if(encontrado == true){
+      var eliminado = this.listaProductos.splice(indice,1);
+    }
+    else{
+      throw new Error('Error borrado producto');
+    }
+   }
+
  //Función para mostrar productos que forman la dieta
   mostrarDieta(){
     var mostrarDieta = new Array();

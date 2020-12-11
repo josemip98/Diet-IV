@@ -6,11 +6,6 @@ var Dieta = require('../src/dieta.js');
 var Producto = require('../src/producto.js');
 var dieta = new Dieta();
 
-var producto = new Producto("arroz","1","1","1","1");
-dieta.aniadirProducto(producto);
-var producto = new Producto("macarrones","1","1","1","1");
-dieta.aniadirProducto(producto);
-
 router.get('/', (req, res) => {
   res.send('La API OrganizeUDiet funciona correctamente!. Consulta /status para ver un ejemplo de uso.')
 })
@@ -45,6 +40,8 @@ router.post('/producto', function(req, res, next) {
   }
   catch(e) {
     throw e;
+    res.send('No se ha podido añadir el producto.')
+    res.sendStatus(404);
   }
 
 });
@@ -58,15 +55,32 @@ router.get('/producto/:producto', function(req, res, next) {
   }
   catch(e) {
     throw e;
+    res.send('No existe el producto.')
+    res.sendStatus(404);
   }
 
 });
 
-router.get('/listadoProductos', function(req, res, next) {
+router.get('/listado', function(req, res, next) {
 
   try {
     var productos = dieta.mostrarDieta();
     res.status(200).json(productos);
+  }
+  catch(e) {
+    throw e;
+    res.send('No hay ningún producto disponible. Debería incluir alguno.')
+    res.sendStatus(404);
+  }
+
+});
+
+router.delete('/elimina', function(req, res, next) {
+  var body = req.body;
+  var nombre = body.nombre;
+  try {
+    dieta.eliminaProducto(nombre);
+    res.sendStatus(200);
   }
   catch(e) {
     throw e;
