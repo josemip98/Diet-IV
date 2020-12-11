@@ -75,6 +75,25 @@ router.get('/listado', function(req, res, next) {
 
 });
 
+router.put('/modifica', function(req, res, next) {
+  var body = req.body;
+  var nombre = body.nombre;
+  var calorias = body.calorias;
+  var grasa = body.grasa;
+  var proteinas = body.proteinas;
+  var hidratos = body.hidratos;
+  try {
+    var producto = dieta.modificarProducto(nombre,calorias,grasa,proteinas,hidratos);
+    res.status(200).json(producto);
+  }
+  catch(e) {
+    throw e;
+    res.send('No se ha podido modificar el producto.')
+    res.sendStatus(404);
+  }
+
+});
+
 router.delete('/elimina', function(req, res, next) {
   var body = req.body;
   var nombre = body.nombre;
@@ -84,6 +103,8 @@ router.delete('/elimina', function(req, res, next) {
   }
   catch(e) {
     throw e;
+    res.send('No se ha podido eliminar el producto.')
+    res.sendStatus(404);
   }
 
 });
