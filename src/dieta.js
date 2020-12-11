@@ -16,6 +16,30 @@ class Dieta{
     }
   }
 
+  //Función para modificar un producto de una dieta
+   modificarProducto(nombre,calorias,grasa,proteinas,hidratos){
+     var encontrado = false;
+     var indice;
+     for(var i in this.listaProductos){
+       if(nombre == this.listaProductos[i].getNombre() && encontrado==false){
+         encontrado = true;
+         indice = i;
+       }
+     }
+    if(encontrado == true){
+      this.listaProductos[i].nombre = nombre;
+      this.listaProductos[i].calorias = calorias;
+      this.listaProductos[i].grasa = grasa;
+      this.listaProductos[i].proteinas = proteinas;
+      this.listaProductos[i].hidratos = hidratos;
+
+      return this.listaProductos[i];
+    }
+    else{
+      return ("No se ha podido modificar el producto")
+    }
+   }
+
   //Función para eliminar un producto de una dieta
    eliminarProducto(producto){
      var encontrado = false;

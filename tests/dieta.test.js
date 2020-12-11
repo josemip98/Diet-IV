@@ -6,10 +6,10 @@ var informacionNutricional;
 
 const dieta = new Dieta();
 var nombre = "arroz";
-var calorias = "354Kcal";
-var grasa = "0,5g";
-var proteinas = "6,5g";
-var hidratos = "79g";
+var calorias = "354";
+var grasa = "0,5";
+var proteinas = "6,5";
+var hidratos = "79";
 var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
 dieta.aniadirProducto(producto);
 
@@ -25,6 +25,20 @@ describe("Testeando el método aniadirProducto()", () => {
     dieta.aniadirProducto(producto);
     var tam_productos = dieta.listaProductos.length;
     expect(tam_vector_esperado).toEqual(tam_productos);
+  });
+});
+
+describe("Testeando el método modificarProducto()", () => {
+ test("Comprobando el metodo para modificar un producto de la clase dieta", () => {
+    nombre = "macarrones";
+    calorias = "1";
+    grasa = "1";
+    proteinas = "1";
+    hidratos = "1";
+    var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
+    dieta.aniadirProducto(producto);
+    producto = dieta.modificarProducto(nombre,"2","2","2","2")
+    expect(producto.getCalorias()).not.toBe(calorias);
   });
 });
 
