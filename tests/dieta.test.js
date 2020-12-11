@@ -21,7 +21,10 @@ describe("Testeando el método aniadirProducto()", () => {
     proteinas = "6,5g";
     hidratos = "79g";
     producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
-    thrown_error = () => dieta.aniadirProducto(producto);
+    var tam_vector_esperado = dieta.listaProductos.length+1;
+    dieta.aniadirProducto(producto);
+    var tam_productos = dieta.listaProductos.length;
+    expect(tam_vector_esperado).toEqual(tam_productos);
   });
 });
 
