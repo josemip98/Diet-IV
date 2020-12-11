@@ -9,7 +9,7 @@ class Dieta{
  //Función para añadir un producto a una dieta
   aniadirProducto(producto){
     if(producto == false){
-      throw new Error('Error inserción producto');
+      throw new Error('Error inserción del producto');
     }
     else{
       this.listaProductos.push(producto);
