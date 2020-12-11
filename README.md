@@ -44,6 +44,19 @@ La información nutricional consta de:
 	+ [Enlace OrganizeUDietBot](https://web.telegram.org/#/im?p=@OrganizeUDietBot)
 ***
 
+## Microservicios
+
++ Framework elegido para el microservicio con documentación sobre cómo se usa en la práctica.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md)
++ Diseño en general del API, las rutas (o tareas), tipos devueltos por las peticiones y estados devueltos por las mismas, tests y documentación de todo, justificando como se ajustan a las historias de usuario, de forma que reflejen correctamente un diseño por capas que desacopla la lógica de negocio del API.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md)
++ Uso de buenas prácticas: configuración distribuida, logs, uso de middleware.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md)
++ Tests correctos y de acuerdo con las historias de usuario.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md)
+
+***
+
 ## Herramientas
 [Herramientas y su justificación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/herramientas.md)
 
