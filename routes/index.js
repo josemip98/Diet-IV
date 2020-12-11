@@ -62,6 +62,16 @@ router.get('/producto/:producto', function(req, res, next) {
 
 });
 
+router.get('/listadoProductos', function(req, res, next) {
 
+  try {
+    var productos = dieta.mostrarDieta();
+    res.status(200).json(productos);
+  }
+  catch(e) {
+    throw e;
+  }
+
+});
 
 module.exports = router;
