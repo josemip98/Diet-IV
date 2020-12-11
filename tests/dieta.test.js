@@ -28,20 +28,6 @@ describe("Testeando el método aniadirProducto()", () => {
   });
 });
 
-describe("Testeando el método modificarProducto()", () => {
- test("Comprobando el metodo para modificar un producto de la clase dieta", () => {
-    nombre = "macarrones";
-    calorias = "1";
-    grasa = "1";
-    proteinas = "1";
-    hidratos = "1";
-    var producto = new Producto(nombre,calorias,grasa,proteinas,hidratos);
-    dieta.aniadirProducto(producto);
-    producto = dieta.modificarProducto(nombre,"2","2","2","2")
-    expect(producto.getCalorias()).not.toBe(calorias);
-  });
-});
-
 describe("Testeando el método eliminaProducto()", () => {
  test("Comprobando el metodo para eliminar un producto de la clase dieta", () => {
     nombre = "arroz";
