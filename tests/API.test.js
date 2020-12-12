@@ -1,7 +1,6 @@
 var request = require('supertest');
 var app = require('../app');
 
-// Ejemplo de nuevo producto
 var nuevo_producto =
     {
       "nombre": "arroz",
@@ -11,7 +10,6 @@ var nuevo_producto =
       "hidratos": "75"
     };
 
-// Ejemplo de modificación de producto
 var modificacion =
     {
       "nombre": "arroz",
@@ -21,18 +19,16 @@ var modificacion =
       "hidratos": "1"
     };
 
-// Hace lo mismo que GET status pero en la ruta raíz
 describe( "GET home page", function() {
-    it('Should get OK status', function(done) {
+    it('Deberías obtener un mensaje de que la API funciona correctamente', function(done) {
         request(app)
             .get('/')
             .expect(200, done);
     });
 });
 
-// Checkea estado del microservicio
 describe( "GET status", function() {
-    it('Should get OK status', function(done) {
+    it('Deberías obtener un mensaje de que la API funciona correctamente', function(done) {
         request(app)
             .get('/status')
             .expect('Content-Type', /json/)

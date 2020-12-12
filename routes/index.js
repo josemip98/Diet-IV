@@ -7,21 +7,11 @@ var Producto = require('../src/producto.js');
 var dieta = new Dieta();
 
 router.get('/', (req, res) => {
-  res.send('La API OrganizeUDiet funciona correctamente!. Consulta /status para ver un ejemplo de uso.')
+  res.send('La API OrganizeUDiet funciona correctamente!')
 })
 
 router.get('/status', function(req, res, next) {
-  var ejemplo = {
-    "producto":
-    {
-      "nombre": "arroz",
-      "calorias": "344",
-      "grasa": "1",
-      "proteinas": "9",
-      "hidratos": "75"
-    }
-  }
-  res.status(200).json(ejemplo);
+  res.send('La API OrganizeUDiet funciona correctamente!')
 });
 
 router.get('/producto/:producto', function(req, res, next) {
