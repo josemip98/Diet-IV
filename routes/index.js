@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
 
 router.get('/status', function(req, res, next) {
   var ejemplo = {
-    "status":"OK",
     "producto":
     {
       "nombre": "arroz",

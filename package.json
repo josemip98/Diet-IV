@@ -26,6 +26,7 @@
   "homepage": "https://github.com/josemip98/OrganizeUDiet#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "supertest": "^6.0.1",
     "morgan": "~1.9.1",
     "jade": "~1.11.0",
     "gulp": "^4.0.2",
@@ -36,8 +37,5 @@
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
     "pm2": "^4.5.0"
-  },
-  "devDependencies": {
-    "supertest": "^6.0.1"
   }
 }
