@@ -1,4 +1,4 @@
-const datos = require("./productos.json");
+const datos = require("./data/productos.json");
 const Dieta  = require("../src/dieta.js");
 const Producto = require("../src/producto.js");
 
