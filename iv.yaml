@@ -9,4 +9,4 @@ taskfile: package.json
 URL: https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz
 make:
   - npm install
-  - npm test
+  - gulp test
