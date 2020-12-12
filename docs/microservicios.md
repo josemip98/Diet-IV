@@ -26,8 +26,12 @@ Estos son un ejemplo de test creado para el decorador que envía una respuesta d
 GET producto
 En este caso vemos cómo se indican parámetros en la ruta de la petición para aquellos casos en los que sea necesario, simplemente añadimos los valores con los que queramos testear la API Rest, como en este caso veriamos la información del producto arroz: .get('/producto/arroz')
 
+Este test está relacionado con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) - Como usuario debo poder consultar un producto concreto de una dieta.
+
 GET listado de productos
 En este caso podemos ver el listado de productos disponibles con: .get('/listado')
+
+Este test está relacionado con la [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9) - Como usuario debo poder consultar el listado de productos que forman una dieta.
 
 En la siguiente imagen se encuentan los tests de ambos:
 
@@ -37,16 +41,22 @@ En la siguiente imagen se encuentan los tests de ambos:
 
 Ahora, veamos cómo se realiza una petición de tipo POST. En general, el esquema es igual que el de las peticiones de tipo GET mostradas previamente, lo único que cambia es el tipo de petición y la ruta: .post('/aniade'), y que tenemos que enviar el body de dicha petición. Para esto último, usamos .send(nuevo_producto):
 
+Este test está relacionado con la [HU05](https://github.com/josemip98/OrganizeUDiet/issues/53) - Como usuario debo poder añadir un producto a una dieta.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/testPOST.png)
 
 ### PUT
 
 En el caso de las peticiones de tipo PUT, lo que tenemos que indicar es .put(<ruta>), el resto coindice con lo explicado anteriormente:
 
+Este test está relacionado con la [HU06](https://github.com/josemip98/OrganizeUDiet/issues/54) - Como usuario debo poder modificar un producto de una dieta.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/testPUT.png)
 
 ### DELETE
 
 En el caso de las peticiones de tipo DELETE, a diferencia de las anteriores, lo que tenemos que indicar es .delete(<ruta>) y el body de la petición .send(<body>):
+
+Este test está relacionado con la [HU07](https://github.com/josemip98/OrganizeUDiet/issues/55) - Como usuario debo poder eliminar un producto de una dieta.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/testDELETE.png)
