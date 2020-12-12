@@ -41,6 +41,8 @@ La información nutricional consta de:
 
 + Lenguaje de programación: JavaScript + Node.js
 
++ Framework: Express js
+
 + Herramientas de testing: Jest
 
 + Despliegue de la aplicación en la nube: Docker

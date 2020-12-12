@@ -2,15 +2,44 @@
 
 ## Justificación técnica del framework elegido para el microservicio
 
+### Express js
+
+Tras consultar varias páginas como [esta](https://www.simform.com/best-nodejs-frameworks/) acercade los distintos frameworks que hay disponibles para node js, me he decidido por utilizar **Express js**.
+
+Express, encabeza la lista de los mejores marcos de Node.js siendo el más utilizado.
+
+![uso frameworks](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/usoFrameworks.png)
+
+Sobretodo me he decantado por Express porque no requiere que se adentre más en la curva de aprendizaje; en su lugar, basta con una comprensión básica del entorno de Node.js y las habilidades de programación. Su arquitectura rápida, robusta y asincrónica se adapta bien a Node.
+
+Esta es su [pagina web](https://expressjs.com/es/) y este su [GitHub](https://github.com/expressjs/express).
+
+### Ventajas de usar Express js:
+
++ Paquetes de programación rápida del lado del servidor: el marco tiene muchas características de Node.js como funciones y acelera el proceso con pocas líneas de código.
+
++ Alto rendimiento: varias operaciones se ejecutan de forma independiente entre sí mediante programación asincrónica
+
++ La cobertura de prueba súper alta ayuda a crear aplicaciones con la máxima capacidad de prueba.
+Una gran cantidad de ayudantes HTTP: hacen que los programas sean más inteligibles y reutilizables.
+
++ Mejor negociación de contenido: esto ayuda a mejorar la comunicación entre el cliente y el servidor al proporcionar encabezados HTTP a las URL, que obtienen la información exacta para los usuarios / cliente.
+
++ Patrón arquitectónico MVC
+
+### Otras alternativas:
+
+Para Node js encontramos muchos frameworks, los más utilizados son los siguientes:
+
++ Sails
++ Koa
++ Hapi
++ Restify
+
+
 ## Diseño (rutas, tipos devueltos,estados), implementación y diseño por capas
 
 ## Uso de buenas prácticas: configuración distribuida, logs, uso de middleware.
-
-### Configuración distribuida
-
-### Logs
-
-### Middleware
 
 ## Tests correctos y de acuerdo con las historias de usuario.
 
