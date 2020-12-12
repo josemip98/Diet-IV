@@ -24,27 +24,6 @@ router.get('/status', function(req, res, next) {
   res.status(200).json(ejemplo);
 });
 
-router.post('/producto', function(req, res, next) {
-  var body = req.body;
-  var nombre = body.nombre;
-  var calorias = body.calorias;
-  var grasa = body.grasa;
-  var proteinas = body.proteinas;
-  var hidratos = body.hidratos;
-
-  try {
-    var producto = new Producto(nombre, calorias, grasa, proteinas, hidratos)
-    dieta.aniadirProducto(producto);
-    res.sendStatus(201);
-  }
-  catch(e) {
-    throw e;
-    res.send('No se ha podido añadir el producto.')
-    res.sendStatus(404);
-  }
-
-});
-
 router.get('/producto/:producto', function(req, res, next) {
 
   try {
@@ -69,6 +48,28 @@ router.get('/listado', function(req, res, next) {
   catch(e) {
     throw e;
     res.send('No hay ningún producto disponible. Debería incluir alguno.')
+    res.sendStatus(404);
+  }
+
+});
+
+
+router.post('/aniade', function(req, res, next) {
+  var body = req.body;
+  var nombre = body.nombre;
+  var calorias = body.calorias;
+  var grasa = body.grasa;
+  var proteinas = body.proteinas;
+  var hidratos = body.hidratos;
+
+  try {
+    var producto = new Producto(nombre, calorias, grasa, proteinas, hidratos)
+    dieta.aniadirProducto(producto);
+    res.sendStatus(201);
+  }
+  catch(e) {
+    throw e;
+    res.send('No se ha podido añadir el producto.')
     res.sendStatus(404);
   }
 
