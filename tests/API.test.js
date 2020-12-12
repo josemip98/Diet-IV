@@ -31,7 +31,6 @@ describe( "GET status", function() {
     it('Deberías obtener un mensaje de que la API funciona correctamente', function(done) {
         request(app)
             .get('/status')
-            .expect('Content-Type', /json/)
             .expect(200, done);
     });
 });
