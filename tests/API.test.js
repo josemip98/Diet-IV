@@ -2,7 +2,7 @@ var request = require('supertest');
 var app = require('../app');
 
 // Ejemplo de nuevo producto
-var nuevo_producto = 
+var nuevo_producto =
     {
       "nombre": "arroz",
       "calorias": "344",
@@ -64,7 +64,7 @@ describe( "GET listado de productos", function() {
 describe( "POST producto", function() {
     it('Debería añadir un nuevo producto', function(done) {
         request(app)
-            .post('/producto')
+            .post('/aniade')
             .send(nuevo_producto)
             .expect(201, done);
     });
