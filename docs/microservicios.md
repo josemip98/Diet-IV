@@ -10,7 +10,7 @@ Express, encabeza la lista de los mejores marcos de Node.js siendo el más utili
 
 ![uso frameworks](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/usoFrameworks.png)
 
-Sobretodo me he decantado por Express porque no requiere que se adentre más en la curva de aprendizaje; en su lugar, basta con una comprensión básica del entorno de Node.js y las habilidades de programación. Su arquitectura rápida, robusta y asincrónica se adapta bien a Node.
+Sobretodo me he decantado por Express porque no requiere que se adentre más en la curva de aprendizaje; en su lugar, basta con una comprensión básica del entorno de Node.js y las habilidades de programación. Su arquitectura rápida, robusta y asincrónica se adapta bien a Node. Por eso mi decisión ya que necesito que sea fácil de comenzar a trabajar para la realización de mi proyecto y pienso que la mejor opción es esta.
 
 Esta es su [pagina web](https://expressjs.com/es/) y este su [GitHub](https://github.com/expressjs/express).
 
@@ -44,6 +44,26 @@ Para Node js encontramos muchos frameworks, los más utilizados son los siguient
 [Archivo](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js) con todas las rutas.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET1.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API2.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API3.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API4.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API5.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API6.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API7.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API8.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API9.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API10.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API11.png)
 
 Esta función está relacionada con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) - Como usuario debo poder consultar un producto concreto de una dieta.
 
