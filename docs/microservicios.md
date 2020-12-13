@@ -120,6 +120,8 @@ Y si utilizamos la ruta /listado podemos comprobar como el producto arroz ya no 
 
 ### Configuración distribuida
 
+Como configuración distribuida siguiendo buenas prácticas de Express creamos las distintas rutas en la carpeta routes en el archivo [index.js](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js), las clases para las funciones utilizadas se encuentran en la carpeta src, estas son la clase [Producto](https://github.com/josemip98/OrganizeUDiet/blob/master/src/producto.js) y clase [Dieta](https://github.com/josemip98/OrganizeUDiet/blob/master/src/dieta.js).
+
 ### Log
 
 Para el log utilizo **Pm2** que es un gestor de procesos en producción para las aplicaciones Node. Tiene una función que permite mostrar por pantalla o guardar en un fichero el log. En mi caso pienso que no necesito guardar el log en un fichero y simplemente se muestra por pantalla las distintas peticiones que se realizan en la API.
@@ -137,7 +139,7 @@ El middleware de nivel de direccionador funciona de la misma manera que el middl
 
 Cargue el middleware de nivel de direccionador utilizando las funciones router.use() y router.METHOD().
 
-El siguiente código de ejemplo replica el sistema de middleware que se ha mostrado anteriormente para el middleware de nivel de aplicación, utilizando el middleware de nivel de direccionador:
+El siguiente código muestra el sistema de middleware que se ha mostrado anteriormente para el middleware de direccionador en el que como he explicado antes utilizo el paquete de express.Router(), con las llamadas router.get, router.post, router.put y router.delete:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware.png)
 
