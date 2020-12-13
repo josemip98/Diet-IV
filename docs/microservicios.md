@@ -122,9 +122,24 @@ Y si utilizamos la ruta /listado podemos comprobar como el producto arroz ya no 
 
 ### Log
 
+Para el log utilizo **Pm2** que es un gestor de procesos en producción para las aplicaciones Node. Tiene una función que permite mostrar por pantalla o guardar en un fichero el log. En mi caso pienso que no necesito guardar el log en un fichero y simplemente se muestra por pantalla las distintas peticiones que se realizan en la API.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/logAPI.png)
 
 ### Middleware
+
+Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es fundamentalmente una serie de llamadas a funciones de middleware.
+
+Las funciones de middleware son funciones que tienen acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitud/respuestas de la aplicación. La siguiente función de middleware se denota normalmente con una variable denominada next.
+
+He utilizado Middleware de nivel de direccionador:
+El middleware de nivel de direccionador funciona de la misma manera que el middleware de nivel de aplicación, excepto que está enlazado a una instancia de express.Router().
+
+Cargue el middleware de nivel de direccionador utilizando las funciones router.use() y router.METHOD().
+
+El siguiente código de ejemplo replica el sistema de middleware que se ha mostrado anteriormente para el middleware de nivel de aplicación, utilizando el middleware de nivel de direccionador:
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware.png)
 
 ## Tests correctos y de acuerdo con las historias de usuario.
 
