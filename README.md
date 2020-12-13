@@ -24,7 +24,7 @@ La información nutricional consta de:
 ## Microservicios
 
 + Framework elegido para el microservicio con documentación sobre cómo se usa en la práctica.
-	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#justificaci%C3%B3n-t%C3%A9cnica-del-framework-elegido-para-el-microservicio)
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md)
 + Diseño en general del API, las rutas (o tareas), tipos devueltos por las peticiones y estados devueltos por las mismas, tests y documentación de todo, justificando como se ajustan a las historias de usuario, de forma que reflejen correctamente un diseño por capas que desacopla la lógica de negocio del API.
 	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#dise%C3%B1o-rutas-tipos-devueltosestados-implementaci%C3%B3n-y-dise%C3%B1o-por-capas)
 	+ [Código rutas](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js)
