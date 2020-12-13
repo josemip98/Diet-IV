@@ -8,7 +8,7 @@ Tras consultar varias páginas como [esta](https://www.simform.com/best-nodejs-f
 
 Express, encabeza la lista de los mejores marcos de Node.js siendo el más utilizado.
 
-![uso frameworks](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/usoFrameworks.png)
+![uso frameworks](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/useFrameworks.png)
 
 Sobretodo me he decantado por Express porque no requiere que se adentre más en la curva de aprendizaje; en su lugar, basta con una comprensión básica del entorno de Node.js y las habilidades de programación. Su arquitectura rápida, robusta y asincrónica se adapta bien a Node. Por eso mi decisión ya que necesito que sea fácil de comenzar a trabajar para la realización de mi proyecto y pienso que la mejor opción es esta.
 
@@ -45,6 +45,9 @@ Para Node js encontramos muchos frameworks, los más utilizados son los siguient
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET1.png)
 
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API1.png)
+
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API2.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API3.png)
@@ -54,8 +57,6 @@ Para Node js encontramos muchos frameworks, los más utilizados son los siguient
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API5.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API6.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API7.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API8.png)
 
