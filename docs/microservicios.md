@@ -47,44 +47,43 @@ Para Node js encontramos muchos frameworks, los más utilizados son los siguient
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API1.png)
 
-
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API2.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API3.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API4.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API5.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API6.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API8.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API9.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API10.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API11.png)
-
-Esta función está relacionada con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) - Como usuario debo poder consultar un producto concreto de una dieta.
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET2.png)
-
-Esta función está relacionada con la [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9) - Como usuario debo poder consultar el listado de productos que forman una dieta.
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET3.png)
 
 Esta función está relacionada con la [HU05](https://github.com/josemip98/OrganizeUDiet/issues/53) - Como usuario debo poder añadir un producto a una dieta.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/POST.png)
 
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API4.png)
+
+Esta función está relacionada con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) - Como usuario debo poder consultar un producto concreto de una dieta.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET2.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API6.png)
+
+Esta función está relacionada con la [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9) - Como usuario debo poder consultar el listado de productos que forman una dieta.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET3.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API5.png)
+
 Esta función está relacionada con la [HU06](https://github.com/josemip98/OrganizeUDiet/issues/54) - Como usuario debo poder modificar un producto de una dieta.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API8.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API9.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/PUT.png)
 
 Esta función está relacionada con la [HU07](https://github.com/josemip98/OrganizeUDiet/issues/55) - Como usuario debo poder eliminar un producto de una dieta.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/DELETE.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API10.png)
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API11.png)
 
 ## Uso de buenas prácticas: configuración distribuida, logs, uso de middleware.
 
