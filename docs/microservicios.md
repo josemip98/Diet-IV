@@ -43,49 +43,88 @@ Para Node js encontramos muchos frameworks, los más utilizados son los siguient
 
 [Archivo](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js) con todas las rutas.
 
+Primero he creado las rutas / y /status que mostrarán un mensaje de bienvenida que nos indica que la API esta funcionando correctamente.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET1.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API1.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API2.png)
 
+Después con la ruta /listado que explicaré más adelante comprobamos que la dieta no contiene ningún producto.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API3.png)
 
 Esta función está relacionada con la [HU05](https://github.com/josemip98/OrganizeUDiet/issues/53) - Como usuario debo poder añadir un producto a una dieta.
 
+Mediante la ruta /aniade, realizamos una petición POST con el nombre, calorias,grasa,proteinas e hidratos en el body del mensaje para añadir un nuevo producto. Para ello utilizamos el constructor de la clase Producto para crearlo y lo añadimos a la dieta con la función aniadirProducto(producto). Devolvemos el código 200 si se ha realizado con éxito o el mensaje no se ha podido añadir el producto y el código 404 si no se ha podido realizar.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/POST.png)
+
+Realizamos la peticion POST y vemos que se realiza correctamente.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API4.png)
 
 Esta función está relacionada con la [HU03](https://github.com/josemip98/OrganizeUDiet/issues/20) - Como usuario debo poder consultar un producto concreto de una dieta.
 
+Mediante la ruta /producto/<nombre_producto> podemos consultar la información de un producto concreto de una dieta. Para ello recojo el nombre del producto de la url con req.params.producto y lo busco con la función buscarProducto(producto) de la clase dieta.
+Si se ha encontrado nos lo devolverá en formato JSON junto con el código de éxito 200. Por el contrario si no se ha encontrado, nos devolverá el código de error 404 y nos indicará que no existe el producto.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET2.png)
+
+Vemos como nos muestra el producto arroz que habíamos añadido anteriormente.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API6.png)
 
 Esta función está relacionada con la [HU01](https://github.com/josemip98/OrganizeUDiet/issues/9) - Como usuario debo poder consultar el listado de productos que forman una dieta.
 
+Mediante la ruta /listado podemos consultar todos los productos que forman una dieta. Para ello utilizamos la función  mostrarDieta() de la clase Dieta que nos devolverá un array de productos.
+Nos devolverá el array de productos en formato JSON junto con el código de éxito 200.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/GET3.png)
+
+Utilizé el métodod POST para añadir los producto atún y arroz y vemos como se muestran correctamente.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API5.png)
 
 Esta función está relacionada con la [HU06](https://github.com/josemip98/OrganizeUDiet/issues/54) - Como usuario debo poder modificar un producto de una dieta.
 
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API8.png)
-
-![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API9.png)
+Mediante la ruta /modifica, realizamos una petición PUT con el nombre, calorias, grasa, proteinas e hidratos en el body del mensaje para modificar el producto indicado con el nombre. Para ello utilizamos la función modificarProducto(nombre,calorias,grasa,proteinas,hidratos) de la clase dieta. Devolvemos el código 200 si se ha realizado con éxito y el producto modificado en formato JSON o el mensaje: no se ha podido añadir el producto y el código 404 si no se ha podido realizar.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/PUT.png)
 
+Vemos como la petición se realiza con éxito.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API8.png)
+
+Y si buscamos el producto modificado vemos que efectivamente hemos modificado la información nutricional del producto. 
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API9.png)
+
 Esta función está relacionada con la [HU07](https://github.com/josemip98/OrganizeUDiet/issues/55) - Como usuario debo poder eliminar un producto de una dieta.
+
+Mediante la ruta /elimina podemos eliminar un producto concreto de una dieta. Para ello recojo el nombre del producto incluido en el body del mensaje y lo elimino con la función eliminarProducto(producto) de la clase dieta.
+Si se ha eliminado nos devolverá el código de éxito 200. Por el contrario si no se ha encontrado, nos devolverá el código de error 404 y nos indicará que no se ha podido eliminar el producto.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/DELETE.png)
 
+Vemos que la petición DELETE se ha realizado correctamente.
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API10.png)
+
+Y si utilizamos la ruta /listado podemos comprobar como el producto arroz ya no aparece ya que ha sido eliminado.
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/API11.png)
 
 ## Uso de buenas prácticas: configuración distribuida, logs, uso de middleware.
+
+### Configuración distribuida
+
+### Log
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/logAPI.png)
+
+### Middleware
 
 ## Tests correctos y de acuerdo con las historias de usuario.
 
