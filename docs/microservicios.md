@@ -130,14 +130,12 @@ Para el log utilizo **Pm2** que es un gestor de procesos en producción para las
 
 ### Middleware
 
-Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es fundamentalmente una serie de llamadas a funciones de middleware.
-
-Las funciones de middleware son funciones que tienen acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitud/respuestas de la aplicación. La siguiente función de middleware se denota normalmente con una variable denominada next.
+Express es una infraestructura web de direccionamiento y middleware que tiene una funcionalidad mínima propia.
 
 He utilizado Middleware de nivel de direccionador:
 El middleware de nivel de direccionador funciona de la misma manera que el middleware de nivel de aplicación, excepto que está enlazado a una instancia de express.Router().
 
-Cargue el middleware de nivel de direccionador utilizando las funciones router.use() y router.METHOD().
+Cargué el middleware de nivel de direccionador utilizando las funciones router.use() y router.METHOD().
 
 El siguiente código muestra el sistema de middleware que se ha mostrado anteriormente para el middleware de direccionador en el que como he explicado antes utilizo el paquete de express.Router(), con las llamadas router.get, router.post, router.put y router.delete:
 
