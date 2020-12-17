@@ -1,3 +1,4 @@
+
 # Pasos para la realización del proyecto
 
 ## Hito 0 - Configuración GitHub
@@ -64,3 +65,49 @@ También he creado dos historias más de usuario:
 	+ Como usuario debo poder consultar un producto concreto perteneciente a una dieta. El formato a mostrar será el producto junto con su información nutricional.
   
 Una vez he cerrado los issues del hito 2, he modificado el fichero hito-2.md y he realizado un Pull Request.
+
+## Hito 3: Creación de un contenedor para pruebas
+
++ Construir fichero Dockerfile
++ Crear repositorio en Docker Hub enlazado con el de GitHub
++ Crear paquete en GitHub Container Registry enlazado con el de GitHub
++ Redactar en el archivo README.md la justificación de la elección de nuestra imagen base
++ Actualizar el archivo README.md para añadir la documentaión correspondientes a este hito
+
+
+Una vez he cerrado los issues del hito 3, he modificado el fichero hito-3.md y he realizado un Pull Request.
+
+## Hito 4: Integración continua
+
++ Enlazar nuestro repositorio con Travis CI
++ Construir fichero .travis.yml
++ Enlazar nuestro repositorio con Circle CI
++ Construir fichero config.yml
++ Añadir capturas de pantalla del funcionamiento de los distintos sistemas de integración continua
++ Actualizar el archivo README.md para añadir la documentaión correspondientes a este hito
+
+Una vez he cerrado los issues del hito 4, he modificado el fichero hito-4.md y he realizado un Pull Request.
+
+## Hito 5: Uso de sistemas serverless
+
++ Enlazar nuestro repositorio con Vercel
++ Enlazar nuestro repositorio con Netlify
++ Añadir capturas de pantalla del funcionamiento de nuestro bot de Telegram
++ Implementación de la función consultaProducto en Vercel y su integración con el bot de Telegram
++ Implementación de la función listadoProductos en Netlify
++ Construir nuestro fichero 5.json con la información que devuelve nuestra funcion consultaProducto
++ Actualizar el archivo README.md para añadir la documentaión correspondientes a este hito
+
+Una vez he cerrado los issues del hito 5, he modificado el fichero hito-5.md y he realizado un Pull Request.
+
+## Hito 6: Diseño y test de un microservicio
+
++ Elección de framework
++ Documentación de la elección de Express
++ Construcción de la API
++ Documentación de la API
++ Realizar tests de integración
++ Documentar tests de integración
++ Actualizar el archivo README.md para añadir la documentaión correspondientes a este hito
+
+Una vez he cerrado los issues del hito 6, he modificado el fichero hito-6.md y he realizado un Pull Request.
