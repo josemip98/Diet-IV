@@ -1,6 +1,7 @@
-#Aquí indicamos el lenguaje que estamos usando, en mi caso node_js
+
+#lenguaje usado
 language: node_js
-#Vamos a probar las distintas versiones de node desde la versión 8 a la 15
+#versiones a probar de node
 node_js:
     - 8
     - 9
@@ -10,9 +11,8 @@ node_js:
     - 13
     - 14
     - 15
-#Esta sección se ejecuta antes de la instalación de la aplicación (antes de npm install .)
-#instalamos Jest y mi gestor de tareas Gulp.
+#instalamos jest y gulp antes de hacer un gulp install para instalar la aplicación
 before_install:
     - npm install -g gulp && npm install -g jest
-#Ejecutamos los tests con gulp
+#ejecutamos los tests con gulp
 script: gulp test
