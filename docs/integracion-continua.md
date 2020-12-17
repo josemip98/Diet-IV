@@ -15,9 +15,9 @@ Después creamos un archivo .travis.yml, en mi caso quedó así:
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/travis.png)
 
 Lo que hago es indicar el lenguaje que voy a utilizar con language, en mi caso es node_js.
-Después compruebo que funciona para diferentes versiones de NodeJS desde la 8 a la 15.
+Después compruebo que funciona para diferentes versiones de NodeJS desde la 8 a la última la 15.
 
-En la sección de before_install incluimos los que queramos instalar antes de que se instale la aplicación (npm install), instalamos jest y **mi gestor de tareas gulp** para el posterior lanzamiento de los tests con gulp test.
+En la sección de before_install instalamos jest y **mi gestor de tareas gulp** para la posterior instalación de la aplicación con **gulp install** y el lanzamiento de los tests con **gulp test**.
 
 El resultado de Travis fué el siguiente:
 
