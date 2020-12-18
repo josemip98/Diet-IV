@@ -124,7 +124,9 @@ Como configuración distribuida siguiendo buenas prácticas de Express creamos l
 
 ### Log
 
-Para el log utilizo **Pm2** que es un gestor de procesos en producción para las aplicaciones Node. Tiene una función que permite mostrar por pantalla o guardar en un fichero el log. En mi caso pienso que no necesito guardar el log en un fichero y simplemente se muestra por pantalla las distintas peticiones que se realizan en la API.
+Para el log utilizo **Morgan** que es un moddleware para capturar solicitudes HTTP para Node.js y así mostrar por pantalla el registro de dichas solicitudes.
+
+![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware1.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/logAPI.png)
 
@@ -140,6 +142,8 @@ Cargué el middleware de nivel de direccionador utilizando las funciones router.
 El siguiente código muestra el sistema de middleware que se ha mostrado anteriormente para el middleware de direccionador en el que como he explicado antes utilizo el paquete de express.Router(), con las llamadas router.get, router.post, router.put y router.delete:
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware.png)
+
+
 
 ## Tests correctos y de acuerdo con las historias de usuario.
 

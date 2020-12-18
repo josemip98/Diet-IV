@@ -49,7 +49,7 @@ La información nutricional consta de:
 
 + Base de datos: MongoDB
 
-+ Sistema de logs: aún por decidir
++ Sistema de logs: Morgan
 
 ***
 
