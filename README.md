@@ -30,6 +30,7 @@ La información nutricional consta de:
 	+ [Código rutas](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js)
 + Uso de buenas prácticas: configuración distribuida, logs, uso de middleware.
 	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#uso-de-buenas-pr%C3%A1cticas-configuraci%C3%B3n-distribuida-logs-uso-de-middleware)
+	+ [Código log](https://github.com/josemip98/OrganizeUDiet/blob/master/app.js)
 + Tests correctos y de acuerdo con las historias de usuario.
 	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#tests-correctos-y-de-acuerdo-con-las-historias-de-usuario)
 	+ [Código tests](https://github.com/josemip98/OrganizeUDiet/blob/master/tests/API.test.js)

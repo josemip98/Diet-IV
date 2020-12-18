@@ -130,6 +130,8 @@ Para ello creo una variable logger mediante el paquete morgan, indico la direcci
 
 Para el manejo de errores creo una función middleware en la que se necesitan 4 argumentos (err,req,res,next) y se devuelve el error 500 y el mensaje de error. He seguido la documentacion oficial de [express](https://expressjs.com/es/guide/error-handling.html)
 
+Puede consultar el archivo app.js [aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/app.js)
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware1.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/logAPI.png)
@@ -147,7 +149,7 @@ El siguiente código muestra el sistema de middleware que se ha mostrado anterio
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware.png)
 
-Puede verse el archivo completo [aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js)
+Puede verse el archivo completo de rutas [aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js)
 
 ## Tests correctos y de acuerdo con las historias de usuario.
 
