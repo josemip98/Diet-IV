@@ -147,7 +147,7 @@ El siguiente código muestra el sistema de middleware que se ha mostrado anterio
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware.png)
 
-
+Puede verse el archivo completo [aquí](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js)
 
 ## Tests correctos y de acuerdo con las historias de usuario.
 
