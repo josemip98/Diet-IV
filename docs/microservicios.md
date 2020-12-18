@@ -126,6 +126,10 @@ Como configuración distribuida siguiendo buenas prácticas de Express creamos l
 
 Para el log utilizo **Morgan** que es un moddleware para capturar solicitudes HTTP para Node.js y así mostrar por pantalla el registro de dichas solicitudes.
 
+Para ello creo una variable logger mediante el paquete morgan, indico la direccion del router con la variable indexRouter en app use('/', indexRouter) con el valor del fichero index.js contenido en la carpeta routes.
+
+Para el manejo de errores creo una función middleware en la que se necesitan 4 argumentos (err,req,res,next) y se devuelve el error 500 y el mensaje de error. He seguido la documentacion oficial de [express](https://expressjs.com/es/guide/error-handling.html)
+
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/middleware1.png)
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/logAPI.png)
