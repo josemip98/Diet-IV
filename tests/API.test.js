@@ -77,7 +77,7 @@ describe( "PUT modificación", function() {
 
 // Elimina un producto de una dieta indicando el nombre en el body
 describe( "DELETE producto", function() {
-    it('Devería eliminar el producto indicado', function(done) {
+    it('Debería eliminar el producto indicado', function(done) {
         request(app)
             .delete('/elimina')
             .send({

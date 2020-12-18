@@ -9,10 +9,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "gulp test",
-    "start": "node bin/www",
-    "start_pm2": "node_modules/.bin/pm2 start bin/www",
-    "stop_pm2": "node_modules/.bin/pm2 stop bin/www"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -26,16 +23,15 @@
   "homepage": "https://github.com/josemip98/OrganizeUDiet#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "supertest": "^6.0.1",
+    "cookie-parser": "~1.4.4",
     "morgan": "~1.9.1",
-    "jade": "~1.11.0",
     "gulp": "^4.0.2",
     "gulp-jest": "^4.0.3",
     "gulp-shell": "^0.8.0",
     "gulp-util": "^3.0.8",
-    "cookie-parser": "~1.4.4",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
-    "pm2": "^4.5.0"
+    "pm2": "^4.5.0",
+    "supertest": "^6.0.1"
   }
 }
