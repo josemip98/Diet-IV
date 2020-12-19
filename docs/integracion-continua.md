@@ -8,7 +8,7 @@ Para ello he utilizado **Travis y Circle CI**.
 
 ## Integración continua con Travis
 
-En primer lugar, debemos registrarnos en Travis y configurarlo, en este [documento](https://github.com/josemip98/EjerciciosIV/tree/master/Tema%202%20-%20TDD#ejercicio-9) lo explico.
+En primer lugar, debemos registrarnos en Travis y configurarlo, en este [documento](https://github.com/josemip98/EjerciciosIV/blob/master/Tema%20TDD/README.md#ejercicio-9) lo explico.
 
 Después creamos un archivo .travis.yml, en mi caso quedó así:
 
