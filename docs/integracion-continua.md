@@ -30,7 +30,12 @@ Primero me he registrado en la web y he creado el archivo .config.yml:
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/circleCI.png)
 
-Indico la versión de Circle CI. Creo una tarea llamada test en el que utilizamos la imagen de mi contenedor josemip98/organizeudiet, después instalamos **jest** y  mi **gestor de tareas gulp** con npm install -g jest y npm install -g gulp. Despues lanzamos los tests con gulp test.
+Indico la versión de Circle CI. Creo una tarea llamada test en el que utilizamos la imagen de mi contenedor josemip98/organizeudiet. Despues creamos el listado de ordenes para ejecutar que serán:
+
+- checkout: Para comprobar errores
+- run: Para lanzar los tests con gulp test.
+
+Por último definimos la tarea a ejecutar que es la de ejecutar los test.
 
 Podemos ver como los tests pasan correctamente.
 

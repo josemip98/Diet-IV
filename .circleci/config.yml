@@ -7,7 +7,7 @@ jobs:
     #listado de órdenes para ejecutar
     steps:
       - checkout
-          #norden para ver errores
+          #orden para ver errores
       - run:
           name: Lanzar tests
           #ejecutamos los tests con el gestor de tareas gulp
