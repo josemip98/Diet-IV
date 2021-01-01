@@ -9,7 +9,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "node bin/www",
+    "start_pm2": "node_modules/.bin/pm2 start bin/www",
+    "stop_pm2": "node_modules/.bin/pm2 stop bin/www"
   },
   "repository": {
     "type": "git",

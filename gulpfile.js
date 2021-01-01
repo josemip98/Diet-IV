@@ -13,3 +13,21 @@ gulp.task('test', () => (
     gulp.src('tests', {read: false})
         .pipe(jest({reporter:'default'}))
 ));
+
+// Tarea para arrancar el microservicio
+gulp.task('start', function () {
+  pm2.connect(true, function () {
+    pm2.start({
+      name: 'OrganizeUDiet',
+      script: 'bin/www',
+      exec_mode: 'cluster',
+      instances: 1
+    }, function () {
+         console.log('Arrancando OrganizeUDiet.');
+         pm2.streamLogs('all', 0);
+       });
+  });
+});
+
+// Tarea para parar el microservicio
+gulp.task('stop', shell.task(['pm2 stop OrganizeUDiet']));

@@ -27,14 +27,6 @@ describe( "GET home page", function() {
     });
 });
 
-describe( "GET status", function() {
-    it('Deberías obtener un mensaje de que la API funciona correctamente', function(done) {
-        request(app)
-            .get('/status')
-            .expect(200, done);
-    });
-});
-
 // Obtiene la información de un producto concreto
 describe( "GET producto", function() {
     it('Deberías obtener la información de un producto concreto', function(done) {
