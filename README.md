@@ -21,19 +21,20 @@ La información nutricional consta de:
 	
 ***
 
-## Microservicios
+## Despliegue en un PaaS
 
-+ Framework elegido para el microservicio con documentación sobre cómo se usa en la práctica.
-	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md)
-+ Diseño en general del API, las rutas (o tareas), tipos devueltos por las peticiones y estados devueltos por las mismas, tests y documentación de todo, justificando como se ajustan a las historias de usuario, de forma que reflejen correctamente un diseño por capas que desacopla la lógica de negocio del API.
-	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#dise%C3%B1o-rutas-tipos-devueltosestados-implementaci%C3%B3n-y-dise%C3%B1o-por-capas)
-	+ [Código rutas](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js)
-+ Uso de buenas prácticas: configuración distribuida, logs, uso de middleware.
-	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#uso-de-buenas-pr%C3%A1cticas-configuraci%C3%B3n-distribuida-logs-uso-de-middleware)
-	+ [Código log](https://github.com/josemip98/OrganizeUDiet/blob/master/app.js)
-+ Tests correctos y de acuerdo con las historias de usuario.
-	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#tests-correctos-y-de-acuerdo-con-las-historias-de-usuario)
-	+ [Código tests](https://github.com/josemip98/OrganizeUDiet/blob/master/tests/API.test.js)
++ Descripción y justificación de las herramientas usadas para desplegar la aplicación en en PaaS.
+	+ [Documentación]()
+
++ Descripción correcta de la configuración para despliegue automático, desde el repositorio o desde el sistema de integración continua.
+	+ [Documentación]()
+	
++ Funcionamiento correcto del despliegue en el PaaS (no sólo el status). Es decir, no se puede devolver ningún status 500.
+	+ [Documentación]()
++ Buenas prácticas en el diseño del API, incluyendo su correspondencia correcta con diferentes HUs.
+	+ [Documentación]()
++ Uso correcto de bases de datos y logs dentro del PaaS, incluyendo su justificación y pruebas de prestaciones, así como avance general y grado de terminación de la aplicación.
+	+ [Documentación]()
 
 ***
 
@@ -127,6 +128,21 @@ Además utilizo en ambos el gestor de tareas **Gulp** que es el que estoy utiliz
 	+ [Tareas bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/index.js)
 	+ [Funciones bot](https://github.com/josemip98/OrganizeUDiet/blob/master/api/bot.js)
 	+ [Enlace OrganizeUDietBot](https://web.telegram.org/#/im?p=@OrganizeUDietBot)
+***
+
+## Microservicios
+
++ Framework elegido para el microservicio con documentación sobre cómo se usa en la práctica.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md)
++ Diseño en general del API, las rutas (o tareas), tipos devueltos por las peticiones y estados devueltos por las mismas, tests y documentación de todo, justificando como se ajustan a las historias de usuario, de forma que reflejen correctamente un diseño por capas que desacopla la lógica de negocio del API.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#dise%C3%B1o-rutas-tipos-devueltosestados-implementaci%C3%B3n-y-dise%C3%B1o-por-capas)
+	+ [Código rutas](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js)
++ Uso de buenas prácticas: configuración distribuida, logs, uso de middleware.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#uso-de-buenas-pr%C3%A1cticas-configuraci%C3%B3n-distribuida-logs-uso-de-middleware)
+	+ [Código log](https://github.com/josemip98/OrganizeUDiet/blob/master/app.js)
++ Tests correctos y de acuerdo con las historias de usuario.
+	+ [Documentacion](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/microservicios.md#tests-correctos-y-de-acuerdo-con-las-historias-de-usuario)
+	+ [Código tests](https://github.com/josemip98/OrganizeUDiet/blob/master/tests/API.test.js)
 ***
 
 ## Recopilación de enlaces
