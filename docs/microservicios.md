@@ -169,8 +169,8 @@ Puede verse el archivo completo de rutas [aquí](https://github.com/josemip98/Or
 
 Para testear el buen funcionamiento de las peticiones de tipo GET se ha realizado lo siguiente:
 
-GET / y GET Status
-Estos son un ejemplo de test creado para el decorador que envía una respuesta de éxito si se accede a la ruta /status o la ruta principal / y el microservicio se ha desplegado correctamente. La petición sobre la aplicación (request(app)) es de tipo get a la ruta /status, por eso se incluye .get('/status); por otro lado, como lo que se espera es un JSON, se indica con .expect('Content-Type', /json/); por último, para comprobar que el código recibido es de éxito, se añade .expect(200, done).
+GET /
+Esto es un ejemplo de test creado para el decorador que envía una respuesta de éxito si se accede a la ruta / y el microservicio se ha desplegado correctamente. La petición sobre la aplicación (request(app)) es de tipo get a la ruta /, por eso se incluye .get('/); por otro lado, como lo que se espera es un JSON, se indica con .expect('Content-Type', /json/); por último, para comprobar que el código recibido es de éxito, se añade .expect(200, done).
 
 ![imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/testGET1.png)
 
