@@ -83,4 +83,37 @@ class Dieta{
     }
   }
 
+  //Función que ordena los productos alfabeticamente de manera ascendente y descendente
+    ordenarProductosAlfabeticamente(orden){
+      var orden = orden;
+      var ordenados = new Array();
+      var lista_productos =new Array();
+      var dieta = {};
+      var i = 0
+      while (i < this.listaProductos.length){
+        lista_productos[i] = this.listaProductos[i].getProducto();
+        dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getNombre();
+        i+=1;
+      }
+      if(orden == "DESCENDENTE"){
+        ordenados = lista_productos.sort();
+      }
+      else if(orden == "ASCENDENTE"){
+        var desordenado = new Array()
+        desordenado = lista_productos.sort();
+        ordenados = desordenado.reverse();
+      }else{
+        throw new NoOrden("El orden introducido no es válido. Introduce ASCENDENTE o DESCENDENTE");
+      }
+      var j = 0;
+      for(var producto in ordenados){
+        this.listaProductos[j].setPalabra(ordenadoS[pal])
+        this.listaProductos[j].setSignificado(dieta[ordenadoS[producto]]);
+        j+=1
+      }
+        return this.listaProductos;
+    }
+
+  
+
 module.exports = Dieta;
