@@ -114,6 +114,52 @@ class Dieta{
         return this.listaProductos;
     }
 
-  
+    //Función que ordena los productos según mayor número de hidratos, grasa, proteinas o calorias.
+      ordenarProductos(orden){
+        var orden = orden;
+        var ordenados = new Array();
+        var lista_productos =new Array();
+        var dieta = {};
+        var i = 0
+        if(orden == "HIDRATOS"){
+          while (i < this.listaProductos.length){
+            lista_productos[i] = this.listaProductos[i].getProducto();
+            dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getHidratos();
+            i+=1;
+          }
+          ordenados = lista_productos.sort();
+        }
+        else if(orden == "GRASA"){
+          while (i < this.listaProductos.length){
+            lista_productos[i] = this.listaProductos[i].getProducto();
+            dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getGrasa();
+            i+=1;
+          }
+          ordenados = lista_productos.sort();
+        }else if(orden == "PROTEINAS"){
+          while (i < this.listaProductos.length){
+            lista_productos[i] = this.listaProductos[i].getProducto();
+            dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getProteinas();
+            i+=1;
+          }
+          ordenados = lista_productos.sort();
+        }else if(orden == "CALORIAS"){
+          while (i < this.listaProductos.length){
+            lista_productos[i] = this.listaProductos[i].getProducto();
+            dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getCalorias();
+            i+=1;
+          }
+          ordenados = lista_productos.sort();
+        }else{
+          throw new NoOrden("El orden introducido no es válido. Introduce HIDRATOS, GRASA, PROTEINAS O CALORIAS");
+        }
+        var j = 0;
+        for(var producto in ordenados){
+          this.listaProductos[j].setPalabra(ordenadoS[pal])
+          this.listaProductos[j].setSignificado(dieta[ordenadoS[producto]]);
+          j+=1
+        }
+          return this.listaProductos;
+      }
 
 module.exports = Dieta;
