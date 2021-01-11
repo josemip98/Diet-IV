@@ -102,3 +102,52 @@ describe("Testeando el método mostrarDieta()", () => {
       expect(dieta.listaProductos[1].getNombre()).toBe("arroz");
     });
   });
+
+  describe("Testeando el método ordenarProductos()", () => {
+    test("Comprobando orden HIDRATOS", () => {
+      var dieta = new Dieta();
+      var producto = new Producto("pollo","2","2","2","2");
+      dieta.aniadirProducto(producto);
+      var producto = new Producto("arroz","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      dieta.ordenarProductosAlfabeticamente("HIDRATOS");
+
+      expect(dieta.listaProductos[0].getNombre()).toBe("pollo");
+      expect(dieta.listaProductos[1].getNombre()).toBe("arroz");
+
+    });
+    test("Comprobando orden GRASA", () => {
+      var dieta = new Dieta();
+      var producto = new Producto("pollo","2","2","2","2");
+      dieta.aniadirProducto(producto);
+      var producto = new Producto("arroz","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      dieta.ordenarProductosAlfabeticamente("GRASA");
+
+      expect(dieta.listaProductos[0].getNombre()).toBe("pollo");
+      expect(dieta.listaProductos[1].getNombre()).toBe("arroz");
+    });
+    test("Comprobando orden PROTEINAS", () => {
+      var dieta = new Dieta();
+      var producto = new Producto("pollo","2","2","2","2");
+      dieta.aniadirProducto(producto);
+      var producto = new Producto("arroz","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      dieta.ordenarProductosAlfabeticamente("PROTEINAS");
+
+      expect(dieta.listaProductos[0].getNombre()).toBe("pollo");
+      expect(dieta.listaProductos[1].getNombre()).toBe("arroz");
+
+    });
+    test("Comprobando orden CALORIAS", () => {
+      var dieta = new Dieta();
+      var producto = new Producto("pollo","2","2","2","2");
+      dieta.aniadirProducto(producto);
+      var producto = new Producto("arroz","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      dieta.ordenarProductosAlfabeticamente("CALORIAS");
+
+      expect(dieta.listaProductos[0].getNombre()).toBe("pollo");
+      expect(dieta.listaProductos[1].getNombre()).toBe("arroz");
+    });
+  });
