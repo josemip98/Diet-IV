@@ -81,7 +81,6 @@ class Dieta{
 
       return productoEncontrado;
     }
-  }
 
   //Función que ordena los productos alfabeticamente de manera ascendente y descendente
     ordenarProductosAlfabeticamente(orden){
@@ -103,12 +102,11 @@ class Dieta{
         desordenado = lista_productos.sort();
         ordenados = desordenado.reverse();
       }else{
-        throw new NoOrden("El orden introducido no es válido. Introduce ASCENDENTE o DESCENDENTE");
+        return ("El orden introducido no es válido. Introduce ASCENDENTE o DESCENDENTE");
       }
       var j = 0;
       for(var producto in ordenados){
-        this.listaProductos[j].setPalabra(ordenadoS[pal])
-        this.listaProductos[j].setSignificado(dieta[ordenadoS[producto]]);
+        this.listaProductos[j].setProducto(ordenados[producto])
         j+=1
       }
         return this.listaProductos;
@@ -151,15 +149,14 @@ class Dieta{
           }
           ordenados = lista_productos.sort();
         }else{
-          throw new NoOrden("El orden introducido no es válido. Introduce HIDRATOS, GRASA, PROTEINAS O CALORIAS");
+          return ("El orden introducido no es válido. Introduce HIDRATOS, GRASA, PROTEINAS O CALORIAS");
         }
         var j = 0;
         for(var producto in ordenados){
-          this.listaProductos[j].setPalabra(ordenadoS[pal])
-          this.listaProductos[j].setSignificado(dieta[ordenadoS[producto]]);
+          this.listaProductos[j].setProducto(ordenados[producto])
           j+=1
         }
           return this.listaProductos;
       }
-
+}
 module.exports = Dieta;

@@ -1,3 +1,4 @@
+
 const Producto = require("../src/producto.js");
 const Dieta = require("../src/dieta.js");
 
@@ -73,5 +74,31 @@ describe("Testeando el método mostrarDieta()", () => {
       informacionNutricional = dieta.listaProductos[indiceProducto];
 
       expect(resultado).toBe(informacionNutricional);
+    });
+  });
+
+  describe("Testeando el método ordenarProductosAlfabeticamente()", () => {
+    test("Comprobando orden ascendente", () => {
+      var dieta = new Dieta();
+      var producto = new Producto("arroz","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      var producto = new Producto("pollo","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      dieta.ordenarProductosAlfabeticamente("ASCENDENTE");
+
+      expect(dieta.listaProductos[0].getNombre()).toBe("arroz");
+      expect(dieta.listaProductos[1].getNombre()).toBe("pollo");
+
+    });
+    test("Comprobando orden descendente", () => {
+      var dieta = new Dieta();
+      var producto = new Producto("pollo","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      var producto = new Producto("arroz","1","1","1","1");
+      dieta.aniadirProducto(producto);
+      dieta.ordenarProductosAlfabeticamente("DESCENDENTE");
+
+      expect(dieta.listaProductos[0].getNombre()).toBe("pollo");
+      expect(dieta.listaProductos[1].getNombre()).toBe("arroz");
     });
   });
