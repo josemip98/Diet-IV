@@ -46,7 +46,7 @@ router.get('/listado', function(req, res, next) {
 });
 
 
-router.post('/aniade', function(req, res, next) {
+router.post('/producto', function(req, res, next) {
   var body = req.body;
   var nombre = body.nombre;
   var calorias = body.calorias;
@@ -67,7 +67,7 @@ router.post('/aniade', function(req, res, next) {
 
 });
 
-router.put('/modifica', function(req, res, next) {
+router.put('/producto', function(req, res, next) {
   var body = req.body;
   var nombre = body.nombre;
   var calorias = body.calorias;
@@ -86,7 +86,7 @@ router.put('/modifica', function(req, res, next) {
 
 });
 
-router.delete('/elimina', function(req, res, next) {
+router.delete('/producto', function(req, res, next) {
   var body = req.body;
   var nombre = body.nombre;
   try {

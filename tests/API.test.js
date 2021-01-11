@@ -51,7 +51,7 @@ describe( "GET listado de productos", function() {
 describe( "POST producto", function() {
     it('Debería añadir un nuevo producto', function(done) {
         request(app)
-            .post('/aniade')
+            .post('/producto')
             .send(nuevo_producto)
             .expect(201, done);
     });
@@ -61,7 +61,7 @@ describe( "POST producto", function() {
 describe( "PUT modificación", function() {
     it('Deberias obtener la modificación del producto', function(done) {
         request(app)
-            .put('/modifica')
+            .put('/producto')
             .send(modificacion)
             .expect(200, done);
     });
@@ -71,7 +71,7 @@ describe( "PUT modificación", function() {
 describe( "DELETE producto", function() {
     it('Debería eliminar el producto indicado', function(done) {
         request(app)
-            .delete('/elimina')
+            .delete('/producto')
             .send({
                 "nombre":"arroz"
               })
