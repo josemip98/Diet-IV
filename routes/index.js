@@ -10,6 +10,12 @@ router.get('/', (req, res) => {
   res.send('La API OrganizeUDiet funciona correctamente!')
 })
 
+router.get('/status', (req, res) => {
+  res.send("{ status: \"OK\" }")
+  res.status(200);
+})
+
+
 router.get('/producto/:producto', function(req, res, next) {
 
   try {
