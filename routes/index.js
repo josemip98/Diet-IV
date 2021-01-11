@@ -110,4 +110,19 @@ router.get('/ordenaAlfabeticamente/:orden', function(req, res, next) {
 
 });
 
+router.get('/ordena/:orden', function(req, res, next) {
+  var body = req.body;
+  var orden = body.orden;
+  try {
+    dieta.ordenarProductosAlfabeticamente(orden);
+    res.sendStatus(200);
+  }
+  catch(e) {
+    throw e;
+    res.send('No se han podido ordenar productos.')
+    res.sendStatus(404);
+  }
+
+});
+
 module.exports = router;
