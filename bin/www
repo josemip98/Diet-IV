@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+var Etcd = require('node-etcd');
+const default_port = 3000;
+var port;
+var etcd = new Etcd("127.0.0.1:2379");
+
+etcd.get("port", port);
+
+if(!port){
+
+    port = default_port;
+}
+
+app.listen( port, () => {
+    console.log( `Servidor arrancado en http://localhost:${ port }` );
+} );
