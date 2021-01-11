@@ -13,7 +13,8 @@ El formato a mostrar será:
 
 + Producto -> Información nutricional
 
-La información nutricional consta de: 
+La información nutricional consta de:
+
 	+ Calorías
 	+ Grasa
 	+ Proteínas
@@ -184,11 +185,11 @@ En este apartado se irán añadiendo las historias de usuario
 	+ Como usuario debo poder consultar un producto concreto perteneciente a una dieta. El formato a mostrar será el producto junto con su información nutricional.
 + [HU04](https://github.com/josemip98/OrganizeUDiet/issues/44) Consultar listado productos.
 	+ Como usuario debo poder consultar el listado completo de productos. El formato a mostrar será un listado formado por el producto junto con su información nutricional.
-+ [HU05](https://github.com/josemip98/OrganizeUDiet/issues/53) Añadir producto.
++ [HU05](https://github.com/josemip98/OrganizeUDiet/issues/53) Añadir producto a una dieta.
 	+ Como usuario debo poder añadir un producto nuevo a una dieta.
-+ [HU06](https://github.com/josemip98/OrganizeUDiet/issues/54) Modificar producto.
++ [HU06](https://github.com/josemip98/OrganizeUDiet/issues/54) Modificar producto de una dieta.
 	+ Como usuario debo poder modificar un producto de una dieta.
-+ [HU07](https://github.com/josemip98/OrganizeUDiet/issues/55) Eliminar producto.
++ [HU07](https://github.com/josemip98/OrganizeUDiet/issues/55) Eliminar producto de una dieta.
 	+ Como usuario debo poder eliminar un producto de una dieta.
 	
 ***

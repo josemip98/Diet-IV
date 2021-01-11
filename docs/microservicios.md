@@ -120,7 +120,19 @@ Y si utilizamos la ruta /listado podemos comprobar como el producto arroz ya no 
 
 ### Configuración distribuida
 
-Como configuración distribuida siguiendo buenas prácticas de Express creamos las distintas rutas en la carpeta routes en el archivo [index.js](https://github.com/josemip98/OrganizeUDiet/blob/master/routes/index.js), las clases para las funciones utilizadas se encuentran en la carpeta src, estas son la clase [Producto](https://github.com/josemip98/OrganizeUDiet/blob/master/src/producto.js) y clase [Dieta](https://github.com/josemip98/OrganizeUDiet/blob/master/src/dieta.js).
+La configuración distribuida está implementada en el fichero [bin/www](https://github.com/josemip98/OrganizeUDiet/blob/master/bin/www).
+
+Para ello he seguido esta [guía](https://www.npmjs.com/package/node-etcd)
+
+Obtenemos los datos de la configuración distribuida con ip 127.0.0.1 y puerto 2379 con:
+`var etcd = new Etcd("127.0.0.1:2379");`
+
+Si no funcionara o no se pudiera obtener el valor de la variable, le damos un valor por defecto:
+
+`const default_port = 3000;`
+
+`if(!port){ port = default_port; }`
+
 
 ### Log
 
