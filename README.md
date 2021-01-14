@@ -25,17 +25,18 @@ La información nutricional consta de:
 ## Despliegue en un PaaS
 
 + Descripción y justificación de las herramientas usadas para desplegar la aplicación en en PaaS.
-	+ [Documentación]()
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/Paas.md#descripci%C3%B3n-y-justificaci%C3%B3n-de-las-herramientas-usadas-para-desplegar-la-aplicaci%C3%B3n-en-el-paas)
 
 + Descripción correcta de la configuración para despliegue automático, desde el repositorio o desde el sistema de integración continua.
-	+ [Documentación]()
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/Paas.md#descripci%C3%B3n-correcta-de-la-configuraci%C3%B3n-para-despliegue-autom%C3%A1tico-desde-el-repositorio-o-desde-el-sistema-de-integraci%C3%B3n-continua)
 	
 + Funcionamiento correcto del despliegue en el PaaS (no sólo el status). Es decir, no se puede devolver ningún status 500.
-	+ [Documentación]()
 + Buenas prácticas en el diseño del API, incluyendo su correspondencia correcta con diferentes HUs.
-	+ [Documentación]()
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/Paas.md#funcionamiento-correcto-del-despliegue-en-el-paas-no-s%C3%B3lo-el-status-es-decir-no-se-puede-devolver-ning%C3%BAn-status-500)
+
+
 + Uso correcto de bases de datos y logs dentro del PaaS, incluyendo su justificación y pruebas de prestaciones, así como avance general y grado de terminación de la aplicación.
-	+ [Documentación]()
+	+ [Documentación](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/Paas.md#uso-correcto-de-bases-de-datos-y-logs-dentro-del-paas-incluyendo-su-justificaci%C3%B3n-y-pruebas-de-prestaciones-as%C3%AD-como-avance-general-y-grado-de-terminaci%C3%B3n-de-la-aplicaci%C3%B3n)
 
 ***
 
