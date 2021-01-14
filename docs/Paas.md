@@ -99,18 +99,18 @@ Es importante que el código que se despliegue no contenga errores, para evitar 
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/configuracionAutomatica4.png)
 
-## Funcionamiento correcto del despliegue en el PaaS (no sólo el status). Es decir, no se puede devolver ningún status 500.
+## Funcionamiento correcto del despliegue en el PaaS (no sólo el status). Es decir, no se puede devolver ningún status 500. Buenas prácticas en el diseño del API, incluyendo su correspondencia correcta con diferentes HUs.
 
 Puede probarse lo que se va a comentar a continuación sobre la api alojada en el siguiente enlace:
 
 Enlace API: https://organizeudiet.herokuapp.com/ 
 
-**Códigos de estado utilizados:**
+### Códigos de estado utilizados:
 
 Cuando una operación tenga éxito, se adjuntará el código de estado: 200. 
 Cuando una operación falle porque no se encuentra un recurso, se adjuntará el código de estado: 404.
 
-**Todas las rutas de nuestra API y relación con HUs**
+### Todas las rutas de nuestra API y relación con HUs**
 
 + /
 [HU10] - Como usuario del microservicio me gustaría comprobar que está disponible con un mensaje de bienvenida
@@ -156,43 +156,73 @@ Cuando una operación falle porque no se encuentra un recurso, se adjuntará el 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento14.png)
 
 
-**API en funcionamiento:**
+### API en funcionamiento:
+
+Para comprobar el estado de la API tenemos tanto la ruta / que nos muestra un mensaje de que funciona correctamente y la ruta /status que devuelve el estado OK si la API esta funcionando.
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento1.png)
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento2.png)
 
-![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento3.png)
+Con la orden /producto podemos añadir un nuevo producto a la dieta indicando los valores del producto que queremos añadir con la ruta /producto y un método **POST**
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento4.png)
 
+Podemos comprobar que se ha creado correctamente si utilizamos la ruta /producto/:nombre_producto para buscarlo:
+
+![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento3.png)
+
+Con la orden /producto podemos modificar un producto de la dieta  indicando los valores del producto que queramos modificar con la ruta /producto y un método **PUT**
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento5.png)
+
+Podemos comprobar que se ha modificado correctamente si utilizamos la ruta /producto/:nombre_producto para buscarlo:
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento6.png)
 
+Con la ruta /listado podemos listar todos los productos pertenecientes a la dieta:
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento7.png)
+
+Con la orden /producto podemos eliminar un producto de la dieta indicando el nombre del producto que queremos eliminar con la ruta /producto y un método **DELETE**
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento8.png)
 
+Si hacemos un /listado podemos comprobar que se ha eliminado correctamente el producto "macarrones"
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento9.png)
+
+Podemos ordenar alfabéticamente los productos de una dieta con la ruta /ordenaAlfabeticamente/:orden:
+
+Tanto de manera ascendente:
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento10.png)
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento11.png)
 
+Como descendente:
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento12.png)
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento13.png)
 
+Y por último podemos ordenar según la información nutricional con la ruta ordena/:orden:
+
+Por grasa:
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento14.png)
+
+Por proteinas:
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento15.png)
 
+Por hidratos:
+
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento16.png)
 
-![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento17.png)
+Por calorias:
 
-## Buenas prácticas en el diseño del API, incluyendo su correspondencia correcta con diferentes HUs.
+![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/funcionamiento17.png)
 
 ## Uso correcto de bases de datos y logs dentro del PaaS, incluyendo su justificación y pruebas de prestaciones, así como avance general y grado de terminación de la aplicación.
 
