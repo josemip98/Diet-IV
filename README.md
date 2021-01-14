@@ -9,16 +9,16 @@ Aquí podrás consultar todo tipo de alimentos junto con su información nutrici
 
 Una dieta está formada por una lista de productos.
 
-El formato a mostrar será:
+El formato a mostrar del producto será:
 
-+ Producto -> Información nutricional
++ Nombre -> Información nutricional
 
 La información nutricional consta de:
 
-	+ Calorías
-	+ Grasa
-	+ Proteínas
-	+ Hidratos	
++ Calorías
++ Grasa
++ Proteínas
++ Hidratos	
 	
 ***
 
