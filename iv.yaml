@@ -9,21 +9,10 @@ test:
 taskfile: package.json
 URL: https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz
 make: gulp
-Paas: https://organizeudiet.herokuapp.com//status
+Paas: https://organizeudiet.herokuapp.com/status
 
 recurso:
-  -
-    nombre: producto
-    metodo: POST
-    payload:
-      - nombre: arroz
-      - calorias: 354
-      - grasa: 1
-      - proteinas: 7
-      - hidratos: 80
-    IDs:
-  -
-    nombre: producto
+  - nombre: producto
     metodo: PUT
     payload:
       - nombre: arroz
@@ -33,4 +22,3 @@ recurso:
       - hidratos: 80
     IDs:
       - 0
-      - 1

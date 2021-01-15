@@ -30,7 +30,7 @@ He seguido esta [guia](https://pm2.keymetrics.io/docs/usage/application-declarat
 He elegido Heroku como PaaS por su simplicidad a la hora de configurarlo y su facil uso. 
 Tiene una documentación muy útil para guiarte durante todo el procedimiento. Es muy sencillo de escalar inicialmente (Dynos) y goza de un gran soporte de plugins.
 
-### Como desplegar esta aplicación
+### Como desplegar la aplicación
 
 El despliegue consiste de los siguientes pasos:
 
@@ -227,6 +227,8 @@ Por calorias:
 ## Uso correcto de bases de datos y logs dentro del PaaS, incluyendo su justificación y pruebas de prestaciones, así como avance general y grado de terminación de la aplicación.
 
 ### Logs
+
+Utilizo el log que proporciona Heroku.
 
 Para acceder al log de la aplicación utilizamos el comando:
 
