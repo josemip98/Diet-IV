@@ -20,3 +20,5 @@ recurso:
     grasa: "1"
     proteinas: "7"
     hidratos: "80"
+  IDs:
+    - arroz
