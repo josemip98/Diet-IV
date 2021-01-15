@@ -13,7 +13,7 @@ PaaS: https://organizeudiet.herokuapp.com/
 
 recurso:
   nombre: producto
-  metodo: PUT
+  metodo: POST
   payload:
     nombre: "arroz"
     calorias: "354"
