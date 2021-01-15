@@ -12,13 +12,13 @@ make: gulp
 Paas: https://organizeudiet.herokuapp.com/status
 
 recurso:
-  - nombre: producto
-    metodo: PUT
-    payload:
-      - nombre: arroz
-      - calorias: 354
-      - grasa: 1
-      - proteinas: 7
-      - hidratos: 80
-    IDs:
-      - 10
+  nombre: producto
+  metodo: PUT
+  payload:
+    nombre: arroz
+    calorias: 354
+    grasa: 1
+    proteinas: 7
+    hidratos: 80
+  IDs:
+    - 10
