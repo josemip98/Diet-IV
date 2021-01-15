@@ -9,7 +9,7 @@ test:
 taskfile: package.json
 URL: https://organize-u-diet.vercel.app/api/consultaProducto?producto=arroz
 make: gulp
-Paas: https://organizeudiet.herokuapp.com
+PaaS: https://organizeudiet.herokuapp.com/
 
 recurso:
   nombre: producto
