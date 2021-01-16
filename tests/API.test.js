@@ -53,7 +53,7 @@ describe( "POST producto", function() {
         request(app)
             .post('/producto')
             .send(nuevo_producto)
-            .expect(200, done);
+            .expect(201, done);
     });
 });
 

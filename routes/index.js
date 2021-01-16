@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/status', (req, res) => {
-  res.send("{ status: \"OK\" }")
+  res.send("{ status: \"OK\" }");
   res.status(200);
 })
 
@@ -59,7 +59,7 @@ router.post('/producto', function(req, res, next) {
     dieta.aniadirProducto(producto);
     res.contentType('application/json');
     res.location('/producto/' + producto.getNombre());
-    res.sendStatus(200);
+    res.sendStatus(201);
   }
   catch(e) {
     throw e;

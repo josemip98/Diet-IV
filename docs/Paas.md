@@ -107,8 +107,11 @@ Enlace API: https://organizeudiet.herokuapp.com/
 
 ### Códigos de estado utilizados:
 
-Cuando una operación tenga éxito, se adjuntará el código de estado: 200. 
-Cuando una operación falle porque no se encuentra un recurso, se adjuntará el código de estado: 404.
+Cuando una operación tenga éxito, se devolverá el código de estado: 200.
+
+Excepto si la operación ha sido de crear un objeto, se devolverá el código de estado: 201.
+
+Cuando una operación falle porque no se encuentra un recurso, se devolverá el código de estado: 404.
 
 ### Todas las rutas de nuestra API y relación con HUs**
 
