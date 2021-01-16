@@ -99,6 +99,10 @@ Es importante que el código que se despliegue no contenga errores, para evitar 
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/configuracionAutomatica4.png)
 
+Por último, marcamos la casilla de Enable Automatic Deploys para el despliegue automático.
+
+![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/configuracionAutomatica5.png)
+
 ## Funcionamiento correcto del despliegue en el PaaS (no sólo el status). Es decir, no se puede devolver ningún status 500. Buenas prácticas en el diseño del API, incluyendo su correspondencia correcta con diferentes HUs.
 
 Puede probarse lo que se va a comentar a continuación sobre la api alojada en el siguiente enlace:
