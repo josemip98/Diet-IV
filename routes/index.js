@@ -57,8 +57,7 @@ router.post('/producto', function(req, res, next) {
   try {
     var producto = new Producto(nombre, calorias, grasa, proteinas, hidratos)
     dieta.aniadirProducto(producto);
-    res.contentType('application/json');
-    res.location('producto/' + producto.getNombre());
+    res.setHeader('location', 'producto/' + producto.getNombre());
     res.sendStatus(201);
   }
   catch(e) {
