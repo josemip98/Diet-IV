@@ -6,16 +6,9 @@ Las herramientas utilizadas para el despliegue de la aplicación en el PaaS has 
 
 ### ¿Por qué PM2?
 
-Pm2 es un gestor de procesos en producción para las aplicaciones Node.js que tiene un balanceador de carga incorporado. PM2 permite mantener siempre activas las aplicaciones y volver a cargarlas evitando los tiempos de inactividad, a la vez que facilita tareas comunes de administrador del sistema. PM2 también permite gestionar el registro de aplicaciones, la supervisión y la agrupación en clúster.
-
-Las principales características de pm2:
-
-+ Capacidad de manejar un montón de apps. (Ver el estado de distintas apps)
-+ Capacidad de monitoreo de memoria y cps de nuestros procesos.
-+ Manejo de logs.
-+ Balanceo de carga.
-+ Iniciar tus aplicaciones una vez el servidores se inicia.
-+ Capacidad de “watch your code” si tu codigo cambia.
+He utilizado PM2 que es un gestor de procesos en producción para aplicaciones en Node.js. Permite mantener activas las aplicaciones y recargarlas para evitar tiempos de inactividad.
+Además permite el monitoreo de memoria, el manejo de logs, balanceo de carga y la capacidad de visualizar el estado de la aplicacion si tu código cambia.
+Por tanto facilita las tareas que realiza el administrador del sistema.
 
 Para instalarlo:
 
@@ -102,6 +95,10 @@ Es importante que el código que se despliegue no contenga errores, para evitar 
 Por último, marcamos la casilla de Enable Automatic Deploys para el despliegue automático.
 
 ![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/configuracionAutomatica5.png)
+
+Como podemos comprobar, he realizado un commit y al pasar los test de IC, se despliega automáticamente en Heroku:
+
+![Imagen](https://github.com/josemip98/OrganizeUDiet/blob/master/docs/img/configuracionAutomatica6.png)
 
 ## Funcionamiento correcto del despliegue en el PaaS (no sólo el status). Es decir, no se puede devolver ningún status 500. Buenas prácticas en el diseño del API, incluyendo su correspondencia correcta con diferentes HUs.
 
