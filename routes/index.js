@@ -105,31 +105,27 @@ router.delete('/producto', function(req, res, next) {
 router.get('/ordenaAlfabeticamente/:orden', function(req, res, next) {
   var body = req.body;
   var orden = body.orden;
-  try {
+  if((orden=="ascendente")||(orden=="descendente")) {
     dieta.ordenarProductos(orden);
     res.sendStatus(200);
   }
-  catch(e) {
-    throw e;
+  else{
     res.send('No se han podido ordenar los productos.')
     res.sendStatus(404);
   }
-
 });
 
 router.get('/ordena/:orden', function(req, res, next) {
   var body = req.body;
   var orden = body.orden;
-  try {
+    if((orden=="grasa")||(orden=="hidratos")||(orden=="proteinas")||(orden=="calorias")){
     dieta.ordenarProductosAlfabeticamente(orden);
     res.sendStatus(200);
   }
-  catch(e) {
-    throw e;
+  else{
     res.send('No se han podido ordenar productos.')
     res.sendStatus(404);
   }
-
 });
 
 module.exports = router;

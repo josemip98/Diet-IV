@@ -85,28 +85,28 @@ class Dieta{
   //Función que ordena los productos alfabeticamente de manera ascendente y descendente
     ordenarProductosAlfabeticamente(orden){
       var orden = orden;
-      var ordenados = new Array();
-      var lista_productos =new Array();
-      var dieta = {};
+      var dieta = new Dieta();
       var i = 0
+      var lista_ordenados = new Array();
+      var lista_productos =new Array();
       while (i < this.listaProductos.length){
         lista_productos[i] = this.listaProductos[i].getProducto();
         dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getNombre();
         i+=1;
       }
-      if(orden == "DESCENDENTE"){
-        ordenados = lista_productos.sort();
+      if(orden == "ascendente"){
+        lista_ordenados = lista_productos.sort();
       }
-      else if(orden == "ASCENDENTE"){
-        var desordenado = new Array()
-        desordenado = lista_productos.sort();
-        ordenados = desordenado.reverse();
+      else if(orden == "descendente"){
+        var lista_desordenado = new Array()
+        lista_desordenado = lista_productos.sort();
+        lista_ordenados = lista_desordenado.reverse();
       }else{
-        return ("El orden introducido no es válido. Introduce ASCENDENTE o DESCENDENTE");
+        return ("El valor introducido no es válido. Introduce ASCENDENTE o DESCENDENTE");
       }
       var j = 0;
-      for(var producto in ordenados){
-        this.listaProductos[j].setProducto(ordenados[producto])
+      for(var producto in lista_ordenados){
+        this.listaProductos[j].setProducto(lista_ordenados[producto])
         j+=1
       }
         return this.listaProductos;
@@ -115,17 +115,17 @@ class Dieta{
     //Función que ordena los productos según mayor número de hidratos, grasa, proteinas o calorias.
       ordenarProductos(orden){
         var orden = orden;
-        var ordenados = new Array();
-        var lista_productos =new Array();
-        var dieta = {};
+        var dieta = new Dieta();
         var i = 0
+        var lista_ordenados = new Array();
+        var lista_productos =new Array();
         if(orden == "HIDRATOS"){
           while (i < this.listaProductos.length){
             lista_productos[i] = this.listaProductos[i].getProducto();
             dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getHidratos();
             i+=1;
           }
-          ordenados = lista_productos.sort();
+          lista_ordenados = lista_productos.sort();
         }
         else if(orden == "GRASA"){
           while (i < this.listaProductos.length){
@@ -133,27 +133,27 @@ class Dieta{
             dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getGrasa();
             i+=1;
           }
-          ordenados = lista_productos.sort();
+          lista_ordenados = lista_productos.sort();
         }else if(orden == "PROTEINAS"){
           while (i < this.listaProductos.length){
             lista_productos[i] = this.listaProductos[i].getProducto();
             dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getProteinas();
             i+=1;
           }
-          ordenados = lista_productos.sort();
+          lista_ordenados = lista_productos.sort();
         }else if(orden == "CALORIAS"){
           while (i < this.listaProductos.length){
             lista_productos[i] = this.listaProductos[i].getProducto();
             dieta[this.listaProductos[i].getProducto()] = this.listaProductos[i].getCalorias();
             i+=1;
           }
-          ordenados = lista_productos.sort();
+          lista_ordenados = lista_productos.sort();
         }else{
-          return ("El orden introducido no es válido. Introduce HIDRATOS, GRASA, PROTEINAS O CALORIAS");
+          return ("El valor introducido no es válido. Introduce HIDRATOS, GRASA, PROTEINAS O CALORIAS");
         }
         var j = 0;
-        for(var producto in ordenados){
-          this.listaProductos[j].setProducto(ordenados[producto])
+        for(var producto in lista_ordenados){
+          this.listaProductos[j].setProducto(lista_ordenados[producto])
           j+=1
         }
           return this.listaProductos;
